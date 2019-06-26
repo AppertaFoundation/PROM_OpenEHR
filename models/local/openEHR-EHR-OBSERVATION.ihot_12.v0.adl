@@ -1,0 +1,281 @@
+archetype (adl_version=1.4; uid=43a01cbb-6b57-4d0f-9cfc-4d39a4e609ad)
+	openEHR-EHR-OBSERVATION.ihot_12.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2018-08-29">
+		["name"] = <"Hildegard McNicoll">
+		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"For the recording and reporting of patient-reported hip outcome measure IHOT-12 (International Hip Outcome Tool).">
+			keywords = <"hip","outcome","PROM">
+			use = <"Use to record patient-reported hip outcome measure IHOT-12 (International Hip Outcome Tool).
+
+While openEHR archetypes are all freely available under an open license, the specific content of this archetype may be copyright protected. Any use of this archetype within implementations must be in compliance with the terms established by the copyright owners where a copyright exists.">
+			misuse = <"Not to be used unless the terms of copyright have been observed (if a copyright exists).">
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["references"] = <"https://britishhipsociety.com/uploaded/NAHR%20MDS%20v1.0%20iHOT_EQ5D.pdf  cited 29-Aug-2018.">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"344bd3018c8afe8fa72665a337b53880">
+		["build_uid"] = <"87d4073b-a78a-3734-95e4-b876911ab17b">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- IHOT_12
+		data matches {
+			HISTORY[at0001] matches {    -- History
+				events cardinality matches {0..*; unordered} matches {
+					POINT_EVENT[at0002] occurrences matches {1..*} matches {    -- Point in time
+						data matches {
+							ITEM_TREE[at0003] matches {    -- ItemTree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0005] occurrences matches {0..1} matches {    -- 1 Pain in hip or groin
+										value matches {
+											DV_COUNT matches {
+												magnitude matches {|>0..<100|}
+											}
+										}
+									}
+									ELEMENT[at0006] occurrences matches {0..1} matches {    -- 2 Difficulty getting up or down off floor
+										value matches {
+											DV_COUNT matches {
+												magnitude matches {|>0..<100|}
+											}
+										}
+									}
+									ELEMENT[at0007] occurrences matches {0..1} matches {    -- 3 Difficulty walking long distances
+										value matches {
+											DV_COUNT matches {
+												magnitude matches {|>0..<100|}
+											}
+										}
+									}
+									ELEMENT[at0011] occurrences matches {0..1} matches {    -- 4 Trouble with grinding or catching or clicking of hip
+										value matches {
+											DV_COUNT matches {
+												magnitude matches {|>0..<100|}
+											}
+										}
+									}
+									ELEMENT[at0012] occurrences matches {0..1} matches {    -- 5 Trouble with pushing or pulling or lifting or carrying heavy objects
+										value matches {
+											DV_COUNT matches {
+												magnitude matches {|>0..<100|}
+											}
+										}
+									}
+									ELEMENT[at0013] occurrences matches {0..1} matches {    -- 6 Concern about cutting or changing direction in sporting or recreational activities
+										value matches {
+											DV_COUNT matches {
+												magnitude matches {|>0..<100|}
+											}
+										}
+									}
+									ELEMENT[at0014] occurrences matches {0..1} matches {    -- 7 Pain in hip after activity
+										value matches {
+											DV_COUNT matches {
+												magnitude matches {|>0..<100|}
+											}
+										}
+									}
+									ELEMENT[at0015] occurrences matches {0..1} matches {    -- 8 Concern about picking up or carrying children
+										value matches {
+											DV_COUNT matches {
+												magnitude matches {|>0..<100|}
+											}
+										}
+									}
+									ELEMENT[at0016] occurrences matches {0..1} matches {    -- 9 Trouble with sexual activity
+										value matches {
+											DV_COUNT matches {
+												magnitude matches {|>0..<100|}
+											}
+										}
+									}
+									ELEMENT[at0017] occurrences matches {0..1} matches {    -- Q9 not applicable
+										value matches {
+											DV_BOOLEAN matches {
+												value matches {true}
+											}
+										}
+									}
+									ELEMENT[at0018] occurrences matches {0..1} matches {    -- 10 Amount of time aware of disability
+										value matches {
+											DV_COUNT matches {
+												magnitude matches {|>0..<100|}
+											}
+										}
+									}
+									ELEMENT[at0019] occurrences matches {0..1} matches {    -- 11 Concern about ability to maintain desired fitness level
+										value matches {
+											DV_COUNT matches {
+												magnitude matches {|>0..<100|}
+											}
+										}
+									}
+									ELEMENT[at0020] occurrences matches {0..1} matches {    -- 12 Extent of distraction
+										value matches {
+											DV_COUNT matches {
+												magnitude matches {|>0..<100|}
+											}
+										}
+									}
+									ELEMENT[at0022] occurrences matches {0..1} matches {    -- Total score
+										value matches {
+											C_DV_QUANTITY <
+												property = <[openehr::380]>
+												list = <
+													["1"] = <
+														units = <"1">
+														magnitude = <|>0.0..<100.0|>
+													>
+												>
+											>
+										}
+									}
+								}
+							}
+						}
+						state matches {
+							ITEM_TREE[at0004] matches {    -- ItemTree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0008] occurrences matches {0..*} matches {    -- Confounding factors
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0009] matches {    -- ItemTree
+				items cardinality matches {0..*; unordered} matches {
+					allow_archetype CLUSTER[at0010] occurrences matches {0..1} matches {    -- Extension
+						include
+							archetype_id/value matches {/.*/}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["1"] = <
+					text = <"Real number">
+					description = <"@ unit @">
+				>
+				["at0000"] = <
+					text = <"IHOT_12">
+					description = <"International Hip Outcome Tool (12 questions).">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"*">
+				>
+				["at0002"] = <
+					text = <"Point in time">
+					description = <"A specific date and/or time which may be explicitly defined in a template or at run-time.">
+				>
+				["at0003"] = <
+					text = <"ItemTree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"ItemTree">
+					description = <"@ internal @">
+				>
+				["at0005"] = <
+					text = <"1 Pain in hip or groin">
+					description = <"Patient-reported extent of pain in hip or groin on a scale of 0 to 100, where 0 represents extreme pain and 100 represents no pain at all.">
+				>
+				["at0006"] = <
+					text = <"2 Difficulty getting up or down off floor">
+					description = <"Patient-reported extent of difficulty getting up or down off the floor or ground on a scale of 0 to 100, where 0 represents extreme difficulty and 100 represents no difficulty at all.">
+				>
+				["at0007"] = <
+					text = <"3 Difficulty walking long distances">
+					description = <"Patient-reported extent of difficulty walking long distances on a scale of 0 to 100, where 0 represents extreme difficulty and 100 represents no difficulty at all.">
+				>
+				["at0008"] = <
+					text = <"Confounding factors">
+					description = <"*">
+				>
+				["at0009"] = <
+					text = <"ItemTree">
+					description = <"@ internal @">
+				>
+				["at0010"] = <
+					text = <"Extension">
+					description = <"*">
+				>
+				["at0011"] = <
+					text = <"4 Trouble with grinding or catching or clicking of hip">
+					description = <"Patient-reported extent of trouble with grinding, catching or clicking of hip on a scale of 0 to 100, where 0 represents severe trouble and 100 represents no trouble at all.">
+				>
+				["at0012"] = <
+					text = <"5 Trouble with pushing or pulling or lifting or carrying heavy objects">
+					description = <"Patient-reported extent of trouble with pushing, pulling, lifting or carrying heavy objects at work on a scale of 0 to 100, where 0 represents severe trouble and 100 represents no trouble at all.">
+				>
+				["at0013"] = <
+					text = <"6 Concern about cutting or changing direction in sporting or recreational activities">
+					description = <"Patient-reported extent of concern about cutting or changing direction in sporting or recreational activities on a scale of 0 to 100, where 0 represents extreme concern and 100 represents no concern at all.">
+				>
+				["at0014"] = <
+					text = <"7 Pain in hip after activity">
+					description = <"Patient-reported extent of pain in hip after activity on a scale of 0 to 100, where 0 represents extreme pain and 100 represents no pain at all.">
+				>
+				["at0015"] = <
+					text = <"8 Concern about picking up or carrying children">
+					description = <"Patient-reported extent of concern about picking up or carrying children because of hip on a scale of 0 to 100, where 0 represents extreme concern and 100 represents no concern at all.">
+				>
+				["at0016"] = <
+					text = <"9 Trouble with sexual activity">
+					description = <"Patient-reported extent of trouble with sexual activity because of hip on a scale of 0 to 100, where 0 represents severe trouble and 100 represents no trouble at all.">
+				>
+				["at0017"] = <
+					text = <"Q9 not applicable">
+					description = <"Patient statement that question 9 is not applicable.">
+				>
+				["at0018"] = <
+					text = <"10 Amount of time aware of disability">
+					description = <"Patient-reported amount of time they are aware of disability in hip on a scale of 0 to 100, where 0 represents constantly aware and 100 represents not aware at all.">
+				>
+				["at0019"] = <
+					text = <"11 Concern about ability to maintain desired fitness level">
+					description = <"Patient-reported extent of concern about ability to maintain desired fitness level on a scale of 0 to 100, where 0 represents extreme concern and 100 represents no concern at all.">
+				>
+				["at0020"] = <
+					text = <"12 Extent of distraction">
+					description = <"Patient-reported extent of distraction caused by hip on a scale of 0 to 100, where 0 represents extreme distraction and 100 represents no distraction at all.">
+				>
+				["at0022"] = <
+					text = <"Total score">
+					description = <"Total score from 12 questions, calculated as average of the 12 individual scores.">
+				>
+			>
+		>
+	>

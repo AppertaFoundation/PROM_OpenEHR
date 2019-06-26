@@ -1,0 +1,503 @@
+archetype (adl_version=1.4; uid=cd1e2a90-7923-4faa-8cd2-be5c63aa7291)
+	openEHR-EHR-OBSERVATION.uram.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2017-10-08">
+		["name"] = <"Hildegard Franke">
+		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
+	>
+	lifecycle_state = <"in_development">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"Use to capture and report URAM QUESTIONNAIRE (Unité Rhumatologique des Affections de la Main) score details.">
+			copyright = <"© Clinical Models UK">
+			use = <"Use to capture and report URAM QUESTIONNAIRE (Unité Rhumatologique des Affections de la Main) Score.
+
+While openEHR archetypes are all freely available under an open license, the specific content of this archetype may be copyright protected. Any use of this archetype within implementations must be in compliance with the terms established by the copyright owners where a copyright exists. 
+
+">
+			misuse = <"Not to be used unless the terms of copyright have been observed (if a copyright exists).">
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"UK Clinical Models">
+		["references"] = <"">
+		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"525b60d10d65f87ba3ef5f20b74e1645">
+		["build_uid"] = <"4218ce62-ec18-464b-84bb-5fe9b815a1ea">
+		["revision"] = <"0.0.1-alpha">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- URAM Questionnaire
+		data matches {
+			HISTORY[at0001] matches {    -- Event Series
+				events cardinality matches {1..*; unordered} matches {
+					POINT_EVENT[at0002] occurrences matches {0..1} matches {    -- Point in time
+						data matches {
+							ITEM_TREE[at0003] matches {    -- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0008] occurrences matches {0..1} matches {    -- 1 Wash with flannel
+										value matches {
+											0|[local::at0009],
+											1|[local::at0010],
+											2|[local::at0011],
+											3|[local::at0012],
+											4|[local::at0116],
+											5|[local::at0117]
+										}
+									}
+									ELEMENT[at0118] occurrences matches {0..1} matches {    -- 2 Wash face
+										value matches {
+											0|[local::at0119],
+											1|[local::at0120],
+											2|[local::at0121],
+											3|[local::at0122],
+											4|[local::at0123],
+											5|[local::at0124]
+										}
+									}
+									ELEMENT[at0125] occurrences matches {0..1} matches {    -- 3 Hold a bottle
+										value matches {
+											0|[local::at0126],
+											1|[local::at0127],
+											2|[local::at0128],
+											3|[local::at0129],
+											4|[local::at0130],
+											5|[local::at0131]
+										}
+									}
+									ELEMENT[at0132] occurrences matches {0..1} matches {    -- 4 Shake hands
+										value matches {
+											0|[local::at0133],
+											1|[local::at0134],
+											2|[local::at0135],
+											3|[local::at0136],
+											4|[local::at0137],
+											5|[local::at0138]
+										}
+									}
+									ELEMENT[at0139] occurrences matches {0..1} matches {    -- 5 Stroke something
+										value matches {
+											0|[local::at0140],
+											1|[local::at0141],
+											2|[local::at0142],
+											3|[local::at0143],
+											4|[local::at0144],
+											5|[local::at0145]
+										}
+									}
+									ELEMENT[at0146] occurrences matches {0..1} matches {    -- 6 Clap hands
+										value matches {
+											0|[local::at0147],
+											1|[local::at0148],
+											2|[local::at0149],
+											3|[local::at0150],
+											4|[local::at0151],
+											5|[local::at0152]
+										}
+									}
+									ELEMENT[at0153] occurrences matches {0..1} matches {    -- 7 Spread out your fingers
+										value matches {
+											0|[local::at0154],
+											1|[local::at0155],
+											2|[local::at0156],
+											3|[local::at0157],
+											4|[local::at0158],
+											5|[local::at0159]
+										}
+									}
+									ELEMENT[at0160] occurrences matches {0..1} matches {    -- 8 Lean on hand
+										value matches {
+											0|[local::at0161],
+											1|[local::at0162],
+											2|[local::at0163],
+											3|[local::at0164],
+											4|[local::at0165],
+											5|[local::at0166]
+										}
+									}
+									ELEMENT[at0167] occurrences matches {0..1} matches {    -- 9 Pick up small objects
+										value matches {
+											0|[local::at0168],
+											1|[local::at0169],
+											2|[local::at0170],
+											3|[local::at0171],
+											4|[local::at0172],
+											5|[local::at0173]
+										}
+									}
+									ELEMENT[at0104] occurrences matches {0..1} matches {    -- Total score
+										value matches {
+											DV_COUNT matches {
+												magnitude matches {|0..45|}
+											}
+										}
+									}
+									ELEMENT[at0105] occurrences matches {0..1} matches {    -- Average score
+										value matches {
+											DV_COUNT matches {
+												magnitude matches {|0..100|}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0005] matches {    -- Tree
+				items cardinality matches {0..*; unordered} matches {
+					allow_archetype CLUSTER[at0006] occurrences matches {0..1} matches {    -- Extension
+						include
+							archetype_id/value matches {/.*/}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"URAM Questionnaire">
+					description = <"URAM QUESTIONNAIRE (Unité Rhumatologique des Affections de la Main) Score.">
+				>
+				["at0001"] = <
+					text = <"Event Series">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Point in time">
+					description = <"A specific date and/or time which may be explicitly defined in a template or at run-time.">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0005"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0006"] = <
+					text = <"Extension">
+					description = <"Additional information required to capture local context or to align with other reference models/formalisms.">
+					comment = <"e.g. Local hospital departmental infomation or additional metadata to align with HL7 or CDISC equivalents.">
+				>
+				["at0008"] = <
+					text = <"1 Wash with flannel">
+					description = <"Patient-reported extent being able to wash with a flannel, keeping hand flat.">
+					comment = <"Questionnaire wording: 
+
+Can you... 
+1.	Wash yourself with a flannel, keeping your hand flat? ">
+				>
+				["at0009"] = <
+					text = <"Without Difficulty">
+					description = <"The patient can wash with a flannel keeping their hand flat without difficulty.">
+				>
+				["at0010"] = <
+					text = <"With very little difficulty">
+					description = <"The patient can wash with a flannel keeping their hand flat with very little difficulty.">
+				>
+				["at0011"] = <
+					text = <"With some difficulty">
+					description = <"The patient can wash with a flannel keeping their hand flat with some difficulty.">
+				>
+				["at0012"] = <
+					text = <"With much difficulty">
+					description = <"The patient can wash with a flannel keeping their hand flat with much difficulty.">
+				>
+				["at0104"] = <
+					text = <"Total score">
+					description = <"Total score from Questions 1 to 11.">
+				>
+				["at0105"] = <
+					text = <"Average score">
+					description = <"Average score from Questions 1-11.">
+				>
+				["at0116"] = <
+					text = <"Almost impossible">
+					description = <"The patient finds washing with a flannel keeping their hand flat almost impossible.">
+				>
+				["at0117"] = <
+					text = <"Impossible">
+					description = <"The patient finds washing with a flannel keeping their hand flat impossible.">
+				>
+				["at0118"] = <
+					text = <"2 Wash face">
+					description = <"Patient-reported extent of being able to wash their face.">
+					comment = <"Questionnaire wording: 
+
+Can you...
+2.	Wash your face? ">
+				>
+				["at0119"] = <
+					text = <"Without Difficulty">
+					description = <"The patient can wash their face without difficulty.">
+				>
+				["at0120"] = <
+					text = <"With very little difficulty">
+					description = <"The patient can wash their face with very little difficulty.">
+				>
+				["at0121"] = <
+					text = <"With some difficulty">
+					description = <"The patient can wash their face with some difficulty.">
+				>
+				["at0122"] = <
+					text = <"With much difficulty">
+					description = <"The patient can wash their face with much difficulty.">
+				>
+				["at0123"] = <
+					text = <"Almost impossible">
+					description = <"The patient finds washing their face almost impossible.">
+				>
+				["at0124"] = <
+					text = <"Impossible">
+					description = <"The patient finds washing their face impossible.">
+				>
+				["at0125"] = <
+					text = <"3 Hold a bottle">
+					description = <"Patient-reported extent of being able to hold a bottle in one hand.">
+					comment = <"Questionnaire wording: 
+
+Can you...
+3.	Hold a bottle in one hand? ">
+				>
+				["at0126"] = <
+					text = <"Without Difficulty">
+					description = <"The patient can hold a bottle in one hand without difficulty.">
+				>
+				["at0127"] = <
+					text = <"With very little difficulty">
+					description = <"The patient can hold a bottle in one hand with very little difficulty.">
+				>
+				["at0128"] = <
+					text = <"With some difficulty">
+					description = <"The patient can hold a bottle in one hand with some difficulty.">
+				>
+				["at0129"] = <
+					text = <"With much difficulty">
+					description = <"The patient can hold a bottle in one hand with much difficulty.">
+				>
+				["at0130"] = <
+					text = <"Almost impossible">
+					description = <"The patient finds holding a bottle in one hand almost impossible.">
+				>
+				["at0131"] = <
+					text = <"Impossible">
+					description = <"The patient finds holding a bottle in one hand impossible.">
+				>
+				["at0132"] = <
+					text = <"4 Shake hands">
+					description = <"Patient-reported extent of being able to shake someone's hand.">
+					comment = <"Questionnaire wording: 
+
+Can you...
+4.	Shake someone's hand? ">
+				>
+				["at0133"] = <
+					text = <"Without Difficulty">
+					description = <"The patient can shake hands without difficulty.">
+				>
+				["at0134"] = <
+					text = <"With very little difficulty">
+					description = <"The patient can shake hands with very little difficulty.">
+				>
+				["at0135"] = <
+					text = <"With some difficulty">
+					description = <"The patient can shake hands with some difficulty.">
+				>
+				["at0136"] = <
+					text = <"With much difficulty">
+					description = <"The patient can shake hands with much difficulty.">
+				>
+				["at0137"] = <
+					text = <"Almost impossible">
+					description = <"The patient finds shaking hands almost impossible.">
+				>
+				["at0138"] = <
+					text = <"Impossible">
+					description = <"The patient finds shaking hands impossible.">
+				>
+				["at0139"] = <
+					text = <"5 Stroke something">
+					description = <"Patient-reported extent of being able to stroke or caress someone.">
+					comment = <"Questionnaire wording: 
+
+Can you...
+5.	Stroke something or caress someone? ">
+				>
+				["at0140"] = <
+					text = <"Without Difficulty">
+					description = <"The patient can stroke or caress someone without difficulty.">
+				>
+				["at0141"] = <
+					text = <"With very little difficulty">
+					description = <"The patient can stroke or caress someone with very little difficulty.">
+				>
+				["at0142"] = <
+					text = <"With some difficulty">
+					description = <"The patient can stroke or caress someone with some difficulty.">
+				>
+				["at0143"] = <
+					text = <"With much difficulty">
+					description = <"The patient can stroke or caress someone with much difficulty.">
+				>
+				["at0144"] = <
+					text = <"Almost impossible">
+					description = <"The patient finds stroking or caressing someone almost impossible.">
+				>
+				["at0145"] = <
+					text = <"Impossible">
+					description = <"The patient finds stroking or caressing someone impossible.">
+				>
+				["at0146"] = <
+					text = <"6 Clap hands">
+					description = <"Patient-reported extent of being able to clap their hands.">
+					comment = <"Questionnaire wording: 
+
+Can you...
+6.	Clap your hands? ">
+				>
+				["at0147"] = <
+					text = <"Without Difficulty">
+					description = <"The patient can clap hands without difficulty.">
+				>
+				["at0148"] = <
+					text = <"With very little difficulty">
+					description = <"The patient can clap hands with very little difficulty.">
+				>
+				["at0149"] = <
+					text = <"With some difficulty">
+					description = <"The patient can clap hands with some difficulty.">
+				>
+				["at0150"] = <
+					text = <"With much difficulty">
+					description = <"The patient can clap hands with much difficulty.">
+				>
+				["at0151"] = <
+					text = <"Almost impossible">
+					description = <"The patient finds clapping hands almost impossible.">
+				>
+				["at0152"] = <
+					text = <"Impossible">
+					description = <"The patient finds clapping hands impossible.">
+				>
+				["at0153"] = <
+					text = <"7 Spread out your fingers">
+					description = <"Patient-reported extent of being able to spread out their fingers.">
+					comment = <"Questionnaire wording: 
+
+Can you...
+7.	Spread out your fingers? ">
+				>
+				["at0154"] = <
+					text = <"Without Difficulty">
+					description = <"The patient can spread out their fingers without difficulty.">
+				>
+				["at0155"] = <
+					text = <"With very little difficulty">
+					description = <"The patient can spread out their fingers with very little difficulty.">
+				>
+				["at0156"] = <
+					text = <"With some difficulty">
+					description = <"The patient can spread out their fingers with some difficulty.">
+				>
+				["at0157"] = <
+					text = <"With much difficulty">
+					description = <"The patient can spread out their fingers with much difficulty.">
+				>
+				["at0158"] = <
+					text = <"Almost impossible">
+					description = <"The patient finds spreading out their fingers almost impossible.">
+				>
+				["at0159"] = <
+					text = <"Impossible">
+					description = <"The patient finds spreading out their fingers impossible.">
+				>
+				["at0160"] = <
+					text = <"8 Lean on hand">
+					description = <"Patient-reported extent of being able to lean on their hand.">
+					comment = <"Questionnaire wording: 
+
+Can you...
+8.	Lean on your hand? ">
+				>
+				["at0161"] = <
+					text = <"Without Difficulty">
+					description = <"The patient can lean on their hand without difficulty.">
+				>
+				["at0162"] = <
+					text = <"With very little difficulty">
+					description = <"The patient can lean on their hand with very little difficulty.">
+				>
+				["at0163"] = <
+					text = <"With some difficulty">
+					description = <"The patient can lean on their hand with some difficulty.">
+				>
+				["at0164"] = <
+					text = <"With much difficulty">
+					description = <"The patient can lean on their hand with much difficulty.">
+				>
+				["at0165"] = <
+					text = <"Almost impossible">
+					description = <"The patient finds leaning on their hand almost impossible.">
+				>
+				["at0166"] = <
+					text = <"Impossible">
+					description = <"The patient finds leaning on their hand impossible.">
+				>
+				["at0167"] = <
+					text = <"9 Pick up small objects">
+					description = <"Patient-reported extent of being able to pick up small objects with their thumb and index finger.">
+					comment = <"Questionnaire wording: 
+
+Can you...
+9.	Pick up small objects with your thumb and index finger? ">
+				>
+				["at0168"] = <
+					text = <"Without Difficulty">
+					description = <"The patient can pick up small objects with their thumb and index finger without difficulty.">
+				>
+				["at0169"] = <
+					text = <"With very little difficulty">
+					description = <"The patient can pick up small objects with their thumb and index finger with very little difficulty.">
+				>
+				["at0170"] = <
+					text = <"With some difficulty">
+					description = <"The patient can pick up small objects with their thumb and index finger with some difficulty.">
+				>
+				["at0171"] = <
+					text = <"With much difficulty">
+					description = <"The patient can pick up small objects with their thumb and index finger with muchdifficulty.">
+				>
+				["at0172"] = <
+					text = <"Almost impossible">
+					description = <"The patient finds picking up small objects with their thumb and index finger almost impossible.">
+				>
+				["at0173"] = <
+					text = <"Impossible">
+					description = <"The patient finds picking up small objects with their thumb and index finger impossible.">
+				>
+			>
+		>
+	>

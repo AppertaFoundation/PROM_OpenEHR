@@ -1,0 +1,246 @@
+archetype (adl_version=1.4; uid=805ce8ba-1ef3-4aa7-b593-92633839679f)
+	openEHR-EHR-OBSERVATION.ikdc.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2018-09-17">
+		["name"] = <"Hildegard McNicoll">
+		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"For the recording and reporting of the patient reported results of the Subjective knee evaluation score developed by the International Knee Documentation Committee.">
+			keywords = <"knee, evaluation, subjective, score, PROM", ...>
+			use = <"Use to record the patient reported results of the Subjective knee evaluation score developed by the International Knee Documentation Committee.
+
+While openEHR archetypes are all freely available under an open license, the specific content of this archetype may be copyright protected. Any use of this archetype within implementations must be in compliance with the terms established by the copyright owners where a copyright exists.">
+			misuse = <"Not to be used unless the terms of copyright have been observed (if a copyright exists).">
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["references"] = <"https://www.aaos.org/uploadedFiles/PreProduction/Quality/Measures/IKDCEnglishUS.pdf cited 17-Sep-2018.">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"53c2f76fc3b74f9c2bba18f66636336b">
+		["build_uid"] = <"32c02cb4-dbd5-371a-a073-44724ebd1c9b">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- IKDC subjective knee evaluation
+		data matches {
+			HISTORY[at0001] matches {    -- History
+				events cardinality matches {0..*; unordered} matches {
+					POINT_EVENT[at0002] occurrences matches {1..*} matches {    -- Point in time
+						data matches {
+							ITEM_TREE[at0003] matches {    -- ItemTree
+								items cardinality matches {0..*; unordered} matches {
+									CLUSTER[at0014] occurrences matches {0..1} matches {    -- Symptoms
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0008] occurrences matches {0..1} matches {    -- Highest level of activity without pain
+												value matches {
+													0|[local::at0009],
+													1|[local::at0010],
+													2|[local::at0011],
+													3|[local::at0012],
+													4|[local::at0013]
+												}
+											}
+											ELEMENT[at0015] occurrences matches {0..1} matches {    -- Frequency of pain
+												value matches {
+													DV_COUNT matches {
+														magnitude matches {|>0..<10|}
+													}
+												}
+											}
+											ELEMENT[at0016] occurrences matches {0..1} matches {    -- Severity of pain
+												value matches {
+													DV_COUNT matches {
+														magnitude matches {|>0..<10|}
+													}
+												}
+											}
+											ELEMENT[at0017] occurrences matches {0..1} matches {    -- Stiff or swollen knee
+												value matches {
+													0|[local::at0018],
+													1|[local::at0019],
+													2|[local::at0020],
+													3|[local::at0021],
+													4|[local::at0022]
+												}
+											}
+											ELEMENT[at0023] occurrences matches {0..1} matches {    -- Highest level of activity without swelling
+												value matches {
+													0|[local::at0024],
+													1|[local::at0025],
+													2|[local::at0026],
+													3|[local::at0027],
+													4|[local::at0028]
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						state matches {
+							ITEM_TREE[at0004] matches {    -- ItemTree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0005] occurrences matches {0..*} matches {    -- Confounding factors
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0006] matches {    -- ItemTree
+				items cardinality matches {0..*; unordered} matches {
+					allow_archetype CLUSTER[at0007] occurrences matches {0..1} matches {    -- Extension
+						include
+							archetype_id/value matches {/.*/}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"IKDC subjective knee evaluation">
+					description = <"International Knee Documentation Committee (IKDC) Subjective knee evaluation score.">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"*">
+				>
+				["at0002"] = <
+					text = <"Point in time">
+					description = <"A specific date and/or time which may be explicitly defined in a template or at run-time.">
+				>
+				["at0003"] = <
+					text = <"ItemTree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"ItemTree">
+					description = <"@ internal @">
+				>
+				["at0005"] = <
+					text = <"Confounding factors">
+					description = <"Record any issues or factors that may impact on the score or interpretation.">
+				>
+				["at0006"] = <
+					text = <"ItemTree">
+					description = <"@ internal @">
+				>
+				["at0007"] = <
+					text = <"Extension">
+					description = <"Additional information required to capture local context or to align with other reference models/formalisms.">
+				>
+				["at0008"] = <
+					text = <"Highest level of activity without pain">
+					description = <"Patient reported highest level of activity they can perform without significant knee pain.">
+				>
+				["at0009"] = <
+					text = <"Unable to perform any activities">
+					description = <"Patient reports that they are unable to perform any activities due to knee pain.">
+				>
+				["at0010"] = <
+					text = <"Light activities">
+					description = <"Patient reports that they are able to perform light activities like walking, housework or gardening.">
+				>
+				["at0011"] = <
+					text = <"Moderate activities">
+					description = <"Patient reports that they are able to perform moderate activities like moderate physical work, running or jogging.">
+				>
+				["at0012"] = <
+					text = <"Strenuous activities">
+					description = <"Patient reports that they are able to perform strenuous activities like heavy physical work, skiing or tennis.">
+				>
+				["at0013"] = <
+					text = <"Very strenuous activities">
+					description = <"Patient reports that they are able to perform very strenuous activities like jumping or pivoting as in gymnastics or football.">
+				>
+				["at0014"] = <
+					text = <"Symptoms">
+					description = <"Patient reported extent of symptoms due to knee pain.">
+				>
+				["at0015"] = <
+					text = <"Frequency of pain">
+					description = <"Patient reported frequency of pain during past 4 weeks or since injury where 0 represents never and 10 represents constant.">
+				>
+				["at0016"] = <
+					text = <"Severity of pain">
+					description = <"Patient reported severity of pain where 0 represents no pain and 10 represents worst pain imaginable.">
+				>
+				["at0017"] = <
+					text = <"Stiff or swollen knee">
+					description = <"Patient reported degree of stiffness or swelling of knee during past 4 weeks or since injury.">
+				>
+				["at0018"] = <
+					text = <"Extremely">
+					description = <"Patient reports that knee has been extremely stiff or swollen during past 4 weeks or since injury.">
+				>
+				["at0019"] = <
+					text = <"Very">
+					description = <"Patient reports that knee has been very stiff or swollen during past 4 weeks or since injury.">
+				>
+				["at0020"] = <
+					text = <"Moderately">
+					description = <"Patient reports that knee has been moderately stiff or swollen during past 4 week or since injury.">
+				>
+				["at0021"] = <
+					text = <"Mildly">
+					description = <"Patient reports that knee has been mildly stiff or swollen during past 4 weeks or since injury.">
+				>
+				["at0022"] = <
+					text = <"Not at all">
+					description = <"Patient reports that knee has not at all been stiff or swollen during past 4 weeks or since injury.">
+				>
+				["at0023"] = <
+					text = <"Highest level of activity without swelling">
+					description = <"Patient reported highest level of activity they can perform without significant swelling in knee.">
+				>
+				["at0024"] = <
+					text = <"Unable to perform any activities">
+					description = <"Patient reports that they are unable to perform any activities due to knee swelling.">
+				>
+				["at0025"] = <
+					text = <"Light activities">
+					description = <"Patient reports that they are able to perform light activities like walking, housework or gardening.">
+				>
+				["at0026"] = <
+					text = <"Moderate activities">
+					description = <"Patient reports that they are able to perform moderate activities like moderate physical work, running or jogging.">
+				>
+				["at0027"] = <
+					text = <"Strenuous activities">
+					description = <"Patient reports that they are able to perform strenuous activities like heavy physical work, skiing or tennis.">
+				>
+				["at0028"] = <
+					text = <"Very strenuous activities">
+					description = <"Patient reports that they are able to perform very strenuous activities like jumping or pivoting as in gymnastics or football.">
+				>
+			>
+		>
+	>

@@ -1,0 +1,738 @@
+archetype (adl_version=1.4; uid=0e1dc7be-75c2-320d-aa30-757ab64d8480)
+	openEHR-EHR-OBSERVATION.quickdash_score.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["name"] = <"">
+	>
+	lifecycle_state = <"Initial">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"For the capture and reporting of the Quick Dash (QDash) questionnaire details">
+			copyright = <"www.dash.iwh.on.ca ">
+			use = <"Use to record details of the Quick Dash questionnaire. This is a patient reported outcome measure (PROM) questionnaire.
+
+While OpenEHR archetypes are all freely available under open license, the specific content of this archetype may be copywright protected. Any use of this archetype within implementations must be in compliance with the terms established by the copywright owners.">
+			misuse = <"Not to be used unless the terms of copywright have been observed.">
+		>
+	>
+	other_details = <
+		["licence"] = <"www.dash.iwh.on.ca/licences">
+		["MD5-CAM-1.0.1"] = <"8946B78659FB6DD778506EBA6B34F212">
+		["build_uid"] = <"db493e5b-aef6-39c7-87af-f43daf9e285f">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- QuickDash score
+		data matches {
+			HISTORY[at0001] matches {    -- Event Series
+				events cardinality matches {1..*; unordered} matches {
+					POINT_EVENT[at0002] occurrences matches {0..1} matches {    -- Point in time
+						data matches {
+							ITEM_TREE[at0003] matches {    -- Tree
+								items cardinality matches {0..*; unordered} matches {
+									CLUSTER[at0036] occurrences matches {0..1} matches {    -- Disability and symptoms
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0037] occurrences matches {0..1} matches {    -- 1. Opening tight or new jar
+												value matches {
+													1|[local::at0080],
+													2|[local::at0081],
+													3|[local::at0082],
+													4|[local::at0083],
+													5|[local::at0084]
+												}
+											}
+											ELEMENT[at0038] occurrences matches {0..1} matches {    -- 2. Doing heavy household chores
+												value matches {
+													1|[local::at0085],
+													2|[local::at0086],
+													3|[local::at0087],
+													4|[local::at0088],
+													5|[local::at0089]
+												}
+											}
+											ELEMENT[at0039] occurrences matches {0..1} matches {    -- 3. Carrying shopping bag or briefcase
+												value matches {
+													1|[local::at0090],
+													2|[local::at0091],
+													3|[local::at0092],
+													4|[local::at0093],
+													5|[local::at0094]
+												}
+											}
+											ELEMENT[at0040] occurrences matches {0..1} matches {    -- 4. Washing own back
+												value matches {
+													1|[local::at0095],
+													2|[local::at0096],
+													3|[local::at0097],
+													4|[local::at0098],
+													5|[local::at0099]
+												}
+											}
+											ELEMENT[at0041] occurrences matches {0..1} matches {    -- 5. Using knife to cut food
+												value matches {
+													1|[local::at0100],
+													2|[local::at0101],
+													3|[local::at0102],
+													4|[local::at0103],
+													5|[local::at0104]
+												}
+											}
+											ELEMENT[at0042] occurrences matches {0..1} matches {    -- 6. Recreational activity with force or impact through limb
+												value matches {
+													1|[local::at0105],
+													2|[local::at0106],
+													3|[local::at0107],
+													4|[local::at0108],
+													5|[local::at0109]
+												}
+											}
+											ELEMENT[at0043] occurrences matches {0..1} matches {    -- 7. Extent interference normal social activities
+												value matches {
+													1|[local::at0110],
+													2|[local::at0111],
+													3|[local::at0112],
+													4|[local::at0113],
+													5|[local::at0114]
+												}
+											}
+											ELEMENT[at0044] occurrences matches {0..1} matches {    -- 8. Limitation in work or regular daily activities
+												value matches {
+													1|[local::at0115],
+													2|[local::at0116],
+													3|[local::at0117],
+													4|[local::at0118],
+													5|[local::at0119]
+												}
+											}
+											ELEMENT[at0045] occurrences matches {0..1} matches {    -- 9. Severity of pain in limb
+												value matches {
+													1|[local::at0120],
+													2|[local::at0121],
+													3|[local::at0122],
+													4|[local::at0123],
+													5|[local::at0124]
+												}
+											}
+											ELEMENT[at0046] occurrences matches {0..1} matches {    -- 10. Severity of tingling in limb
+												value matches {
+													1|[local::at0125],
+													2|[local::at0126],
+													3|[local::at0127],
+													4|[local::at0128],
+													5|[local::at0129]
+												}
+											}
+											ELEMENT[at0047] occurrences matches {0..1} matches {    -- 11. Difficulty sleeping because of limb pain
+												value matches {
+													1|[local::at0130],
+													2|[local::at0131],
+													3|[local::at0132],
+													4|[local::at0133],
+													5|[local::at0134]
+												}
+											}
+											ELEMENT[at0048] occurrences matches {0..1} matches {    -- Total Score Disablity and Symptoms
+												value matches {
+													DV_COUNT matches {
+														magnitude matches {|0..100|}
+													}
+												}
+											}
+										}
+									}
+									CLUSTER[at0049] occurrences matches {0..1} matches {    -- Work Module
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0050] occurrences matches {0..1} matches {    -- Occupation
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0051] occurrences matches {0..1} matches {    -- Work status
+												value matches {
+													DV_CODED_TEXT matches {
+														defining_code matches {
+															[local::
+															at0135,    -- Yes
+															at0136]    -- No
+														}
+													}
+												}
+											}
+											ELEMENT[at0052] occurrences matches {0..1} matches {    -- 12. Difficulty usual technique working
+												value matches {
+													DV_ORDINAL matches {*}
+												}
+											}
+											ELEMENT[at0053] occurrences matches {0..1} matches {    -- 13. Difficulty working because of pain in limb
+												value matches {
+													DV_ORDINAL matches {*}
+												}
+											}
+											ELEMENT[at0054] occurrences matches {0..1} matches {    -- 14. Difficulty working as well as liked
+												value matches {
+													DV_ORDINAL matches {*}
+												}
+											}
+											ELEMENT[at0055] occurrences matches {0..1} matches {    -- 15. Difficulty spending usual time doing work
+												value matches {
+													1|[local::at0075],
+													2|[local::at0076],
+													3|[local::at0077],
+													4|[local::at0078],
+													5|[local::at0079]
+												}
+											}
+											ELEMENT[at0056] occurrences matches {0..1} matches {    -- Total Score Work Module
+												value matches {
+													DV_COUNT matches {
+														magnitude matches {|0..100|}
+													}
+												}
+											}
+										}
+									}
+									CLUSTER[at0057] occurrences matches {0..1} matches {    -- Sports, Performing Arts Module
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0058] occurrences matches {0..1} matches {    -- Sport or instrument
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0059] occurrences matches {0..1} matches {    -- Sport or instrument status
+												value matches {
+													DV_CODED_TEXT matches {
+														defining_code matches {
+															[local::
+															at0137,    -- Yes
+															at0138]    -- No
+														}
+													}
+												}
+											}
+											ELEMENT[at0060] occurrences matches {0..1} matches {    -- 16. Difficulty usual technique playing sport, instrument
+												value matches {
+													1|[local::at0065],
+													2|[local::at0066],
+													3|[local::at0067],
+													4|[local::at0068],
+													5|[local::at0069]
+												}
+											}
+											ELEMENT[at0061] occurrences matches {0..1} matches {    -- 17. Difficulty playing because of pain in limb
+												value matches {
+													1|[local::at0070],
+													2|[local::at0071],
+													3|[local::at0072],
+													4|[local::at0073],
+													5|[local::at0074]
+												}
+											}
+											ELEMENT[at0062] occurrences matches {0..1} matches {    -- 18. Difficulty playing as well as liked
+												value matches {
+													DV_ORDINAL matches {*}
+												}
+											}
+											ELEMENT[at0063] occurrences matches {0..1} matches {    -- 19. Difficulty spending usual time playing or practising
+												value matches {
+													DV_ORDINAL matches {*}
+												}
+											}
+											ELEMENT[at0064] occurrences matches {0..1} matches {    -- Total Score Sports, Performing Arts Module
+												value matches {
+													DV_COUNT matches {
+														magnitude matches {|0..100|}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						state matches {
+							ITEM_TREE[at0005] matches {    -- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0139] occurrences matches {0..*} matches {    -- Confounding factors
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0004] matches {    -- Tree
+				items cardinality matches {0..*; unordered} matches {
+					allow_archetype CLUSTER[at0143] occurrences matches {0..*} matches {    -- Extension
+						include
+							archetype_id/value matches {/.*/}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"QuickDash score">
+					description = <"Quick Dash Score questionnaire.">
+				>
+				["at0001"] = <
+					text = <"Event Series">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Point in time">
+					description = <"A specific date and/or time which may be explicitly defined in a template or at run-time.">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0005"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0036"] = <
+					text = <"Disability and symptoms">
+					description = <"Details of patient-reported extent of disability and symptoms in the last week.">
+				>
+				["at0037"] = <
+					text = <"1. Opening tight or new jar">
+					description = <"Patient reported ability to open a tight or new jar in the last week.">
+				>
+				["at0038"] = <
+					text = <"2. Doing heavy household chores">
+					description = <"Patient reported ability to do heavy household chores in the last week (e.g. wash walls, floors).">
+				>
+				["at0039"] = <
+					text = <"3. Carrying shopping bag or briefcase">
+					description = <"Patient reported ability to carry a shopping bag or briefcase in the last week.">
+				>
+				["at0040"] = <
+					text = <"4. Washing own back">
+					description = <"Patient reported ability to wash their back in the last week.">
+				>
+				["at0041"] = <
+					text = <"5. Using knife to cut food">
+					description = <"Patient reported ability to use a knife to cut food in the last week.">
+				>
+				["at0042"] = <
+					text = <"6. Recreational activity with force or impact through limb">
+					description = <"Patient reported ability in recreational activities incurring some force or impact through the arm, shoulder or hand (e.g. golf, hammering, tennis etc.)in the last week.">
+				>
+				["at0043"] = <
+					text = <"7. Extent interference normal social activities">
+					description = <"Patient reported extent to which arm, shoulder or hand problem has interfered with normal social activities with family, friends, neighbours or groups in the past week.">
+				>
+				["at0044"] = <
+					text = <"8. Limitation in work or regular daily activities">
+					description = <"Patient reported limitation in work or other regular daily activities as a result of arm, shoulder or hand problem in the past week.">
+				>
+				["at0045"] = <
+					text = <"9. Severity of pain in limb">
+					description = <"Patient reported severity of arm, shoulder or hand pain in the last week.">
+				>
+				["at0046"] = <
+					text = <"10. Severity of tingling in limb">
+					description = <"Patient reported severity of tingling (pins and needles) in their arm, shoulder or hand in the last week.">
+				>
+				["at0047"] = <
+					text = <"11. Difficulty sleeping because of limb pain">
+					description = <"Patient reported difficulty sleeping because of pain in arm, shoulder or hand in the last week.">
+				>
+				["at0048"] = <
+					text = <"Total Score Disablity and Symptoms">
+					description = <"Total score from questions 1 to 11, calculated as sum of 1 to 11 divided by number of responses then subtract 1 and finally multiply by 25, [(sum of n responses/n)-1]x25.">
+				>
+				["at0049"] = <
+					text = <"Work Module">
+					description = <"Details of patient-reported extent of impact on ability to work (including homemaking if that is main work role) in the last week.">
+				>
+				["at0050"] = <
+					text = <"Occupation">
+					description = <"Patient indication of their main job/work (including homemaking if that is their main work role).">
+				>
+				["at0051"] = <
+					text = <"Work status">
+					description = <"Patient response to the question \"Do you work?\".">
+				>
+				["at0052"] = <
+					text = <"12. Difficulty usual technique working">
+					description = <"Patient-reported extent of difficulty using their usual technique for their work in the past week.">
+				>
+				["at0053"] = <
+					text = <"13. Difficulty working because of pain in limb">
+					description = <"Patient-reported extent of difficulty doing their usual work in the past week due to arm, shoulder or hand pain.">
+				>
+				["at0054"] = <
+					text = <"14. Difficulty working as well as liked">
+					description = <"Patient-reported extent of difficulty doing their their work as well as they would like in the past week.">
+				>
+				["at0055"] = <
+					text = <"15. Difficulty spending usual time doing work">
+					description = <"Patient-reported extent of difficulty spending their usual amount of time doing their work in the past week.">
+				>
+				["at0056"] = <
+					text = <"Total Score Work Module">
+					description = <"Total score from questions 12 to 15, calculated as sum of 12 to 15 divided by number of responses then subtract 1 and finally multiply by 25, [(sum of n responses/n)-1]x25.">
+				>
+				["at0057"] = <
+					text = <"Sports, Performing Arts Module">
+					description = <"Details of patient-reported extent of impact on ability to play a sport or musical instrument in the last week (If more than one sport or instrument played, then the one which is most important to the patient.">
+				>
+				["at0058"] = <
+					text = <"Sport or instrument">
+					description = <"Patient indication which sport or intrument is most important to them.">
+				>
+				["at0059"] = <
+					text = <"Sport or instrument status">
+					description = <"Patient response to the question \"Do you play a sport or instrument?\".">
+				>
+				["at0060"] = <
+					text = <"16. Difficulty usual technique playing sport, instrument">
+					description = <"Patient-reported extent of difficulty using their usual technique for playing their usual sport or instrument in the past week.">
+				>
+				["at0061"] = <
+					text = <"17. Difficulty playing because of pain in limb">
+					description = <"Patient-reported extent of difficulty playing their usual sport or instrument in the past week because of arm, shoulder or hand pain.">
+				>
+				["at0062"] = <
+					text = <"18. Difficulty playing as well as liked">
+					description = <"Patient-reported extent of difficulty playing their usual sport or instrument as well as they would like in the past week.">
+				>
+				["at0063"] = <
+					text = <"19. Difficulty spending usual time playing or practising">
+					description = <"Patient-reported extent of difficulty spending their usual amount of time practising or playing their usual sport or instrument in the past week.">
+				>
+				["at0064"] = <
+					text = <"Total Score Sports, Performing Arts Module">
+					description = <"Total score from questions 16 to 19, calculated as sum of 16 to 19 divided by number of responses then subtract 1 and finally multiply by 25, [(sum of n responses/n)-1]x25.">
+				>
+				["at0065"] = <
+					text = <"No difficulty.">
+					description = <"Patient reports no difficulty using their usual technique for playing their instrument or sport.">
+				>
+				["at0066"] = <
+					text = <"Mild difficulty.">
+					description = <"Patient reports mild difficulty using their usual technique for playing their instrument or sport.">
+				>
+				["at0067"] = <
+					text = <"Moderate difficulty.">
+					description = <"Patient reports moderate difficulty using their usual technique for playing their instrument or sport.">
+				>
+				["at0068"] = <
+					text = <"Severe difficulty.">
+					description = <"Patient reports severe difficulty using their usual technique for playing their instrument or sport.">
+				>
+				["at0069"] = <
+					text = <"Unable.">
+					description = <"Patient reports they are unable to use their usual technique for playing their instrument or sport.">
+				>
+				["at0070"] = <
+					text = <"No difficulty.">
+					description = <"Patient reports no difficulty playing their instrument or sport because of arm, shoulder or hand pain because of arm, shoulder or hand pain.">
+				>
+				["at0071"] = <
+					text = <"Mild difficulty">
+					description = <"Patient reports mild difficulty playing their instrument or sport because of arm, shoulder or hand pain.">
+				>
+				["at0072"] = <
+					text = <"Moderate difficulty">
+					description = <"Patient reports moderate difficulty playing their instrument or sport because of arm, shoulder or hand pain.">
+				>
+				["at0073"] = <
+					text = <"Severe difficulty">
+					description = <"Patient reports severe difficulty playing their instrument or sport because of arm, shoulder or hand pain.">
+				>
+				["at0074"] = <
+					text = <"Unable">
+					description = <"Patient reports they are unable to play their instrument or sport because of arm, shoulder or hand pain.">
+				>
+				["at0075"] = <
+					text = <"No difficulty.">
+					description = <"Patient reports no difficulty spending their usual amount of time doing their work in the past week.">
+				>
+				["at0076"] = <
+					text = <"Mild difficulty.">
+					description = <"Patient reports mild difficulty spending their usual amount of time doing their work in the past week.">
+				>
+				["at0077"] = <
+					text = <"Moderate difficulty.">
+					description = <"Patient reports moderate difficulty spending their usual amount of time doing their work in the past week.">
+				>
+				["at0078"] = <
+					text = <"Severe difficulty.">
+					description = <"Patient reports severe difficulty spending their usual amount of time doing their work in the past week.">
+				>
+				["at0079"] = <
+					text = <"Unable.">
+					description = <"Patient reports they are unable to spend their usual amount of time doing their work in the past week.">
+				>
+				["at0080"] = <
+					text = <"No difficulty.">
+					description = <"Patient reports no difficulty with their ability to open a tight or new jar in the last week.">
+				>
+				["at0081"] = <
+					text = <"Mild difficulty.">
+					description = <"Patient reports mild difficulty with their ability to open a tight or new jar in the last week.">
+				>
+				["at0082"] = <
+					text = <"Moderate difficulty.">
+					description = <"Patient reports moderate difficulty with their ability to open a tight or new jar in the last week.">
+				>
+				["at0083"] = <
+					text = <"Severe difficulty.">
+					description = <"Patient reports severe difficulty with their ability to open a tight or new jar in the last week.">
+				>
+				["at0084"] = <
+					text = <"Unable.">
+					description = <"Patient reports they are unable to open a tight or new jar in the last week.">
+				>
+				["at0085"] = <
+					text = <"No difficulty.">
+					description = <"Patient reports no difficulty with their ability to do heavy household chores in the last week (e.g. wash walls, floors).">
+				>
+				["at0086"] = <
+					text = <"Mild difficulty.">
+					description = <"Patient reports mild difficulty with their ability to do heavy household chores in the last week (e.g. wash walls, floors). ">
+				>
+				["at0087"] = <
+					text = <"Moderate difficulty.">
+					description = <"Patient reports moderate difficulty with their ability to do heavy household chores in the last week (e.g. wash walls, floors). ">
+				>
+				["at0088"] = <
+					text = <"Severe difficulty.">
+					description = <"Patient reports severe difficulty with their ability to do heavy household chores in the last week (e.g. wash walls, floors). ">
+				>
+				["at0089"] = <
+					text = <"Unable.">
+					description = <"Patient reports they are unable to do heavy household chores in the last week (e.g. wash walls, floors). ">
+				>
+				["at0090"] = <
+					text = <"No difficulty.">
+					description = <"Patient reports no difficulty with ability to carry a shopping bag or briefcase in the last week.">
+				>
+				["at0091"] = <
+					text = <"Mild difficulty.">
+					description = <"Patient reports mild difficulty with ability to carry a shopping bag or briefcase in the last week.">
+				>
+				["at0092"] = <
+					text = <"Moderate difficulty.">
+					description = <"Patient reports moderate difficulty with ability to carry a shopping bag or briefcase in the last week.">
+				>
+				["at0093"] = <
+					text = <"Severe difficulty.">
+					description = <"Patient reports severe difficulty with ability to carry a shopping bag or briefcase in the last week.">
+				>
+				["at0094"] = <
+					text = <"Unable.">
+					description = <"Patient reports unable to carry a shopping bag or briefcase in the last week.">
+				>
+				["at0095"] = <
+					text = <"No difficulty.">
+					description = <"Patient reports no difficulty with their ability to wash their back in the last week.">
+				>
+				["at0096"] = <
+					text = <"Mild difficulty.">
+					description = <"Patient reports mild difficulty with their ability to wash their back in the last week.">
+				>
+				["at0097"] = <
+					text = <"Moderate difficulty.">
+					description = <"Patient reports moderate difficulty with their ability to wash their back in the last week.">
+				>
+				["at0098"] = <
+					text = <"Severe difficulty.">
+					description = <"Patient reports severe difficulty with their ability to wash their back in the last week.">
+				>
+				["at0099"] = <
+					text = <"Unable.">
+					description = <"Patient reports they are unable to wash their back in the last week.">
+				>
+				["at0100"] = <
+					text = <"No difficulty.">
+					description = <"Patient reports no difficulty with their ability to use a knife to cut food in the last week.">
+				>
+				["at0101"] = <
+					text = <"Mild difficulty.">
+					description = <"Patient reports mild difficulty with their ability to use a knife to cut food in the last week.">
+				>
+				["at0102"] = <
+					text = <"Moderate difficulty.">
+					description = <"Patient reports moderate difficulty with their ability to use a knife to cut food in the last week.">
+				>
+				["at0103"] = <
+					text = <"Severe difficulty.">
+					description = <"Patient reports severe difficulty with their ability to use a knife to cut food in the last week.">
+				>
+				["at0104"] = <
+					text = <"Unable.">
+					description = <"Patient reports they are unable to use a knife to cut food in the last week.">
+				>
+				["at0105"] = <
+					text = <"No difficulty.">
+					description = <"Patient reports no difficulty with ability in recreational activities incurring some force or impact through the arm, shoulder or hand (e.g. golf, hammering, tennis etc.) in the last week.">
+				>
+				["at0106"] = <
+					text = <"Mild difficulty.">
+					description = <"Patient reports mild difficulty with ability in recreational activities incurring some force or impact through the arm, shoulder or hand (e.g. golf, hammering, tennis etc.) in the last week.">
+				>
+				["at0107"] = <
+					text = <"Moderate difficulty.">
+					description = <"Patient reports moderate difficulty with ability in recreational activities incurring some force or impact through the arm, shoulder or hand (e.g. golf, hammering, tennis etc.) in the last week.">
+				>
+				["at0108"] = <
+					text = <"Severe difficulty.">
+					description = <"Patient reports severe difficulty with ability in recreational activities incurring some force or impact through the arm, shoulder or hand (e.g. golf, hammering, tennis etc.) in the last week.">
+				>
+				["at0109"] = <
+					text = <"Unable.">
+					description = <"Patient reports unable to undertake recreational activities incurring some force or impact through the arm, shoulder or hand (e.g. golf, hammering, tennis etc.) in the last week.">
+				>
+				["at0110"] = <
+					text = <"Not at all.">
+					description = <"Patient reports no interference from arm, shoulder or hand problem with normal social activities with family, friends, neighbours or groups in the past week.">
+				>
+				["at0111"] = <
+					text = <"Slightly.">
+					description = <"Patient reports slight interference from arm, shoulder or hand problem with normal social activities with family, friends, neighbours or groups in the past week.">
+				>
+				["at0112"] = <
+					text = <"Moderately.">
+					description = <"Patient reports moderate interference from arm, shoulder or hand problem with normal social activities with family, friends, neighbours or groups in the past week.">
+				>
+				["at0113"] = <
+					text = <"Quite a bit.">
+					description = <"Patient reports quite a bit of interference from arm, shoulder or hand problem with normal social activities with family, friends, neighbours or groups in the past week.">
+				>
+				["at0114"] = <
+					text = <"Extremely.">
+					description = <"Patient reports extreme interference from arm, shoulder or hand problem with normal social activities with family, friends, neighbours or groups in the past week.">
+				>
+				["at0115"] = <
+					text = <"Not at all limited.">
+					description = <"Patient reports no limitation in work or other regular daily activities as a result of arm, shoulder or hand problem in the past week.">
+				>
+				["at0116"] = <
+					text = <"Slightly limited.">
+					description = <"Patient reports slight limitation in work or other regular daily activities as a result of arm, shoulder or hand problem in the past week.">
+				>
+				["at0117"] = <
+					text = <"Moderately limited.">
+					description = <"Patient reports moderate limitation in work or other regular daily activities as a result of arm, shoulder or hand problem in the past week.">
+				>
+				["at0118"] = <
+					text = <"Very limited.">
+					description = <"Patient reports very limitated in work or other regular daily activities as a result of arm, shoulder or hand problem in the past week.">
+				>
+				["at0119"] = <
+					text = <"Unable.">
+					description = <"Patient reports unable to engage in work or other regular daily activities as a result of arm, shoulder or hand problem in the past week.">
+				>
+				["at0120"] = <
+					text = <"None.">
+					description = <"Patient reports no arm, shoulder or hand pain in the last week.">
+				>
+				["at0121"] = <
+					text = <"Mild.">
+					description = <"Patient reports mild arm, shoulder or hand pain in the last week.">
+				>
+				["at0122"] = <
+					text = <"Moderate.">
+					description = <"Patient reports moderate arm, shoulder or hand pain in the last week.">
+				>
+				["at0123"] = <
+					text = <"Severe.">
+					description = <"Patient reports severe arm, shoulder or hand pain in the last week.">
+				>
+				["at0124"] = <
+					text = <"Extreme.">
+					description = <"Patient reports extreme arm, shoulder or hand pain in the last week.">
+				>
+				["at0125"] = <
+					text = <"None.">
+					description = <"Patient reports no tingling (pins and needles) in their arm, shoulder or hand in the last week.">
+				>
+				["at0126"] = <
+					text = <"Mild.">
+					description = <"Patient reports mild tingling (pins and needles) in their arm, shoulder or hand in the last week.">
+				>
+				["at0127"] = <
+					text = <"Moderate.">
+					description = <"Patient reports moderate tingling (pins and needles) in their arm, shoulder or hand in the last week.">
+				>
+				["at0128"] = <
+					text = <"Severe.">
+					description = <"Patient reports severe tingling (pins and needles) in their arm, shoulder or hand in the last week.">
+				>
+				["at0129"] = <
+					text = <"Extreme.">
+					description = <"Patient reports extreme tingling (pins and needles) in their arm, shoulder or hand in the last week.">
+				>
+				["at0130"] = <
+					text = <"No difficulty.">
+					description = <"Patient reports no difficulty sleeping because of pain in arm, shoulder or hand in the last week.">
+				>
+				["at0131"] = <
+					text = <"Mild difficulty.">
+					description = <"Patient reports mild difficulty sleeping because of pain in arm, shoulder or hand in the last week.">
+				>
+				["at0132"] = <
+					text = <"Moderate difficulty.">
+					description = <"Patient reports moderate difficulty sleeping because of pain in arm, shoulder or hand in the last week.">
+				>
+				["at0133"] = <
+					text = <"Severe difficulty.">
+					description = <"Patient reports severe difficulty sleeping because of pain in arm, shoulder or hand in the last week.">
+				>
+				["at0134"] = <
+					text = <"So much difficulty unable to sleep.">
+					description = <"Patient reports nso much difficulty they are unable to sleep because of pain in arm, shoulder or hand in the last week.">
+				>
+				["at0135"] = <
+					text = <"Yes">
+					description = <"Patient indicates that they do work.">
+				>
+				["at0136"] = <
+					text = <"No">
+					description = <"Patient indicates that they do not work.">
+				>
+				["at0137"] = <
+					text = <"Yes">
+					description = <"Patient indicates they do play a sport or instrument.">
+				>
+				["at0138"] = <
+					text = <"No">
+					description = <"Patient indicates they do not play a sport or instrument.">
+				>
+				["at0139"] = <
+					text = <"Confounding factors">
+					description = <"Confounding factors.">
+				>
+				["at0143"] = <
+					text = <"Extension">
+					description = <"Additional information required to capture local context or to align with other reference models/formalisms.">
+					comment = <"e.g. Local hospital departmental infomation or additional metadata to align with HL7 or CDISC equivalents.">
+				>
+			>
+		>
+	>
