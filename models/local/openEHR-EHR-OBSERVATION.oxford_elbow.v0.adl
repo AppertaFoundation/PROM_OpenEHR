@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"d42201aebe6cb490282c93d38c0e11eb">
+		["MD5-CAM-1.0.1"] = <"74481fda6c21b599eea2ddc273e4b204">
 		["build_uid"] = <"4218ce62-ec18-464b-84bb-5fe9b815a1ea">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -567,7 +567,7 @@ How would you describe the pain you usually had from your elbow?">
 				>
 				["at0223"] = <
 					text = <"Grading">
-					description = <"*">
+					description = <"Grading system for total score.">
 				>
 				["at0224"] = <
 					text = <"Severe">
