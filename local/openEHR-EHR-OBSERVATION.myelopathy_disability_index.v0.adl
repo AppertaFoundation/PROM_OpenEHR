@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"486ef2179a009854605d796da45a4165">
+		["MD5-CAM-1.0.1"] = <"a939fa30649ded3218c8fdcb10b2fe04">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -88,6 +88,14 @@ definition
 											1|[local::at0070],
 											2|[local::at0071],
 											3|[local::at0072]
+										}
+									}
+									ELEMENT[at0078] occurrences matches {0..1} matches {    -- Walking - flat ground
+										value matches {
+											0|[local::at0079],
+											1|[local::at0080],
+											2|[local::at0081],
+											3|[local::at0082]
 										}
 									}
 									ELEMENT[at0073] occurrences matches {0..1} matches {    -- Hygiene - washing
@@ -320,6 +328,28 @@ Hygiene are you able to wash and dry your entire body? ">
 				["at0077"] = <
 					text = <"Unable to do">
 					description = <"The patient is unable to wash and dry their body.">
+				>
+				["at0078"] = <
+					text = <"Walking - flat ground">
+					description = <"Patient-reported ability to walk around outdoors on flat ground.">
+					comment = <"Questionnaire wording: 
+Walking are you able to walk outdoors on flat ground? ">
+				>
+				["at0079"] = <
+					text = <"Without ANY difficulty">
+					description = <"The patient can walk around outdoors on flat ground without any difficulty.">
+				>
+				["at0080"] = <
+					text = <"With SOME difficulty">
+					description = <"The patient can walk around outdoors on flat ground with some difficulty.">
+				>
+				["at0081"] = <
+					text = <"With MUCH difficulty / assistance required">
+					description = <"The patient can walk around outdoors on flat ground with much difficulty.">
+				>
+				["at0082"] = <
+					text = <"Unable to do">
+					description = <"The patient is unable to walk around outdoors on flat ground.">
 				>
 			>
 		>
