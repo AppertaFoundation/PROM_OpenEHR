@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"b2a351d1ceae33ac67c07448bf245d5a">
+		["MD5-CAM-1.0.1"] = <"486ef2179a009854605d796da45a4165">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -307,19 +307,19 @@ Hygiene are you able to wash and dry your entire body? ">
 				>
 				["at0074"] = <
 					text = <"Without ANY difficulty">
-					description = <"The patient can climb up five steps any without any difficulty.">
+					description = <"The patient can wash and dry their body any without any difficulty.">
 				>
 				["at0075"] = <
 					text = <"With SOME difficulty">
-					description = <"The patient can climb up five steps with some difficulty.">
+					description = <"The patient can wash and dry their body with some difficulty.">
 				>
 				["at0076"] = <
 					text = <"With MUCH difficulty / assistance required">
-					description = <"The patient can climb up five steps with much difficulty.">
+					description = <"The patient can wash and dry their body with much difficulty.">
 				>
 				["at0077"] = <
 					text = <"Unable to do">
-					description = <"The patient is unable to climb up five steps.">
+					description = <"The patient is unable to wash and dry their body.">
 				>
 			>
 		>
