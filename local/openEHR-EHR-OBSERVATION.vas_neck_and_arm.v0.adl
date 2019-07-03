@@ -25,7 +25,7 @@ description
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
 		["current_contact"] = <"Alan Fish, Apperta Foundation CIC.<alan.fish@apperta.org>">
-		["MD5-CAM-1.0.1"] = <"ecce61c4872418084da91ba09447a760">
+		["MD5-CAM-1.0.1"] = <"7f88acc649c820e659a1864cc115ab00">
 		["build_uid"] = <"3d430d71-3943-3346-a27c-de70fa6ca283">
 	>
 
@@ -38,14 +38,14 @@ definition
 						data matches {
 							ITEM_TREE[at0003] matches {    -- Tree
 								items cardinality matches {0..*; unordered} matches {
-									ELEMENT[at0008] occurrences matches {0..1} matches {    -- Back pain
+									ELEMENT[at0008] occurrences matches {0..1} matches {    -- Neck pain
 										value matches {
 											DV_COUNT matches {
 												magnitude matches {|0..10|}
 											}
 										}
 									}
-									ELEMENT[at0009] occurrences matches {0..1} matches {    -- Leg pain
+									ELEMENT[at0009] occurrences matches {0..1} matches {    -- Arm pain
 										value matches {
 											DV_COUNT matches {
 												magnitude matches {|0..10|}
@@ -125,14 +125,14 @@ ontology
 					description = <"Record any issues or factors that may impact on the overall assessment or score.">
 				>
 				["at0008"] = <
-					text = <"Back pain">
-					description = <"Assessment of back pain in the last week, on a scale of 0 to 10.">
-					comment = <"Questionnaire wording: Please mark on the line below how much pain you have had from your back , on average, ove the past week? (0 - 10).">
+					text = <"Neck pain">
+					description = <"Assessment of general neck pain, on a scale of 0 to 10.">
+					comment = <"Questionnaire wording: Place a vertical line at the point on the horizontal line line that you feel best answers the question - Your neck pain generally, 0 no pain, 10 worst imaginable.">
 				>
 				["at0009"] = <
-					text = <"Leg pain">
-					description = <"Assessment of leg pain over last week, on a scale of 0 to 10.">
-					comment = <"Questionnaire wording: Please mark on the line below how much pain you have had from your leg , on average, ove the past week? (0 - 10).">
+					text = <"Arm pain">
+					description = <"Assessment of arm pain generally, on a scale of 0 to 10.">
+					comment = <"Questionnaire wording: Place a vertical line at the point on the horizontal line line that you feel best answers the question - Your arm pain generally, 0 no pain, 10 worst imaginable.">
 				>
 				["at0010"] = <
 					text = <"Comment">
