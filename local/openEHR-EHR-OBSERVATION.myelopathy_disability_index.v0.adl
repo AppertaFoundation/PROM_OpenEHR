@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"aa1fc4d51012fad49531133bd9eefd39">
+		["MD5-CAM-1.0.1"] = <"139ee404d9f200ad2eef6b506b3602bd">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -112,6 +112,14 @@ definition
 											1|[local::at0085],
 											2|[local::at0086],
 											3|[local::at0087]
+										}
+									}
+									ELEMENT[at0088] occurrences matches {0..1} matches {    -- Grip - open jars
+										value matches {
+											0|[local::at0089],
+											1|[local::at0090],
+											2|[local::at0091],
+											3|[local::at0092]
 										}
 									}
 									ELEMENT[at0044] occurrences matches {0..1} matches {    -- Total score
@@ -381,6 +389,29 @@ Hygiene are you able to get on and off the toilet? ">
 				["at0087"] = <
 					text = <"Unable to do">
 					description = <"The patient is unable to get on and off the toilet.">
+				>
+				["at0088"] = <
+					text = <"Grip - open jars">
+					description = <"Patient-reported ability to open jars which have previously been opened.">
+					comment = <"Questionnaire wording: 
+Grip are you able to:Open jars which have been previously
+opened? ">
+				>
+				["at0089"] = <
+					text = <"Without ANY difficulty">
+					description = <"The patient can open jars that have already been opened without any difficulty.">
+				>
+				["at0090"] = <
+					text = <"With SOME difficulty">
+					description = <"The patient can open jars that have already been opened with some difficulty.">
+				>
+				["at0091"] = <
+					text = <"With MUCH difficulty / assistance required">
+					description = <"The patient can open jars that have already been opened with much difficulty.">
+				>
+				["at0092"] = <
+					text = <"Unable to do">
+					description = <"The patient is unable to open jars that have already been opened.">
 				>
 			>
 		>
