@@ -36,13 +36,13 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"b60b9063046eb5c2fe30d048ba65f67c">
+		["MD5-CAM-1.0.1"] = <"d173f00b40ddd1064fb63f61060603a8">
 		["build_uid"] = <"4218ce62-ec18-464b-84bb-5fe9b815a1ea">
 		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
-	OBSERVATION[at0000] matches {    -- MOXFQ Score
+	OBSERVATION[at0000] matches {    -- Manchester Oxford Foot Questionnaire Score (MOXFQ)
 		data matches {
 			HISTORY[at0001] matches {    -- Event Series
 				events cardinality matches {1..*; unordered} matches {
@@ -262,7 +262,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"MOXFQ Score">
+					text = <"Manchester Oxford Foot Questionnaire Score (MOXFQ)">
 					description = <"Manchester Oxford Foot Questionnaire Score.">
 				>
 				["at0001"] = <
