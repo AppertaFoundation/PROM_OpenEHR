@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"8a4b74fcab049f274d6630c0ac3b82ce">
+		["MD5-CAM-1.0.1"] = <"08f731bb7914008f6c7109fd8f8b1b2d">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -66,7 +66,7 @@ definition
 											3|[local::at0057]
 										}
 									}
-									ELEMENT[at0058] occurrences matches {0..1} matches {    -- Rising bed
+									ELEMENT[at0058] occurrences matches {0..1} matches {    -- Eating cutting
 										value matches {
 											0|[local::at0059],
 											1|[local::at0060],
@@ -210,26 +210,26 @@ Rising are you able to get in and out of bed?">
 					description = <"The patient is unable to get in and out of bed.">
 				>
 				["at0058"] = <
-					text = <"Rising bed">
-					description = <"Patient-reported ability to get in and out of bed.">
+					text = <"Eating cutting">
+					description = <"Patient-reported ability to eat and cut their meat.">
 					comment = <"Questionnaire wording: 
-Rising are you able to get in and out of bed?">
+Eating are you able to cut your meat? ">
 				>
 				["at0059"] = <
 					text = <"Without ANY difficulty">
-					description = <"The patient can get in and out of bed without any difficulty.">
+					description = <"The patient can cut meat without any difficulty.">
 				>
 				["at0060"] = <
 					text = <"With SOME difficulty">
-					description = <"The patient can get in and out of bed with some difficulty.">
+					description = <"The patient can cut meat with some difficulty.">
 				>
 				["at0061"] = <
 					text = <"With MUCH difficulty / assistance required">
-					description = <"The patient can get in and out of bed with much difficulty.">
+					description = <"The patient can cut meat with much difficulty.">
 				>
 				["at0062"] = <
 					text = <"Unable to do">
-					description = <"The patient is unable to get in and out of bed.">
+					description = <"The patient is unable to cut meat.">
 				>
 			>
 		>
