@@ -36,13 +36,13 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"dd83cb9e89305fb5f6b3fe9c392116aa">
+		["MD5-CAM-1.0.1"] = <"d42201aebe6cb490282c93d38c0e11eb">
 		["build_uid"] = <"4218ce62-ec18-464b-84bb-5fe9b815a1ea">
 		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
-	OBSERVATION[at0000] matches {    -- OSE
+	OBSERVATION[at0000] matches {    -- Oxford Elbow Questionnaire Score (OSE)
 		data matches {
 			HISTORY[at0001] matches {    -- Event Series
 				events cardinality matches {1..*; unordered} matches {
@@ -172,6 +172,19 @@ definition
 											}
 										}
 									}
+									ELEMENT[at0223] occurrences matches {0..1} matches {    -- Grading
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0224,    -- Severe
+													at0225,    -- Moderate to severe
+													at0226,    -- Moderate
+													at0227]    -- Satisfactory
+												}
+											}
+										}
+									}
 								}
 							}
 						}
@@ -196,7 +209,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"OSE">
+					text = <"Oxford Elbow Questionnaire Score (OSE)">
 					description = <"Oxford Elbow Questionnaire Score.">
 				>
 				["at0001"] = <
@@ -551,6 +564,26 @@ How would you describe the pain you usually had from your elbow?">
 				["at0222"] = <
 					text = <"No pain">
 					description = <"The patient found the no pain from their elbow problem during the last 4 weeks.">
+				>
+				["at0223"] = <
+					text = <"Grading">
+					description = <"*">
+				>
+				["at0224"] = <
+					text = <"Severe">
+					description = <"May indicate severe elbow arthritis.">
+				>
+				["at0225"] = <
+					text = <"Moderate to severe">
+					description = <"May indicate moderate to severe elbow arthritis.">
+				>
+				["at0226"] = <
+					text = <"Moderate">
+					description = <"May indicate mild to moderate elbow arthritis.">
+				>
+				["at0227"] = <
+					text = <"Satisfactory">
+					description = <"May indicate satisfactory joint function.">
 				>
 			>
 		>
