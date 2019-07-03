@@ -9,20 +9,20 @@ language
 
 description
 	original_author = <
-		["date"] = <"2017-10-23">
-		["name"] = <"Hildegard Franke">
-		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
-		["email"] = <"hildi@freshehr.com">
+		["date"] = <"2019-07-03">
+		["name"] = <"Alan Fish">
+		["organisation"] = <"Apperta Foundation CIC.">
+		["email"] = <"alan.fish@apperta.org">
 	>
 	lifecycle_state = <"in_development">
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
-			purpose = <"For the capture and reporting of details of the VISA-A questionnaire, an index of the severity of Achilles tendinopathy.">
+			purpose = <"For the capture and reporting of details of the Myelopathy Disability Index Questionnaire.">
 			copyright = <"© Clinical Models UK">
-			use = <"Use to record details of the VISA-A questionnaire, an index of the severity of Achilles tendinopathy.
+			use = <"Use to record details of the Myelopathy Disability Index Questionnaire.
 
-This questionnaire is a patient-reported outcome measure (PROM) for foot and ankle surgery.
+This questionnaire is a patient-reported outcome measure (PROM) for spine surgery.
 
 While openEHR archetypes are all freely available under an open license, the specific content of this archetype may be copyright protected. Any use of this archetype within implementations must be in compliance with the terms established by the copyright owners where a copyright exists. ">
 			misuse = <"Not to be used unless the terms of copyright have been observed (if a copyright exists).">
@@ -31,18 +31,18 @@ While openEHR archetypes are all freely available under an open license, the spe
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
 		["custodian_organisation"] = <"UK Clinical Models">
-		["references"] = <"https://www.physio-pedia.com/VISA-A_scale cited 23-Oct-2017">
-		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
+		["references"] = <"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3886505/">
+		["current_contact"] = <"Alan Fish, Apperta Foundation CIC.<alan.fish@apperta.org>">
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"1ebaf5b6aaa4e36d49e6f6a0386a28a6">
+		["MD5-CAM-1.0.1"] = <"dcc0f67b8340277f16234ccc577082bc">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
-	OBSERVATION[at0000] matches {    -- VISA-A questionnaire
+	OBSERVATION[at0000] matches {    -- Myelopathy Disability Index Questionnaire
 		data matches {
 			HISTORY[at0001] matches {    -- Event Series
 				events cardinality matches {1..*; unordered} matches {
@@ -184,8 +184,8 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"VISA-A questionnaire">
-					description = <"VISA-A questionnaire: an index of the severity of Achilles tendinopathy.">
+					text = <"Myelopathy Disability Index Questionnaire">
+					description = <"Myelopathy Disability Index Questionnaire.">
 				>
 				["at0001"] = <
 					text = <"Event Series">
