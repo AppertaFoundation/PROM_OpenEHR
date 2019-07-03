@@ -10,9 +10,9 @@ language
 description
 	original_author = <
 		["date"] = <"2017-10-08">
-		["name"] = <"Hildegard Franke">
-		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
-		["email"] = <"hildi@freshehr.com">
+		["name"] = <"Alan Fish">
+		["organisation"] = <"Aperta Foundation CIC.">
+		["email"] = <"alan.fish@apperta.org">
 	>
 	lifecycle_state = <"in_development">
 	details = <
@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"74481fda6c21b599eea2ddc273e4b204">
+		["MD5-CAM-1.0.1"] = <"8dd71b72a40e2b9c30a8430f1dc14543">
 		["build_uid"] = <"4218ce62-ec18-464b-84bb-5fe9b815a1ea">
 		["revision"] = <"0.0.1-alpha">
 	>
