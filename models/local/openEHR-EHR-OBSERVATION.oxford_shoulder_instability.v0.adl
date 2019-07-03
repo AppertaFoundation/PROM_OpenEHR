@@ -36,13 +36,13 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"ccb691c05519fef65d6ab3d28aabb3e3">
+		["MD5-CAM-1.0.1"] = <"7a674722a173d87d717b42b52887f7d8">
 		["build_uid"] = <"4218ce62-ec18-464b-84bb-5fe9b815a1ea">
 		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
-	OBSERVATION[at0000] matches {    -- OSI
+	OBSERVATION[at0000] matches {    -- Oxford Shoulder Instability Questionnaire Score (OSI)
 		data matches {
 			HISTORY[at0001] matches {    -- Event Series
 				events cardinality matches {1..*; unordered} matches {
@@ -172,6 +172,19 @@ definition
 											}
 										}
 									}
+									ELEMENT[at0157] occurrences matches {0..1} matches {    -- Grading
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0158,    -- Poor
+													at0159,    -- Fair
+													at0160,    -- Good
+													at0161]    -- Excellent
+												}
+											}
+										}
+									}
 								}
 							}
 						}
@@ -196,7 +209,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"OSI">
+					text = <"Oxford Shoulder Instability Questionnaire Score (OSI)">
 					description = <"Oxford Shoulder Instability Questionnaire Score.">
 				>
 				["at0001"] = <
@@ -541,6 +554,26 @@ During the last four weeks, have you avoided lying in certain positions, in bed 
 				["at0156"] = <
 					text = <"No nights">
 					description = <"The patient found that they did not avoid lying in certain positions at night due to their shoulder problem in the last 4 weeks.">
+				>
+				["at0157"] = <
+					text = <"Grading">
+					description = <"*">
+				>
+				["at0158"] = <
+					text = <"Poor">
+					description = <"Indicates poor shoulder instability.">
+				>
+				["at0159"] = <
+					text = <"Fair">
+					description = <"Indicates fair shoulder instability.">
+				>
+				["at0160"] = <
+					text = <"Good">
+					description = <"Indicates good shoulder instability.">
+				>
+				["at0161"] = <
+					text = <"Excellent">
+					description = <"Indicates excellent shoulder instability.">
 				>
 			>
 		>
