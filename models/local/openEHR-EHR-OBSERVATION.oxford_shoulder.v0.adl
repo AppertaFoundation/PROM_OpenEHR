@@ -9,10 +9,10 @@ language
 
 description
 	original_author = <
-		["date"] = <"2017-10-08">
-		["name"] = <"Hildegard Franke">
-		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
-		["email"] = <"hildi@freshehr.com">
+		["date"] = <"2019-07-03">
+		["name"] = <"Alan Fish">
+		["organisation"] = <"Apperta Foundation CIC">
+		["email"] = <"alan.fish@apperta.org">
 	>
 	lifecycle_state = <"in_development">
 	details = <
@@ -32,11 +32,11 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
 		["custodian_organisation"] = <"UK Clinical Models">
 		["references"] = <"https://innovation.ox.ac.uk/outcome-measures/oxford-shoulder-score-oss/">
-		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
+		["current_contact"] = <"Alan Fish, Apperta Foundation .<alan.fish@apperta.org>">
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"f4494931e40aa8df740191bd4c1223aa">
+		["MD5-CAM-1.0.1"] = <"a8d89d070d7c88625467050220d8eed5">
 		["build_uid"] = <"4218ce62-ec18-464b-84bb-5fe9b815a1ea">
 		["revision"] = <"0.0.1-alpha">
 	>
