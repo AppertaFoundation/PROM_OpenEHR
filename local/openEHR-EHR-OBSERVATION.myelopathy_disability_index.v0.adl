@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"a939fa30649ded3218c8fdcb10b2fe04">
+		["MD5-CAM-1.0.1"] = <"2d528fef160a02b78ca511188832fd8b">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -331,9 +331,10 @@ Hygiene are you able to wash and dry your entire body? ">
 				>
 				["at0078"] = <
 					text = <"Walking - flat ground">
-					description = <"Patient-reported ability to walk around outdoors on flat ground.">
+					description = <"Patient-reported ability to climb up 5 steps.">
 					comment = <"Questionnaire wording: 
-Walking are you able to walk outdoors on flat ground? ">
+Walking are you able to climb up five steps?
+">
 				>
 				["at0079"] = <
 					text = <"Without ANY difficulty">
