@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"741ceb9e51987648ce95a565454269d6">
+		["MD5-CAM-1.0.1"] = <"63df3024f96b163b41162192b751964d">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -80,6 +80,14 @@ definition
 											1|[local::at0065],
 											2|[local::at0066],
 											3|[local::at0067]
+										}
+									}
+									ELEMENT[at0068] occurrences matches {0..1} matches {    -- Walking flat ground
+										value matches {
+											0|[local::at0069],
+											1|[local::at0070],
+											2|[local::at0071],
+											3|[local::at0072]
 										}
 									}
 									ELEMENT[at0044] occurrences matches {0..1} matches {    -- Total score
@@ -260,6 +268,28 @@ Eating are you able to lift a full cup or glass to your mouth?">
 				["at0067"] = <
 					text = <"Unable to do">
 					description = <"The patient is unable to lift a full cup or glass to their mouth.">
+				>
+				["at0068"] = <
+					text = <"Walking flat ground">
+					description = <"Patient-reported ability to walk around outdoors on flat ground.">
+					comment = <"Questionnaire wording: 
+Walking are you able to walk outdoors on flat ground? ">
+				>
+				["at0069"] = <
+					text = <"Without ANY difficulty">
+					description = <"The patient can walk around outdoors on flat ground any difficulty.">
+				>
+				["at0070"] = <
+					text = <"With SOME difficulty">
+					description = <"The patient can walk around outdoors on flat ground with some difficulty.">
+				>
+				["at0071"] = <
+					text = <"With MUCH difficulty / assistance required">
+					description = <"The patient can walk around outdoors on flat ground with much difficulty.">
+				>
+				["at0072"] = <
+					text = <"Unable to do">
+					description = <"The patient is unable walk around outdoors on flat ground.">
 				>
 			>
 		>
