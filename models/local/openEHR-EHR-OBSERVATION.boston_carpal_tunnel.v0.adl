@@ -9,10 +9,10 @@ language
 
 description
 	original_author = <
-		["date"] = <"2017-10-08">
-		["name"] = <"Hildegard Franke">
-		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
-		["email"] = <"hildi@freshehr.com">
+		["date"] = <"2019-07-03">
+		["name"] = <"Alan Fish">
+		["organisation"] = <"Apperta Foundation CIC">
+		["email"] = <"alan.fish@apperta.org">
 	>
 	lifecycle_state = <"in_development">
 	details = <
@@ -32,17 +32,17 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
 		["custodian_organisation"] = <"UK Clinical Models">
 		["references"] = <"">
-		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
+		["current_contact"] = <"Alan Fish, Apperta Foundation CIC.<alan.fish@apperta.org>">
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"3d11482e405ac435673ccc597805a31d">
+		["MD5-CAM-1.0.1"] = <"23617b0d8f1461438878f36dbf90fd0e">
 		["build_uid"] = <"4218ce62-ec18-464b-84bb-5fe9b815a1ea">
 		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
-	OBSERVATION[at0000] matches {    -- BOSTON
+	OBSERVATION[at0000] matches {    -- Boston Carpal Tunnel Questionnaire Score (BOSTON)
 		data matches {
 			HISTORY[at0001] matches {    -- Event Series
 				events cardinality matches {1..*; unordered} matches {
@@ -187,7 +187,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"BOSTON">
+					text = <"Boston Carpal Tunnel Questionnaire Score (BOSTON)">
 					description = <"Boston Carpal Tunnel Questionnaire Score.">
 				>
 				["at0001"] = <
