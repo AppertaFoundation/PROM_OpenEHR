@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"5129185d81f8045d35f9719b76148360">
+		["MD5-CAM-1.0.1"] = <"2d3829a6caa12bae6dbb8a4f865c752c">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -56,6 +56,14 @@ definition
 											1|[local::at0050],
 											2|[local::at0051],
 											3|[local::at0052]
+										}
+									}
+									ELEMENT[at0053] occurrences matches {0..1} matches {    -- Rising bed
+										value matches {
+											0|[local::at0054],
+											1|[local::at0055],
+											2|[local::at0056],
+											3|[local::at0057]
 										}
 									}
 									ELEMENT[at0044] occurrences matches {0..1} matches {    -- Total score
@@ -170,6 +178,28 @@ Rising are you able to stand up from an armless straight chair?">
 				["at0052"] = <
 					text = <"Unable to do">
 					description = <"The patient is unable to stand up from an armless straight chair.">
+				>
+				["at0053"] = <
+					text = <"Rising bed">
+					description = <"Patient-reported ability to get in and out of bed.">
+					comment = <"Questionnaire wording: 
+Rising are you able to get in and out of bed?">
+				>
+				["at0054"] = <
+					text = <"Without ANY difficulty">
+					description = <"The patient can get in and out of bed without any difficulty.">
+				>
+				["at0055"] = <
+					text = <"With SOME difficulty">
+					description = <"The patient can get in and out of bed with some difficulty.">
+				>
+				["at0056"] = <
+					text = <"With MUCH difficulty / assistance required">
+					description = <"The patient can get in and out of bed with much difficulty.">
+				>
+				["at0057"] = <
+					text = <"Unable to do">
+					description = <"The patient is unable to get in and out of bed.">
 				>
 			>
 		>
