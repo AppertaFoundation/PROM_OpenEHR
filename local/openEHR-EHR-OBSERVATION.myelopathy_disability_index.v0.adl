@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"2d528fef160a02b78ca511188832fd8b">
+		["MD5-CAM-1.0.1"] = <"e1c7a3be17432ac009a2cd686079c180">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -90,7 +90,7 @@ definition
 											3|[local::at0072]
 										}
 									}
-									ELEMENT[at0078] occurrences matches {0..1} matches {    -- Walking - flat ground
+									ELEMENT[at0078] occurrences matches {0..1} matches {    -- Walking - five steps
 										value matches {
 											0|[local::at0079],
 											1|[local::at0080],
@@ -330,7 +330,7 @@ Hygiene are you able to wash and dry your entire body? ">
 					description = <"The patient is unable to wash and dry their body.">
 				>
 				["at0078"] = <
-					text = <"Walking - flat ground">
+					text = <"Walking - five steps">
 					description = <"Patient-reported ability to climb up 5 steps.">
 					comment = <"Questionnaire wording: 
 Walking are you able to climb up five steps?
@@ -338,19 +338,19 @@ Walking are you able to climb up five steps?
 				>
 				["at0079"] = <
 					text = <"Without ANY difficulty">
-					description = <"The patient can walk around outdoors on flat ground without any difficulty.">
+					description = <"The patient can climb up five steps without any difficulty.">
 				>
 				["at0080"] = <
 					text = <"With SOME difficulty">
-					description = <"The patient can walk around outdoors on flat ground with some difficulty.">
+					description = <"The patient can climb up five steps with some difficulty.">
 				>
 				["at0081"] = <
 					text = <"With MUCH difficulty / assistance required">
-					description = <"The patient can walk around outdoors on flat ground with much difficulty.">
+					description = <"The patient can climb up five steps with much difficulty.">
 				>
 				["at0082"] = <
 					text = <"Unable to do">
-					description = <"The patient is unable to walk around outdoors on flat ground.">
+					description = <"The patient is unable to climb up five steps.">
 				>
 			>
 		>
