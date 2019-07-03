@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"7a674722a173d87d717b42b52887f7d8">
+		["MD5-CAM-1.0.1"] = <"b17b265769963c204b9388406d7d58d2">
 		["build_uid"] = <"4218ce62-ec18-464b-84bb-5fe9b815a1ea">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -561,19 +561,19 @@ During the last four weeks, have you avoided lying in certain positions, in bed 
 				>
 				["at0158"] = <
 					text = <"Poor">
-					description = <"Indicates poor shoulder instability.">
+					description = <"May indicate poor shoulder instability.">
 				>
 				["at0159"] = <
 					text = <"Fair">
-					description = <"Indicates fair shoulder instability.">
+					description = <"May indicate fair shoulder instability.">
 				>
 				["at0160"] = <
 					text = <"Good">
-					description = <"Indicates good shoulder instability.">
+					description = <"May indicate good shoulder instability.">
 				>
 				["at0161"] = <
 					text = <"Excellent">
-					description = <"Indicates excellent shoulder instability.">
+					description = <"May indicate excellent shoulder instability.">
 				>
 			>
 		>
