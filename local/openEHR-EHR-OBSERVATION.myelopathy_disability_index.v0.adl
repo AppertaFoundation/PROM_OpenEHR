@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"4fdea1f3203ce23dbe550dd340774117">
+		["MD5-CAM-1.0.1"] = <"deb1b921fee35fdffa5d2e1dd1008bd5">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -50,7 +50,7 @@ definition
 						data matches {
 							ITEM_TREE[at0003] matches {    -- Tree
 								items cardinality matches {0..*; unordered} matches {
-									ELEMENT[at0004] occurrences matches {0..1} matches {    -- Rising chair
+									ELEMENT[at0004] occurrences matches {0..1} matches {    -- Rising - chair
 										value matches {
 											0|[local::at0009],
 											1|[local::at0050],
@@ -58,7 +58,7 @@ definition
 											3|[local::at0052]
 										}
 									}
-									ELEMENT[at0053] occurrences matches {0..1} matches {    -- Rising bed
+									ELEMENT[at0053] occurrences matches {0..1} matches {    -- Rising - bed
 										value matches {
 											0|[local::at0054],
 											1|[local::at0055],
@@ -66,7 +66,7 @@ definition
 											3|[local::at0057]
 										}
 									}
-									ELEMENT[at0058] occurrences matches {0..1} matches {    -- Eating cutting
+									ELEMENT[at0058] occurrences matches {0..1} matches {    -- Eating - cutting
 										value matches {
 											0|[local::at0059],
 											1|[local::at0060],
@@ -74,7 +74,7 @@ definition
 											3|[local::at0062]
 										}
 									}
-									ELEMENT[at0063] occurrences matches {0..1} matches {    -- Eating lift a cup
+									ELEMENT[at0063] occurrences matches {0..1} matches {    -- Eating - lift a cup
 										value matches {
 											0|[local::at0064],
 											1|[local::at0065],
@@ -82,7 +82,7 @@ definition
 											3|[local::at0067]
 										}
 									}
-									ELEMENT[at0068] occurrences matches {0..1} matches {    -- Walking flat ground
+									ELEMENT[at0068] occurrences matches {0..1} matches {    -- Walking - flat ground
 										value matches {
 											0|[local::at0069],
 											1|[local::at0070],
@@ -90,7 +90,7 @@ definition
 											3|[local::at0072]
 										}
 									}
-									ELEMENT[at0073] occurrences matches {0..1} matches {    -- Climb five steps
+									ELEMENT[at0073] occurrences matches {0..1} matches {    -- Walking - climb five steps
 										value matches {
 											0|[local::at0074],
 											1|[local::at0075],
@@ -165,7 +165,7 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0004"] = <
-					text = <"Rising chair">
+					text = <"Rising - chair">
 					description = <"Patient-reported ability to rise up from an armless straght chair.">
 					comment = <"Questionnaire wording: 
 Rising are you able to stand up from an armless straight chair?">
@@ -212,7 +212,7 @@ Rising are you able to stand up from an armless straight chair?">
 					description = <"The patient is unable to stand up from an armless straight chair.">
 				>
 				["at0053"] = <
-					text = <"Rising bed">
+					text = <"Rising - bed">
 					description = <"Patient-reported ability to get in and out of bed.">
 					comment = <"Questionnaire wording: 
 Rising are you able to get in and out of bed?">
@@ -234,7 +234,7 @@ Rising are you able to get in and out of bed?">
 					description = <"The patient is unable to get in and out of bed.">
 				>
 				["at0058"] = <
-					text = <"Eating cutting">
+					text = <"Eating - cutting">
 					description = <"Patient-reported ability to eat and cut their meat.">
 					comment = <"Questionnaire wording: 
 Eating are you able to cut your meat? ">
@@ -256,7 +256,7 @@ Eating are you able to cut your meat? ">
 					description = <"The patient is unable to cut meat.">
 				>
 				["at0063"] = <
-					text = <"Eating lift a cup">
+					text = <"Eating - lift a cup">
 					description = <"Patient-reported ability to lift a full cup or glass to their mouth.">
 					comment = <"Questionnaire wording: 
 Eating are you able to lift a full cup or glass to your mouth?">
@@ -278,7 +278,7 @@ Eating are you able to lift a full cup or glass to your mouth?">
 					description = <"The patient is unable to lift a full cup or glass to their mouth.">
 				>
 				["at0068"] = <
-					text = <"Walking flat ground">
+					text = <"Walking - flat ground">
 					description = <"Patient-reported ability to walk around outdoors on flat ground.">
 					comment = <"Questionnaire wording: 
 Walking are you able to walk outdoors on flat ground? ">
@@ -300,7 +300,7 @@ Walking are you able to walk outdoors on flat ground? ">
 					description = <"The patient is unable to walk around outdoors on flat ground.">
 				>
 				["at0073"] = <
-					text = <"Climb five steps">
+					text = <"Walking - climb five steps">
 					description = <"Patient-reported ability to walk around outdoors on flat ground.">
 					comment = <"Questionnaire wording: 
 Walking are you able to walk outdoors on flat ground? ">
