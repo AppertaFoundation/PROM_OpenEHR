@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"e1c7a3be17432ac009a2cd686079c180">
+		["MD5-CAM-1.0.1"] = <"b94463bae759ed9ab35566df8ed23e1c">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -104,6 +104,14 @@ definition
 											1|[local::at0075],
 											2|[local::at0076],
 											3|[local::at0077]
+										}
+									}
+									ELEMENT[at0083] occurrences matches {0..1} matches {    -- Hygiene - toilet
+										value matches {
+											0|[local::at0084],
+											1|[local::at0085],
+											2|[local::at0086],
+											3|[local::at0087]
 										}
 									}
 									ELEMENT[at0044] occurrences matches {0..1} matches {    -- Total score
@@ -351,6 +359,28 @@ Walking are you able to climb up five steps?
 				["at0082"] = <
 					text = <"Unable to do">
 					description = <"The patient is unable to climb up five steps.">
+				>
+				["at0083"] = <
+					text = <"Hygiene - toilet">
+					description = <"Patient-reported ability to get on and off the toilet">
+					comment = <"Questionnaire wording: 
+Hygiene are you able to get on and off the toilet? ">
+				>
+				["at0084"] = <
+					text = <"Without ANY difficulty">
+					description = <"The patient can get on and off the toilet without any difficulty.">
+				>
+				["at0085"] = <
+					text = <"With SOME difficulty">
+					description = <"The patient can get on and off the toilet with some difficulty.">
+				>
+				["at0086"] = <
+					text = <"With MUCH difficulty / assistance required">
+					description = <"The patient can get on and off the toilet with much difficulty.">
+				>
+				["at0087"] = <
+					text = <"Unable to do">
+					description = <"The patient is unable to get on and off the toilet.">
 				>
 			>
 		>
