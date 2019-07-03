@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"07c36e6071fe9701a8613433835c6e55">
+		["MD5-CAM-1.0.1"] = <"5129185d81f8045d35f9719b76148360">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -126,9 +126,9 @@ ontology
 				>
 				["at0004"] = <
 					text = <"Rising chair">
-					description = <"Patient-reported estimation of how many minutes of stiffness in Achilles region is experienced when first getting up.">
+					description = <"Patient-reported ability to rise up from an armless straght chair.">
 					comment = <"Questionnaire wording: 
-For how many minutes do you have stiffness in the Achilles region on first getting up?">
+Rising are you able to stand up from an armless straight chair?">
 				>
 				["at0009"] = <
 					text = <"Without ANY difficulty">
