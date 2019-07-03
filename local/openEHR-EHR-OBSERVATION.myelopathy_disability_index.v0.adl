@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"f4c5b92b3791c6d51d890f894a323206">
+		["MD5-CAM-1.0.1"] = <"bd9e87b756a4db5a5e14b1071ded32f5">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -141,7 +141,6 @@ definition
 										value matches {
 											DV_PROPORTION matches {
 												numerator matches {|0.0..100.0|}
-												is_integral matches {false}
 												type matches {2}
 											}
 										}
@@ -212,7 +211,7 @@ Rising are you able to stand up from an armless straight chair?">
 				>
 				["at0045"] = <
 					text = <"Total score as percentage">
-					description = <"Total score from questions 1 to 8 as a percentage.">
+					description = <"Total score from questions 1 to 10 as a percentage.">
 				>
 				["at0046"] = <
 					text = <"Tree">
