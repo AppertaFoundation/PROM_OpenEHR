@@ -9,7 +9,7 @@ language
 
 description
 	original_author = <
-		["date"] = <"2017-10-08">
+		["date"] = <"2019-07-03">
 		["name"] = <"Alan Fish">
 		["organisation"] = <"Aperta Foundation CIC.">
 		["email"] = <"alan.fish@apperta.org">
@@ -32,7 +32,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
 		["custodian_organisation"] = <"UK Clinical Models">
 		["references"] = <"https://innovation.ox.ac.uk/outcome-measures/the-oxford-elbow-score-oes/">
-		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
+		["current_contact"] = <"Alan Fish, Apperta Foundation CIC.<alan.fish@apperta.org>">
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
