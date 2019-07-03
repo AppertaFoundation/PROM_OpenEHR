@@ -25,12 +25,12 @@ description
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"152C9994C316880986CC68A7009A1275">
+		["MD5-CAM-1.0.1"] = <"764f8e72446a6525decbb4e1dac8af31">
 		["build_uid"] = <"3d430d71-3943-3346-a27c-de70fa6ca283">
 	>
 
 definition
-	OBSERVATION[at0000] matches {    -- VAS back and leg pain
+	OBSERVATION[at0000] matches {    -- Visual analogue scale (VAS) back and leg pain
 		data matches {
 			HISTORY[at0001] matches {    -- Event Series
 				events cardinality matches {1..*; unordered} matches {
@@ -92,7 +92,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"VAS back and leg pain">
+					text = <"Visual analogue scale (VAS) back and leg pain">
 					description = <"Visual analogue scale for back and leg pain.">
 				>
 				["at0001"] = <
