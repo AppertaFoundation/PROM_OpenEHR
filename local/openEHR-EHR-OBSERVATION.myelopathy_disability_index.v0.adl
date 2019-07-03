@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"139ee404d9f200ad2eef6b506b3602bd">
+		["MD5-CAM-1.0.1"] = <"f4c5b92b3791c6d51d890f894a323206">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -120,6 +120,14 @@ definition
 											1|[local::at0090],
 											2|[local::at0091],
 											3|[local::at0092]
+										}
+									}
+									ELEMENT[at0093] occurrences matches {0..1} matches {    -- Activities - car
+										value matches {
+											0|[local::at0094],
+											1|[local::at0095],
+											2|[local::at0096],
+											3|[local::at0097]
 										}
 									}
 									ELEMENT[at0044] occurrences matches {0..1} matches {    -- Total score
@@ -412,6 +420,28 @@ opened? ">
 				["at0092"] = <
 					text = <"Unable to do">
 					description = <"The patient is unable to open jars that have already been opened.">
+				>
+				["at0093"] = <
+					text = <"Activities - car">
+					description = <"Patient-reported ability to get in and out of a car.">
+					comment = <"Questionnaire wording: 
+Activities are you able to:Get in and out of a car? ">
+				>
+				["at0094"] = <
+					text = <"Without ANY difficulty">
+					description = <"The patient can get in and out of a car without any difficulty.">
+				>
+				["at0095"] = <
+					text = <"With SOME difficulty">
+					description = <"The patient can get in and out of a car with some difficulty.">
+				>
+				["at0096"] = <
+					text = <"With MUCH difficulty / assistance required">
+					description = <"The patient can get in and out of a car with much difficulty.">
+				>
+				["at0097"] = <
+					text = <"Unable to do">
+					description = <"The patient is unable to get in and out of a car.">
 				>
 			>
 		>
