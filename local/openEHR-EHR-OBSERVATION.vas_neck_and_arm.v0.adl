@@ -9,28 +9,28 @@ language
 
 description
 	original_author = <
-		["date"] = <"2017-10-02">
-		["name"] = <"Hildegard Franke">
-		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
-		["email"] = <"hildi@freshehr.com">
+		["date"] = <"2019-07-03">
+		["name"] = <"Alan Fish">
+		["organisation"] = <"Apperta Foundation CIC.">
+		["email"] = <"alan.fish@apperta.org">
 	>
 	lifecycle_state = <"Initial">
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
-			purpose = <"For the capture and reporting of patient-reported back and leg pain as a visual analogue scale.">
-			use = <"Use to record patient-reported back and leg pain as a visual analogue scale.">
+			purpose = <"For the capture and reporting of patient-reported neck and arm pain as a visual analogue scale.">
+			use = <"Use to record patient-reported neck and arm pain as a visual analogue scale.">
 		>
 	>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
-		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"48be1acfc1d703c0925acf67b495eab4">
+		["current_contact"] = <"Alan Fish, Apperta Foundation CIC.<alan.fish@apperta.org>">
+		["MD5-CAM-1.0.1"] = <"ecce61c4872418084da91ba09447a760">
 		["build_uid"] = <"3d430d71-3943-3346-a27c-de70fa6ca283">
 	>
 
 definition
-	OBSERVATION[at0000] matches {    -- Visual analogue scale (VAS) back and leg pain
+	OBSERVATION[at0000] matches {    -- Visual analogue scale (VAS) neck and arm pain
 		data matches {
 			HISTORY[at0001] matches {    -- Event Series
 				events cardinality matches {1..*; unordered} matches {
@@ -92,8 +92,8 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"Visual analogue scale (VAS) back and leg pain">
-					description = <"Visual analogue scale for back and leg pain.">
+					text = <"Visual analogue scale (VAS) neck and arm pain">
+					description = <"Visual analogue scale for neck and arm pain.">
 				>
 				["at0001"] = <
 					text = <"Event Series">
