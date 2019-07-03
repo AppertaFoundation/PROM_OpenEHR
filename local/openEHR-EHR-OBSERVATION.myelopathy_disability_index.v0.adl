@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"63df3024f96b163b41162192b751964d">
+		["MD5-CAM-1.0.1"] = <"c5a8c27fe93c3b2cd259f64d6f79d662">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -88,6 +88,14 @@ definition
 											1|[local::at0070],
 											2|[local::at0071],
 											3|[local::at0072]
+										}
+									}
+									ELEMENT[at0073] occurrences matches {0..1} matches {    -- Walking flat ground
+										value matches {
+											0|[local::at0074],
+											1|[local::at0075],
+											2|[local::at0076],
+											3|[local::at0077]
 										}
 									}
 									ELEMENT[at0044] occurrences matches {0..1} matches {    -- Total score
@@ -290,6 +298,28 @@ Walking are you able to walk outdoors on flat ground? ">
 				["at0072"] = <
 					text = <"Unable to do">
 					description = <"The patient is unable walk around outdoors on flat ground.">
+				>
+				["at0073"] = <
+					text = <"Walking flat ground">
+					description = <"Patient-reported ability to walk around outdoors on flat ground.">
+					comment = <"Questionnaire wording: 
+Walking are you able to walk outdoors on flat ground? ">
+				>
+				["at0074"] = <
+					text = <"Without ANY difficulty">
+					description = <"The patient can climb up five steps any without any difficulty.">
+				>
+				["at0075"] = <
+					text = <"With SOME difficulty">
+					description = <"The patient can climb up five steps with some difficulty.">
+				>
+				["at0076"] = <
+					text = <"With MUCH difficulty / assistance required">
+					description = <"The patient can climb up five steps with much difficulty.">
+				>
+				["at0077"] = <
+					text = <"Unable to do">
+					description = <"The patient is unable to climb up five steps.">
 				>
 			>
 		>
