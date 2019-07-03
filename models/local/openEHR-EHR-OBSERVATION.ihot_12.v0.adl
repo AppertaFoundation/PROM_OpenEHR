@@ -33,12 +33,12 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"e48cb0a1f58c6fdd44edc9d27d8aba73">
+		["MD5-CAM-1.0.1"] = <"7fa27a9d758eb24a9c0f3ccb43b39908">
 		["build_uid"] = <"87d4073b-a78a-3734-95e4-b876911ab17b">
 	>
 
 definition
-	OBSERVATION[at0000] matches {    -- IHOT_12
+	OBSERVATION[at0000] matches {    -- International Hip Outcome Tool  (IHOT_12)
 		data matches {
 			HISTORY[at0001] matches {    -- History
 				events cardinality matches {0..*; unordered} matches {
@@ -189,7 +189,7 @@ ontology
 					description = <"@ unit @">
 				>
 				["at0000"] = <
-					text = <"IHOT_12">
+					text = <"International Hip Outcome Tool  (IHOT_12)">
 					description = <"International Hip Outcome Tool (12 questions).">
 				>
 				["at0001"] = <
