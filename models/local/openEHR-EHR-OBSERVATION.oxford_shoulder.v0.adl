@@ -36,13 +36,13 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"305318b7d83efe9e337d0cfbddb95252">
+		["MD5-CAM-1.0.1"] = <"f4494931e40aa8df740191bd4c1223aa">
 		["build_uid"] = <"4218ce62-ec18-464b-84bb-5fe9b815a1ea">
 		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
-	OBSERVATION[at0000] matches {    -- OSS
+	OBSERVATION[at0000] matches {    -- Oxford Shoulder Questionnaire Score (OSS)
 		data matches {
 			HISTORY[at0001] matches {    -- Event Series
 				events cardinality matches {1..*; unordered} matches {
@@ -172,6 +172,19 @@ definition
 											}
 										}
 									}
+									ELEMENT[at0115] occurrences matches {0..1} matches {    -- Grading
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0116,    -- Severe
+													at0117,    -- Moderate to severe
+													at0118,    -- Mild to moderate
+													at0119]    -- Satisfactory
+												}
+											}
+										}
+									}
 								}
 							}
 						}
@@ -196,7 +209,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"OSS">
+					text = <"Oxford Shoulder Questionnaire Score (OSS)">
 					description = <"Oxford Shoulder Questionnaire Score.">
 				>
 				["at0001"] = <
@@ -541,6 +554,26 @@ Have you been troubled by pain from your shoulder in bed at night?">
 				["at0114"] = <
 					text = <"Yes, easily">
 					description = <"The patient could brush/comb their hair easily, because of shoulder pain all of the time during past 4 weeks.">
+				>
+				["at0115"] = <
+					text = <"Grading">
+					description = <"Grading system for total score.">
+				>
+				["at0116"] = <
+					text = <"Severe">
+					description = <"May indicate severe shoulder arthritis.">
+				>
+				["at0117"] = <
+					text = <"Moderate to severe">
+					description = <"May indicate moderate to severe shoulder arthritis.">
+				>
+				["at0118"] = <
+					text = <"Mild to moderate">
+					description = <"May indicate mild to moderate shoulder arthritis.">
+				>
+				["at0119"] = <
+					text = <"Satisfactory">
+					description = <"May indicate satisfactory joint function.">
 				>
 			>
 		>
