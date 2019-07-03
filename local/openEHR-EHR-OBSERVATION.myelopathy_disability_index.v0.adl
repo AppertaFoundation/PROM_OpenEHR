@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"08f731bb7914008f6c7109fd8f8b1b2d">
+		["MD5-CAM-1.0.1"] = <"741ceb9e51987648ce95a565454269d6">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -72,6 +72,14 @@ definition
 											1|[local::at0060],
 											2|[local::at0061],
 											3|[local::at0062]
+										}
+									}
+									ELEMENT[at0063] occurrences matches {0..1} matches {    -- Eating lift a cup
+										value matches {
+											0|[local::at0064],
+											1|[local::at0065],
+											2|[local::at0066],
+											3|[local::at0067]
 										}
 									}
 									ELEMENT[at0044] occurrences matches {0..1} matches {    -- Total score
@@ -230,6 +238,28 @@ Eating are you able to cut your meat? ">
 				["at0062"] = <
 					text = <"Unable to do">
 					description = <"The patient is unable to cut meat.">
+				>
+				["at0063"] = <
+					text = <"Eating lift a cup">
+					description = <"Patient-reported ability to lift a full cup or glass to their mouth.">
+					comment = <"Questionnaire wording: 
+Eating are you able to lift a full cup or glass to your mouth?">
+				>
+				["at0064"] = <
+					text = <"Without ANY difficulty">
+					description = <"The patient can lift a full cup or glass to their mouth without any difficulty.">
+				>
+				["at0065"] = <
+					text = <"With SOME difficulty">
+					description = <"The patient can lift a full cup or glass to their mouth with some difficulty.">
+				>
+				["at0066"] = <
+					text = <"With MUCH difficulty / assistance required">
+					description = <"The patient can lift a full cup or glass to their mouth with much difficulty.">
+				>
+				["at0067"] = <
+					text = <"Unable to do">
+					description = <"The patient is unable to lift a full cup or glass to their mouth.">
 				>
 			>
 		>
