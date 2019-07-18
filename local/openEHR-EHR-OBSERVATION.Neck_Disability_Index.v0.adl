@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"f3d4ce5950ad93c46719a1404899fabb">
+		["MD5-CAM-1.0.1"] = <"50c800353790550c51612395d78d12a1">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -378,20 +378,20 @@ Section 6 – Concentration
 ">
 				>
 				["at0079"] = <
-					text = <"I can stand as long as I want without extra pain">
-					description = <"The patient can stand as long as they want without extra pain.">
+					text = <"I can concentrate fully when I want to with no difficulty">
+					description = <"The patient can concentrate fully when they want to with no difficulty.">
 				>
 				["at0080"] = <
-					text = <"I can stand as long as I want but it gives me extra pain">
-					description = <"The patient can stand as long as they want but it gives me extra pain.">
+					text = <"I can concentrate fully when I want to with slight difficulty">
+					description = <"The patient can concentrate fully when they want to with slight difficulty.">
 				>
 				["at0081"] = <
-					text = <"Pain prevents me from standing for more than 1 hour">
-					description = <"Pain prevents the patient from standing for more than 1 hour.">
+					text = <"I have a fair degree of difficulty in concentrating when I want to">
+					description = <"The patient has a fair degree of difficulty in concentrating when they want to.">
 				>
 				["at0082"] = <
-					text = <"Pain prevents me from standing for more than 30 minutes">
-					description = <"Pain prevents the patient from standing for more than 30 minutes.">
+					text = <"I have a lot of difficulty in concentrating when I want to">
+					description = <"The patient has a lot of difficulty in concentrating when they want to.">
 				>
 				["at0083"] = <
 					text = <"Sex life">
