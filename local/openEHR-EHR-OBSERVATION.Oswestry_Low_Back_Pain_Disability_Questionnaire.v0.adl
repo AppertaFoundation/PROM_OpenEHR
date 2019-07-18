@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"dcc179dcf0db5693e20122fb0ea17895">
+		["MD5-CAM-1.0.1"] = <"eefe61b8b80d338519d3900b6911dd1a">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -55,7 +55,9 @@ definition
 											0|[local::at0009],
 											1|[local::at0050],
 											2|[local::at0051],
-											3|[local::at0052]
+											3|[local::at0052],
+											4|[local::at0098],
+											5|[local::at0099]
 										}
 									}
 									ELEMENT[at0053] occurrences matches {0..1} matches {    -- Personal care
@@ -452,6 +454,14 @@ Section 10 – Travelling">
 				["at0097"] = <
 					text = <"Pain restricts me to journeys of less than one hour">
 					description = <"Pain restricts the patient to journeys of less than one hour.">
+				>
+				["at0098"] = <
+					text = <"The pain is very severe at the moment">
+					description = <"The patient has very severe pain at the moment.">
+				>
+				["at0099"] = <
+					text = <"The pain is the worst imaginable at the moment">
+					description = <"The patient has the worst imaginable pain at the moment.">
 				>
 			>
 		>
