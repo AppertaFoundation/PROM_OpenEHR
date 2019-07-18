@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"8f210e1f24d9d65200802dffcbf279b9">
+		["MD5-CAM-1.0.1"] = <"0c7c267d4a256e5a2fa1bcdc72ae0e33">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -75,7 +75,9 @@ definition
 											0|[local::at0059],
 											1|[local::at0060],
 											2|[local::at0061],
-											3|[local::at0062]
+											3|[local::at0062],
+											4|[local::at0102],
+											5|[local::at0103]
 										}
 									}
 									ELEMENT[at0063] occurrences matches {0..1} matches {    -- Walking
@@ -472,6 +474,14 @@ Section 10 – Travelling">
 				["at0101"] = <
 					text = <"I do not get dressed, I wash with difficulty and stay in bed">
 					description = <"The patient does not get dressed, they wash with difficulty and stay in bed.">
+				>
+				["at0102"] = <
+					text = <"I can only lift very light weights">
+					description = <"The patient can only lift very light weights.">
+				>
+				["at0103"] = <
+					text = <"I cannot lift or carry anything">
+					description = <"The patient cannot lift or carry anything.">
 				>
 			>
 		>
