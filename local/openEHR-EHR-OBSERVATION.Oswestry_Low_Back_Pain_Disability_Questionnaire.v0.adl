@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"d2e565ca253963fa22cf41cdfd12aeff">
+		["MD5-CAM-1.0.1"] = <"0d0daa2264141a66bf7c3f98e4c59ab9">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -66,7 +66,7 @@ definition
 											3|[local::at0057]
 										}
 									}
-									ELEMENT[at0058] occurrences matches {0..1} matches {    -- Eating - cutting
+									ELEMENT[at0058] occurrences matches {0..1} matches {    -- Lifting
 										value matches {
 											0|[local::at0059],
 											1|[local::at0060],
@@ -265,26 +265,26 @@ Section 2 – Personal care (washing, dressing etc)">
 					description = <"The patient needs some help but manages most of their personal care.">
 				>
 				["at0058"] = <
-					text = <"Eating - cutting">
-					description = <"Patient-reported ability to eat and cut their meat.">
+					text = <"Lifting">
+					description = <"Patient-reported ability to lift heavy weights.">
 					comment = <"Questionnaire wording: 
-Eating are you able to cut your meat? ">
+Section 3 – Lifting">
 				>
 				["at0059"] = <
-					text = <"Without ANY difficulty">
-					description = <"The patient can cut meat without any difficulty.">
+					text = <"I can lift heavy weights without extra pain">
+					description = <"The patient can lift heavy weights without extra pain.">
 				>
 				["at0060"] = <
-					text = <"With SOME difficulty">
-					description = <"The patient can cut meat with some difficulty.">
+					text = <"I can lift heavy weights but it gives extra pain">
+					description = <"The patient can lift heavy weights but it gives extra pain.">
 				>
 				["at0061"] = <
-					text = <"With MUCH difficulty / assistance required">
-					description = <"The patient can cut meat with much difficulty.">
+					text = <"Pain prevents me from lifting heavy weights off the floor, but I can manage if they are conveniently placed eg. on a table">
+					description = <"Pain prevents the patient from lifting heavy weights off the floor, but they can manage if they are conveniently placed eg. on a table.">
 				>
 				["at0062"] = <
-					text = <"Unable to do">
-					description = <"The patient is unable to cut meat.">
+					text = <"Pain prevents me from lifting heavy weights, but I can manage light to medium weights if they are conveniently positioned">
+					description = <"Pain prevents the patient from lifting heavy weights, but they can manage light to medium weights if they are conveniently positioned.">
 				>
 				["at0063"] = <
 					text = <"Eating - lift a cup">
