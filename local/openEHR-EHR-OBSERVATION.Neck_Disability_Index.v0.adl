@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"888c58ea673f17f357ac767281222fcf">
+		["MD5-CAM-1.0.1"] = <"484a6e148049b5585488ccedb4a8d891">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -88,7 +88,7 @@ definition
 											3|[local::at0067]
 										}
 									}
-									ELEMENT[at0068] occurrences matches {0..1} matches {    -- Sitting
+									ELEMENT[at0068] occurrences matches {0..1} matches {    -- Headaches
 										value matches {
 											0|[local::at0069],
 											1|[local::at0070],
@@ -306,9 +306,9 @@ Section 3 – Lifting">
 				>
 				["at0063"] = <
 					text = <"Reading">
-					description = <"Patient-reported ability to walk due to lower back pain.">
+					description = <"Patient-reported ability to read due to neck pain.">
 					comment = <"Questionnaire wording: 
-Section 4 – Walking*">
+Section 4 – Reading">
 				>
 				["at0064"] = <
 					text = <"I can read as much as I want to with no pain in my neck">
@@ -327,7 +327,7 @@ Section 4 – Walking*">
 					description = <"The patient can’t read as much as they want because of moderate pain in their neck.">
 				>
 				["at0068"] = <
-					text = <"Sitting">
+					text = <"Headaches">
 					description = <"Patient-reported ability to sit due to lower back pain.">
 					comment = <"Questionnaire wording: 
 Section 5 – Sitting">
