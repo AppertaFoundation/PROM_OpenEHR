@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"6bc1539b3c4ea625ff29fbcf01f8caaf">
+		["MD5-CAM-1.0.1"] = <"d15d159a4517449f9ce8c46c83ea7866">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -82,7 +82,7 @@ definition
 											3|[local::at0067]
 										}
 									}
-									ELEMENT[at0068] occurrences matches {0..1} matches {    -- Walking - flat ground
+									ELEMENT[at0068] occurrences matches {0..1} matches {    -- Sitting
 										value matches {
 											0|[local::at0069],
 											1|[local::at0070],
@@ -197,7 +197,7 @@ ontology
 				>
 				["at0004"] = <
 					text = <"Pain Intensity">
-					description = <"Patient-reported pain intensity.">
+					description = <"Patient-reported lower back pain intensity.">
 					comment = <"Questionnaire wording: 
 Section 1 - Pain intensity">
 				>
@@ -244,7 +244,7 @@ Section 1 - Pain intensity">
 				>
 				["at0053"] = <
 					text = <"Personal care">
-					description = <"Patient-reported ability of personal care (washing, dressing etc).">
+					description = <"Patient-reported ability of personal care (washing, dressing etc) due to lower back pain.">
 					comment = <"Questionnaire wording: 
 Section 2 – Personal care (washing, dressing etc)">
 				>
@@ -266,7 +266,7 @@ Section 2 – Personal care (washing, dressing etc)">
 				>
 				["at0058"] = <
 					text = <"Lifting">
-					description = <"Patient-reported ability to lift heavy weights.">
+					description = <"Patient-reported ability to lift heavy weights due to lower back pain.">
 					comment = <"Questionnaire wording: 
 Section 3 – Lifting">
 				>
@@ -288,7 +288,7 @@ Section 3 – Lifting">
 				>
 				["at0063"] = <
 					text = <"Walking">
-					description = <"Patient-reported ability to walk.">
+					description = <"Patient-reported ability to walk due to lower back pain.">
 					comment = <"Questionnaire wording: 
 Section 4 – Walking*">
 				>
@@ -309,26 +309,26 @@ Section 4 – Walking*">
 					description = <"Pain prevents the patient from walking more than 100 yards.">
 				>
 				["at0068"] = <
-					text = <"Walking - flat ground">
-					description = <"Patient-reported ability to walk around outdoors on flat ground.">
+					text = <"Sitting">
+					description = <"Patient-reported ability to sit due to lower back pain.">
 					comment = <"Questionnaire wording: 
-Walking are you able to walk outdoors on flat ground? ">
+Section 5 – Sitting">
 				>
 				["at0069"] = <
-					text = <"Without ANY difficulty">
-					description = <"The patient can walk around outdoors on flat ground without any difficulty.">
+					text = <"I can sit in any chair as long as I like">
+					description = <"The patient can sit in any chair as long as they like.">
 				>
 				["at0070"] = <
-					text = <"With SOME difficulty">
-					description = <"The patient can walk around outdoors on flat ground with some difficulty.">
+					text = <"I can only sit in my favourite chair as long as I like">
+					description = <"The patient can only sit in their favourite chair as long as they like.">
 				>
 				["at0071"] = <
-					text = <"With MUCH difficulty / assistance required">
-					description = <"The patient can walk around outdoors on flat ground with much difficulty.">
+					text = <"Pain prevents me sitting more than one hour">
+					description = <"Pain prevents the patient from sitting more than one hour.">
 				>
 				["at0072"] = <
-					text = <"Unable to do">
-					description = <"The patient is unable to walk around outdoors on flat ground.">
+					text = <"Pain prevents me from sitting more than 30 minutes">
+					description = <"Pain prevents the patient from sitting more than 30 minutes.">
 				>
 				["at0073"] = <
 					text = <"Hygiene - washing">
