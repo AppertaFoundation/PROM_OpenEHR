@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"d15d159a4517449f9ce8c46c83ea7866">
+		["MD5-CAM-1.0.1"] = <"04b28784311242450c41676dcee901f1">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -90,7 +90,7 @@ definition
 											3|[local::at0072]
 										}
 									}
-									ELEMENT[at0078] occurrences matches {0..1} matches {    -- Walking - five steps
+									ELEMENT[at0078] occurrences matches {0..1} matches {    -- Standing
 										value matches {
 											0|[local::at0079],
 											1|[local::at0080],
@@ -98,7 +98,7 @@ definition
 											3|[local::at0082]
 										}
 									}
-									ELEMENT[at0073] occurrences matches {0..1} matches {    -- Hygiene - washing
+									ELEMENT[at0073] occurrences matches {0..1} matches {    -- Sleeping
 										value matches {
 											0|[local::at0074],
 											1|[local::at0075],
@@ -331,49 +331,49 @@ Section 5 – Sitting">
 					description = <"Pain prevents the patient from sitting more than 30 minutes.">
 				>
 				["at0073"] = <
-					text = <"Hygiene - washing">
-					description = <"Patient-reported ability to wash and dry their entire body.">
+					text = <"Sleeping">
+					description = <"Patient-reported ability to sleep due to lower back pain.">
 					comment = <"Questionnaire wording: 
-Hygiene are you able to wash and dry your entire body? ">
+Section 7 – Sleeping">
 				>
 				["at0074"] = <
-					text = <"Without ANY difficulty">
-					description = <"The patient can wash and dry their body without any difficulty.">
+					text = <"My sleep is never disturbed by pain">
+					description = <"The patient's sleep is never disturbed by pain.">
 				>
 				["at0075"] = <
-					text = <"With SOME difficulty">
-					description = <"The patient can wash and dry their body with some difficulty.">
+					text = <"My sleep is occasionally disturbed by pain">
+					description = <"The patient's is occasionally disturbed by pain.">
 				>
 				["at0076"] = <
-					text = <"With MUCH difficulty / assistance required">
-					description = <"The patient can wash and dry their body with much difficulty.">
+					text = <"Because of pain I have less than 6 hours sleep">
+					description = <"Because of pain the patient has less than 6 hours sleep.">
 				>
 				["at0077"] = <
-					text = <"Unable to do">
-					description = <"The patient is unable to wash and dry their body.">
+					text = <"Because of pain I have less than 4 hours sleep">
+					description = <"Because of pain the patient has less than 4 hours sleep.">
 				>
 				["at0078"] = <
-					text = <"Walking - five steps">
-					description = <"Patient-reported ability to climb up 5 steps.">
+					text = <"Standing">
+					description = <"Patient-reported ability to stand due to lower back pain.">
 					comment = <"Questionnaire wording: 
-Walking are you able to climb up five steps?
+Section 6 – Standing
 ">
 				>
 				["at0079"] = <
-					text = <"Without ANY difficulty">
-					description = <"The patient can climb up five steps without any difficulty.">
+					text = <"I can stand as long as I want without extra pain">
+					description = <"The patient can stand as long as they want without extra pain.">
 				>
 				["at0080"] = <
-					text = <"With SOME difficulty">
-					description = <"The patient can climb up five steps with some difficulty.">
+					text = <"I can stand as long as I want but it gives me extra pain">
+					description = <"The patient can stand as long as they want but it gives me extra pain.">
 				>
 				["at0081"] = <
-					text = <"With MUCH difficulty / assistance required">
-					description = <"The patient can climb up five steps with much difficulty.">
+					text = <"Pain prevents me from standing for more than 1 hour">
+					description = <"Pain prevents the patient from standing for more than 1 hour.">
 				>
 				["at0082"] = <
-					text = <"Unable to do">
-					description = <"The patient is unable to climb up five steps.">
+					text = <"Pain prevents me from standing for more than 30 minutes">
+					description = <"Pain prevents the patient from standing for more than 30 minutes.">
 				>
 				["at0083"] = <
 					text = <"Hygiene - toilet">
