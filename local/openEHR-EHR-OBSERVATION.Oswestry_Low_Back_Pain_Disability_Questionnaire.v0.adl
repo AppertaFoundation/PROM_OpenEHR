@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"309058201855e753d09b6fed1bee1b33">
+		["MD5-CAM-1.0.1"] = <"d2e565ca253963fa22cf41cdfd12aeff">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -58,7 +58,7 @@ definition
 											3|[local::at0052]
 										}
 									}
-									ELEMENT[at0053] occurrences matches {0..1} matches {    -- Rising - bed
+									ELEMENT[at0053] occurrences matches {0..1} matches {    -- Personal care
 										value matches {
 											0|[local::at0054],
 											1|[local::at0055],
@@ -243,26 +243,26 @@ Section 1 - Pain intensity">
 					description = <"The patient has fairly severe pain at the moment.">
 				>
 				["at0053"] = <
-					text = <"Rising - bed">
-					description = <"Patient-reported ability to get in and out of bed.">
+					text = <"Personal care">
+					description = <"Patient-reported ability of personal care (washing, dressing etc).">
 					comment = <"Questionnaire wording: 
-Rising are you able to get in and out of bed?">
+Section 2 – Personal care (washing, dressing etc)">
 				>
 				["at0054"] = <
-					text = <"Without ANY difficulty">
-					description = <"The patient can get in and out of bed without any difficulty.">
+					text = <"I can look after myself normally without causing extra pain">
+					description = <"The patient can look after their self without causing extra pain.">
 				>
 				["at0055"] = <
-					text = <"With SOME difficulty">
-					description = <"The patient can get in and out of bed with some difficulty.">
+					text = <"I can look after myself normally but it causes extra pain">
+					description = <"The patient can look after their self normally but it causes extra pain.">
 				>
 				["at0056"] = <
-					text = <"With MUCH difficulty / assistance required">
-					description = <"The patient can get in and out of bed with much difficulty.">
+					text = <"It is painful to look after myself and I am slow and careful">
+					description = <"The patient finds it painful to look after their self and are slow and careful doing so.">
 				>
 				["at0057"] = <
-					text = <"Unable to do">
-					description = <"The patient is unable to get in and out of bed.">
+					text = <"I need some help but manage most of my personal care">
+					description = <"The patient needs some help but manages most of their personal care.">
 				>
 				["at0058"] = <
 					text = <"Eating - cutting">
