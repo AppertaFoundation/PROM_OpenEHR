@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"6039792940f270aa7579faa097024b23">
+		["MD5-CAM-1.0.1"] = <"309058201855e753d09b6fed1bee1b33">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -50,7 +50,7 @@ definition
 						data matches {
 							ITEM_TREE[at0003] matches {    -- Tree
 								items cardinality matches {0..*; unordered} matches {
-									ELEMENT[at0004] occurrences matches {0..1} matches {    -- Rising - chair
+									ELEMENT[at0004] occurrences matches {0..1} matches {    -- Pain Intensity
 										value matches {
 											0|[local::at0009],
 											1|[local::at0050],
@@ -196,14 +196,14 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0004"] = <
-					text = <"Rising - chair">
-					description = <"Patient-reported ability to rise up from an armless straght chair.">
+					text = <"Pain Intensity">
+					description = <"Patient-reported pain intensity.">
 					comment = <"Questionnaire wording: 
-Rising are you able to stand up from an armless straight chair?">
+Section 1 - Pain intensity">
 				>
 				["at0009"] = <
-					text = <"Without ANY difficulty">
-					description = <"The patient can stand up from an armless straight chair without any difficulty.">
+					text = <"I have no pain at the moment">
+					description = <"The patient has no pain at the moment.">
 				>
 				["at0044"] = <
 					text = <"Total score">
@@ -231,16 +231,16 @@ Rising are you able to stand up from an armless straight chair?">
 					comment = <"e.g. Local hospital departmental information or additional metadata to align with HL7 or CDISC equivalents.">
 				>
 				["at0050"] = <
-					text = <"With SOME difficulty">
-					description = <"The patient can stand up from an armless straight chair with some difficulty.">
+					text = <"The pain is very mild at the moment">
+					description = <"The patient has very mild pain at the moment.">
 				>
 				["at0051"] = <
-					text = <"With MUCH difficulty / assistance required">
-					description = <"The patient can stand up from an armless straight chair with much difficulty.">
+					text = <"The pain is moderate at the moment">
+					description = <"The patient has moderate pain at the moment.">
 				>
 				["at0052"] = <
-					text = <"Unable to do">
-					description = <"The patient is unable to stand up from an armless straight chair.">
+					text = <"The pain is fairly severe at the moment">
+					description = <"The patient has fairly severe pain at the moment.">
 				>
 				["at0053"] = <
 					text = <"Rising - bed">
