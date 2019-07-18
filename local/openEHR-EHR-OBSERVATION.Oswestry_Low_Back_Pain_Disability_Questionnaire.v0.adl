@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"0d0daa2264141a66bf7c3f98e4c59ab9">
+		["MD5-CAM-1.0.1"] = <"b798444f0a4c9ab5afe3b239c2978191">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -74,7 +74,7 @@ definition
 											3|[local::at0062]
 										}
 									}
-									ELEMENT[at0063] occurrences matches {0..1} matches {    -- Eating - lift a cup
+									ELEMENT[at0063] occurrences matches {0..1} matches {    -- Walking
 										value matches {
 											0|[local::at0064],
 											1|[local::at0065],
@@ -207,7 +207,7 @@ Section 1 - Pain intensity">
 				>
 				["at0044"] = <
 					text = <"Total score">
-					description = <"Total score from questions 1 to 8.">
+					description = <"Total score from questions 1 to 10.">
 				>
 				["at0045"] = <
 					text = <"Total score as percentage">
@@ -287,10 +287,10 @@ Section 3 – Lifting">
 					description = <"Pain prevents the patient from lifting heavy weights, but they can manage light to medium weights if they are conveniently positioned.">
 				>
 				["at0063"] = <
-					text = <"Eating - lift a cup">
-					description = <"Patient-reported ability to lift a full cup or glass to their mouth.">
+					text = <"Walking">
+					description = <"Patient-reported ability to walk.">
 					comment = <"Questionnaire wording: 
-Eating are you able to lift a full cup or glass to your mouth?">
+Section 4 – Walking*">
 				>
 				["at0064"] = <
 					text = <"Without ANY difficulty">
