@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"5aacb7b00ebf49b11939b1a8a54c7ad0">
+		["MD5-CAM-1.0.1"] = <"888c58ea673f17f357ac767281222fcf">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -311,20 +311,20 @@ Section 3 – Lifting">
 Section 4 – Walking*">
 				>
 				["at0064"] = <
-					text = <"Pain does not prevent me walking any distance">
-					description = <"Pain does not prevent the patient walking any distance.">
+					text = <"I can read as much as I want to with no pain in my neck">
+					description = <"The patient can read as much as they want to with no pain in their neck.">
 				>
 				["at0065"] = <
-					text = <"Pain prevents me from walking more than 1 mile">
-					description = <"Pain prevents the patient from walking more than 1 mile.">
+					text = <"I can read as much as I want to with slight pain in my neck">
+					description = <"The patient can read as much as they want to with slight pain in their neck.">
 				>
 				["at0066"] = <
-					text = <"Pain prevents me from walking more than 1/2 mile">
-					description = <"Pain prevents the patient from walking more than 1/2 mile.">
+					text = <"I can read as much as I want with moderate pain in my neck">
+					description = <"The patient can read as much as they want with moderate pain in their neck.">
 				>
 				["at0067"] = <
-					text = <"Pain prevents me from walking more than 100 yards">
-					description = <"Pain prevents the patient from walking more than 100 yards.">
+					text = <"I can’t read as much as I want because of moderate pain in my neck">
+					description = <"The patient can’t read as much as they want because of moderate pain in their neck.">
 				>
 				["at0068"] = <
 					text = <"Sitting">
