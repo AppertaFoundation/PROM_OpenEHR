@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"42173e47f3ad8fb35e0618998321bbcd">
+		["MD5-CAM-1.0.1"] = <"327f1a613b0eced6eae0eddf1b387a2e">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -115,7 +115,9 @@ definition
 											0|[local::at0074],
 											1|[local::at0075],
 											2|[local::at0076],
-											3|[local::at0077]
+											3|[local::at0077],
+											4|[local::at0110],
+											5|[local::at0111]
 										}
 									}
 									ELEMENT[at0083] occurrences matches {0..1} matches {    -- Sex life
@@ -512,6 +514,14 @@ Section 10 – Travelling">
 				["at0109"] = <
 					text = <"Pain prevents me from standing at all">
 					description = <"Pain prevents the patient from standing at all.">
+				>
+				["at0110"] = <
+					text = <"Because of pain I have less than 2 hours sleep">
+					description = <"Because of pain the patient has less than 2 hours sleep.">
+				>
+				["at0111"] = <
+					text = <"Pain prevents me from sleeping at all">
+					description = <"Pain prevents the patient from sleeping at all.">
 				>
 			>
 		>
