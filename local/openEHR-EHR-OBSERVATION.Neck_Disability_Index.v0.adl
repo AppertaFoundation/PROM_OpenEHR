@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"634ad8edd3b5029639c5931addb86038">
+		["MD5-CAM-1.0.1"] = <"f14bbae8a56310145ffbbd8309e6fe4f">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -218,18 +218,6 @@ Section 1 - Pain intensity">
 				["at0045"] = <
 					text = <"Total score as percentage">
 					description = <"Total score from questions 1 to 10 as a percentage.">
-					comment = <"0% to 20%: minimal disability: The patient can cope with most living activities. Usually no treatment is
-indicated apart from advice on lifting sitting and exercise.
-21%-40%: moderate disability: The patient experiences more pain and difficulty with sitting, lifting and
-standing. Travel and social life are more difficult and they may be
-disabled from work. Personal care, sexual activity and sleeping are not
-grossly affected and the patient can usually be managed by
-conservative means.
-41%-60%: severe disability: Pain remains the main problem in this group but activities of daily
-living are affected. These patients require a detailed investigation.
-61%-80%: crippled: Back pain impinges on all aspects of the patient's life. Positive
-intervention is required.
-81%-100%: These patients are either bed-bound or exaggerating their symptoms.">
 				>
 				["at0046"] = <
 					text = <"Tree">
