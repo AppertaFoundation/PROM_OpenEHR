@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"b798444f0a4c9ab5afe3b239c2978191">
+		["MD5-CAM-1.0.1"] = <"6bc1539b3c4ea625ff29fbcf01f8caaf">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -293,20 +293,20 @@ Section 3 – Lifting">
 Section 4 – Walking*">
 				>
 				["at0064"] = <
-					text = <"Without ANY difficulty">
-					description = <"The patient can lift a full cup or glass to their mouth without any difficulty.">
+					text = <"Pain does not prevent me walking any distance">
+					description = <"Pain does not prevent the patient walking any distance.">
 				>
 				["at0065"] = <
-					text = <"With SOME difficulty">
-					description = <"The patient can lift a full cup or glass to their mouth with some difficulty.">
+					text = <"Pain prevents me from walking more than 1 mile">
+					description = <"Pain prevents the patient from walking more than 1 mile.">
 				>
 				["at0066"] = <
-					text = <"With MUCH difficulty / assistance required">
-					description = <"The patient can lift a full cup or glass to their mouth with much difficulty.">
+					text = <"Pain prevents me from walking more than 1/2 mile">
+					description = <"Pain prevents the patient from walking more than 1/2 mile.">
 				>
 				["at0067"] = <
-					text = <"Unable to do">
-					description = <"The patient is unable to lift a full cup or glass to their mouth.">
+					text = <"Pain prevents me from walking more than 100 yards">
+					description = <"Pain prevents the patient from walking more than 100 yards.">
 				>
 				["at0068"] = <
 					text = <"Walking - flat ground">
