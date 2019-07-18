@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"889c489194bd6d2209a19bf96bd2a5b0">
+		["MD5-CAM-1.0.1"] = <"eab3f646dc0fdd756a246d88743529c4">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -404,20 +404,20 @@ Section 8 – Sex life (if applicable)">
 Section 9 – Social life">
 				>
 				["at0089"] = <
-					text = <"Without ANY difficulty">
-					description = <"The patient can open jars that have already been opened without any difficulty.">
+					text = <"My social life is normal and gives me no extra pain">
+					description = <"The patient's social life is normal and gives me no extra pain.">
 				>
 				["at0090"] = <
-					text = <"With SOME difficulty">
-					description = <"The patient can open jars that have already been opened with some difficulty.">
+					text = <"My social life is normal but increases the degree of pain">
+					description = <"The patient's social life is normal but increases the degree of pain.">
 				>
 				["at0091"] = <
-					text = <"With MUCH difficulty / assistance required">
-					description = <"The patient can open jars that have already been opened with much difficulty.">
+					text = <"Pain has no significant effect on my social life apart from limiting my more energetic interests eg. sport">
+					description = <"Pain has no significant effect on the patient's social life apart from limiting their more energetic interests eg. sport.">
 				>
 				["at0092"] = <
-					text = <"Unable to do">
-					description = <"The patient is unable to open jars that have already been opened.">
+					text = <"Pain has restricted my social life and I do not go out as often">
+					description = <"Pain has restricted the patient's social life and they do not go out as often.">
 				>
 				["at0093"] = <
 					text = <"Activities - car">
