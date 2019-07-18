@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"23cc9ac360ccf5487d273dfc374ea00d">
+		["MD5-CAM-1.0.1"] = <"f3d4ce5950ad93c46719a1404899fabb">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -96,7 +96,7 @@ definition
 											3|[local::at0072]
 										}
 									}
-									ELEMENT[at0078] occurrences matches {0..1} matches {    -- Standing
+									ELEMENT[at0078] occurrences matches {0..1} matches {    -- Concentration
 										value matches {
 											0|[local::at0079],
 											1|[local::at0080],
@@ -371,10 +371,10 @@ Section 7 – Sleeping">
 					description = <"Because of pain the patient has less than 4 hours sleep.">
 				>
 				["at0078"] = <
-					text = <"Standing">
-					description = <"Patient-reported ability to stand due to lower back pain.">
+					text = <"Concentration">
+					description = <"Patient-reported concentration levels due to neck pain.">
 					comment = <"Questionnaire wording: 
-Section 6 – Standing
+Section 6 – Concentration
 ">
 				>
 				["at0079"] = <
