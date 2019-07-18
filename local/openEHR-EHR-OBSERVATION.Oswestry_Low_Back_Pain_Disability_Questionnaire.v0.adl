@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"0c7c267d4a256e5a2fa1bcdc72ae0e33">
+		["MD5-CAM-1.0.1"] = <"06165a9334464712eda0ba6c6d4a6f33">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -85,7 +85,9 @@ definition
 											0|[local::at0064],
 											1|[local::at0065],
 											2|[local::at0066],
-											3|[local::at0067]
+											3|[local::at0067],
+											4|[local::at0104],
+											5|[local::at0105]
 										}
 									}
 									ELEMENT[at0068] occurrences matches {0..1} matches {    -- Sitting
@@ -482,6 +484,14 @@ Section 10 – Travelling">
 				["at0103"] = <
 					text = <"I cannot lift or carry anything">
 					description = <"The patient cannot lift or carry anything.">
+				>
+				["at0104"] = <
+					text = <"I can only walk using a stick or crutches">
+					description = <"Patient can only walk using a stick or crutches.">
+				>
+				["at0105"] = <
+					text = <"I am in bed most of the time">
+					description = <"Patient is in bed most of the time.">
 				>
 			>
 		>
