@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"35bfdf99f15843f2345eb76ee97c6e9b">
+		["MD5-CAM-1.0.1"] = <"790741091724370a305f0169c7672ef4">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -112,7 +112,7 @@ definition
 											3|[local::at0077]
 										}
 									}
-									ELEMENT[at0083] occurrences matches {0..1} matches {    -- Sex life
+									ELEMENT[at0083] occurrences matches {0..1} matches {    -- Driving
 										value matches {
 											0|[local::at0084],
 											1|[local::at0085],
@@ -394,10 +394,10 @@ Section 6 – Concentration
 					description = <"The patient has a lot of difficulty in concentrating when they want to.">
 				>
 				["at0083"] = <
-					text = <"Sex life">
-					description = <"Patient-reported impact on sex life due to back pain.">
+					text = <"Driving">
+					description = <"Patient-reported impact on driving due to back pain.">
 					comment = <"Questionnaire wording: 
-Section 8 – Sex life (if applicable)">
+Section 8 – Driving">
 				>
 				["at0084"] = <
 					text = <"My sex life is normal and causes no extra pain">
