@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"790741091724370a305f0169c7672ef4">
+		["MD5-CAM-1.0.1"] = <"1fe5853c79cd798cef2e5d9dd875db26">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -400,20 +400,20 @@ Section 6 – Concentration
 Section 8 – Driving">
 				>
 				["at0084"] = <
-					text = <"My sex life is normal and causes no extra pain">
-					description = <"The patient's sex life is normal and causes no extra pain">
+					text = <"I can drive my car without any neck pain">
+					description = <"The patient can drive my car without any neck pain.">
 				>
 				["at0085"] = <
-					text = <"My sex life is normal but causes some extra pain">
-					description = <"The patient's sex life is normal but causes some extra pain.">
+					text = <"I can drive my car as long as I want with slight pain in my neck">
+					description = <"The patient can drive my car as long as they want with slight pain in their neck.">
 				>
 				["at0086"] = <
-					text = <"My sex life is nearly normal but is very painful">
-					description = <"The patient's sex life is nearly normal but is very painful.">
+					text = <"I can drive my car as long as I want with moderate pain in my neck">
+					description = <"The patient can drive my car as long as they want with moderate pain in their neck.">
 				>
 				["at0087"] = <
-					text = <"My sex life is severely restricted by pain">
-					description = <"The patient's sex life is severely restricted by pain.">
+					text = <"I can hardly drive at all because of severe pain in my neck">
+					description = <"The patient can hardly drive at all because of severe pain in their neck.">
 				>
 				["at0088"] = <
 					text = <"Social life">
