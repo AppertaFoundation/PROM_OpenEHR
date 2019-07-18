@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"20b9119e155dea52728351459b1a341b">
+		["MD5-CAM-1.0.1"] = <"fd05b57d3f8234daa2016c9871b9b6e1">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -258,7 +258,7 @@ intervention is required.
 				>
 				["at0053"] = <
 					text = <"Personal care">
-					description = <"Patient-reported ability of personal care (washing, dressing etc) due to lower back pain.">
+					description = <"Patient-reported ability of personal care (washing, dressing etc) due to neck pain.">
 					comment = <"Questionnaire wording: 
 Section 2 – Personal care (washing, dressing etc)">
 				>
