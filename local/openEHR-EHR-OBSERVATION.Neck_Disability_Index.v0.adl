@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"fd05b57d3f8234daa2016c9871b9b6e1">
+		["MD5-CAM-1.0.1"] = <"fa1e69e5a946ef29f0adcb9add7dee80">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -65,7 +65,9 @@ definition
 											0|[local::at0054],
 											1|[local::at0055],
 											2|[local::at0056],
-											3|[local::at0057]
+											3|[local::at0057],
+											4|[local::at0100],
+											5|[local::at0101]
 										}
 									}
 									ELEMENT[at0058] occurrences matches {0..1} matches {    -- Lifting
@@ -462,6 +464,14 @@ Section 10 – Travelling">
 				["at0099"] = <
 					text = <"The pain is the worst pain imaginable at the moment">
 					description = <"The patient has the worst pain imaginable at the moment.">
+				>
+				["at0100"] = <
+					text = <"I need help every day in most aspects of self care">
+					description = <"The patient needs help every day in most aspects of self care.">
+				>
+				["at0101"] = <
+					text = <"I do not get dressed, I was with difficulty and stay in bed">
+					description = <"The patient does not get dressed, washes with difficulty and stays in bed.">
 				>
 			>
 		>
