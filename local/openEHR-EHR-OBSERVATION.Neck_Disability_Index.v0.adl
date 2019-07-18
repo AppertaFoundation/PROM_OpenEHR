@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"1fe5853c79cd798cef2e5d9dd875db26">
+		["MD5-CAM-1.0.1"] = <"3b162fbf4b2951015560f59793a07c29">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -120,7 +120,7 @@ definition
 											3|[local::at0087]
 										}
 									}
-									ELEMENT[at0088] occurrences matches {0..1} matches {    -- Social life
+									ELEMENT[at0088] occurrences matches {0..1} matches {    -- Sleeping
 										value matches {
 											0|[local::at0089],
 											1|[local::at0090],
@@ -416,26 +416,26 @@ Section 8 – Driving">
 					description = <"The patient can hardly drive at all because of severe pain in their neck.">
 				>
 				["at0088"] = <
-					text = <"Social life">
-					description = <"Patient-reported impact on social life due to lower back pain.">
+					text = <"Sleeping">
+					description = <"Patient-reported impact on sleep due to neck pain.">
 					comment = <"Questionnaire wording: 
-Section 9 – Social life">
+Section 9 – Sleeping">
 				>
 				["at0089"] = <
-					text = <"My social life is normal and gives me no extra pain">
-					description = <"The patient's social life is normal and gives me no extra pain.">
+					text = <"I have no trouble sleeping">
+					description = <"Patient has no trouble sleeping.">
 				>
 				["at0090"] = <
-					text = <"My social life is normal but increases the degree of pain">
-					description = <"The patient's social life is normal but increases the degree of pain.">
+					text = <"My sleep is slightly disturbed (less than 1 hr sleepless)">
+					description = <"The patient's sleep is slightly disturbed (less than 1 hr sleepless).">
 				>
 				["at0091"] = <
-					text = <"Pain has no significant effect on my social life apart from limiting my more energetic interests eg. sport">
-					description = <"Pain has no significant effect on the patient's social life apart from limiting their more energetic interests eg. sport.">
+					text = <"My sleep is mildly disturbed (1-2 hrs sleepless)">
+					description = <"The patient's sleep is mildly disturbed (1-2 hrs sleepless).">
 				>
 				["at0092"] = <
-					text = <"Pain has restricted my social life and I do not go out as often">
-					description = <"Pain has restricted the patient's social life and they do not go out as often.">
+					text = <"My sleep is moderately disturbed (2-3 hrs sleepless)">
+					description = <"The patient's sleep is moderately disturbed (2-3 hrs sleepless).">
 				>
 				["at0093"] = <
 					text = <"Travelling">
