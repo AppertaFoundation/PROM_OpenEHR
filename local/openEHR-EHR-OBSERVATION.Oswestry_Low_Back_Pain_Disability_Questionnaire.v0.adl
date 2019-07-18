@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"957bead73f7c10553027928065282395">
+		["MD5-CAM-1.0.1"] = <"29675ede733c0830183899d988dcd6b1">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -145,7 +145,9 @@ definition
 											0|[local::at0094],
 											1|[local::at0095],
 											2|[local::at0096],
-											3|[local::at0097]
+											3|[local::at0097],
+											4|[local::at0116],
+											5|[local::at0117]
 										}
 									}
 									ELEMENT[at0044] occurrences matches {0..1} matches {    -- Total score
@@ -542,6 +544,14 @@ Section 10 – Travelling">
 				["at0115"] = <
 					text = <"I have no social life because of pain">
 					description = <"The patient has no social life because of pain.">
+				>
+				["at0116"] = <
+					text = <"Pain restricts me to short necessary journeys under 30 minutes">
+					description = <"Pain restricts the patient to short necessary journeys under 30 minutes.">
+				>
+				["at0117"] = <
+					text = <"Pain prevents me from travelling except to receive treatment">
+					description = <"Pain prevents the patient from travelling except to receive treatment.">
 				>
 			>
 		>
