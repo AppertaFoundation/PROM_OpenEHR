@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"50c800353790550c51612395d78d12a1">
+		["MD5-CAM-1.0.1"] = <"c5d1d0a6a8d97128e2075b9c10fc2435">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -104,7 +104,7 @@ definition
 											3|[local::at0082]
 										}
 									}
-									ELEMENT[at0073] occurrences matches {0..1} matches {    -- Sleeping
+									ELEMENT[at0073] occurrences matches {0..1} matches {    -- Work
 										value matches {
 											0|[local::at0074],
 											1|[local::at0075],
@@ -349,10 +349,10 @@ Section 5 – Headaches">
 					description = <"The patient has moderate headaches, which come frequently.">
 				>
 				["at0073"] = <
-					text = <"Sleeping">
-					description = <"Patient-reported ability to sleep due to lower back pain.">
+					text = <"Work">
+					description = <"Patient-reported ability to work due to neck pain.">
 					comment = <"Questionnaire wording: 
-Section 7 – Sleeping">
+Section 7 – Work">
 				>
 				["at0074"] = <
 					text = <"My sleep is never disturbed by pain">
