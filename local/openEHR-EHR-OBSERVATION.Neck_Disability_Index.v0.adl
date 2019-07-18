@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"3b162fbf4b2951015560f59793a07c29">
+		["MD5-CAM-1.0.1"] = <"634ad8edd3b5029639c5931addb86038">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -128,7 +128,7 @@ definition
 											3|[local::at0092]
 										}
 									}
-									ELEMENT[at0093] occurrences matches {0..1} matches {    -- Travelling
+									ELEMENT[at0093] occurrences matches {0..1} matches {    -- Recreation
 										value matches {
 											0|[local::at0094],
 											1|[local::at0095],
@@ -438,26 +438,26 @@ Section 9 – Sleeping">
 					description = <"The patient's sleep is moderately disturbed (2-3 hrs sleepless).">
 				>
 				["at0093"] = <
-					text = <"Travelling">
-					description = <"Patient-reported ability to travel due to lower back pain.">
+					text = <"Recreation">
+					description = <"Patient-reported ability to engage in recreational activity due to pain.">
 					comment = <"Questionnaire wording: 
-Section 10 – Travelling">
+Section 10 – Recreation">
 				>
 				["at0094"] = <
-					text = <"I can travel anywhere without pain">
-					description = <"The patient can travel anywhere without pain.">
+					text = <"I am able to engage in all my recreation activities with no neck pain at all">
+					description = <"Patient is able to engage in all recreation activities with no neck pain at all.">
 				>
 				["at0095"] = <
-					text = <"I can travel anywhere but it gives me extra pain">
-					description = <"The patient can travel anywhere but it gives me extra pain.">
+					text = <"I am able to engage in all my recreation activities, with some pain in my neck">
+					description = <"Patient is able to engage in all recreation activities, with some pain in neck.">
 				>
 				["at0096"] = <
-					text = <"Pain is bad but I manage journeys over two hours">
-					description = <"Pain is bad but the patient can manage journeys over two hours.">
+					text = <"I am able to engage in most, but not all of my usual recreation activities because of pain in my neck">
+					description = <"Patient is able to engage in most, but not all usual recreation activities because of pain in neck.">
 				>
 				["at0097"] = <
-					text = <"Pain restricts me to journeys of less than one hour">
-					description = <"Pain restricts the patient to journeys of less than one hour.">
+					text = <"I am able to engage in a few of my usual recreation activities because of pain in my neck">
+					description = <"Patient is able to engage in a few usual recreation activities because of pain in neck.">
 				>
 				["at0098"] = <
 					text = <"The pain is very severe at the moment">
