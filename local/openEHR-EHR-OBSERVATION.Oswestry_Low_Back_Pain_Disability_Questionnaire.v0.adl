@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"f8f6e71fa0cfa8648098e23c16ed0fe8">
+		["MD5-CAM-1.0.1"] = <"889c489194bd6d2209a19bf96bd2a5b0">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -114,7 +114,7 @@ definition
 											3|[local::at0087]
 										}
 									}
-									ELEMENT[at0088] occurrences matches {0..1} matches {    -- Grip - open jars
+									ELEMENT[at0088] occurrences matches {0..1} matches {    -- Social life
 										value matches {
 											0|[local::at0089],
 											1|[local::at0090],
@@ -398,11 +398,10 @@ Section 8 – Sex life (if applicable)">
 					description = <"The patient's sex life is severely restricted by pain.">
 				>
 				["at0088"] = <
-					text = <"Grip - open jars">
-					description = <"Patient-reported ability to open jars which have previously been opened.">
+					text = <"Social life">
+					description = <"Patient-reported impact on social life due to lower back pain.">
 					comment = <"Questionnaire wording: 
-Grip are you able to:Open jars which have been previously
-opened? ">
+Section 9 – Social life">
 				>
 				["at0089"] = <
 					text = <"Without ANY difficulty">
