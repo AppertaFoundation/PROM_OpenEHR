@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"fa1e69e5a946ef29f0adcb9add7dee80">
+		["MD5-CAM-1.0.1"] = <"b71da0d17fb3049d9bbbb3c6b2ad3875">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -470,7 +470,7 @@ Section 10 – Travelling">
 					description = <"The patient needs help every day in most aspects of self care.">
 				>
 				["at0101"] = <
-					text = <"I do not get dressed, I was with difficulty and stay in bed">
+					text = <"I do not get dressed, I wash with difficulty and stay in bed">
 					description = <"The patient does not get dressed, washes with difficulty and stays in bed.">
 				>
 			>
