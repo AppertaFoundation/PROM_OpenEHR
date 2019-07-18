@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"eab3f646dc0fdd756a246d88743529c4">
+		["MD5-CAM-1.0.1"] = <"c99f96fbbdecc404bc65a8fb5b328005">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -122,7 +122,7 @@ definition
 											3|[local::at0092]
 										}
 									}
-									ELEMENT[at0093] occurrences matches {0..1} matches {    -- Activities - car
+									ELEMENT[at0093] occurrences matches {0..1} matches {    -- Travelling
 										value matches {
 											0|[local::at0094],
 											1|[local::at0095],
@@ -420,26 +420,26 @@ Section 9 – Social life">
 					description = <"Pain has restricted the patient's social life and they do not go out as often.">
 				>
 				["at0093"] = <
-					text = <"Activities - car">
-					description = <"Patient-reported ability to get in and out of a car.">
+					text = <"Travelling">
+					description = <"Patient-reported ability to travel due to lower back pain.">
 					comment = <"Questionnaire wording: 
-Activities are you able to:Get in and out of a car? ">
+Section 10 – Travelling">
 				>
 				["at0094"] = <
-					text = <"Without ANY difficulty">
-					description = <"The patient can get in and out of a car without any difficulty.">
+					text = <"I can travel anywhere without pain">
+					description = <"The patient can travel anywhere without pain.">
 				>
 				["at0095"] = <
-					text = <"With SOME difficulty">
-					description = <"The patient can get in and out of a car with some difficulty.">
+					text = <"I can travel anywhere but it gives me extra pain">
+					description = <"The patient can travel anywhere but it gives me extra pain.">
 				>
 				["at0096"] = <
-					text = <"With MUCH difficulty / assistance required">
-					description = <"The patient can get in and out of a car with much difficulty.">
+					text = <"Pain is bad but I manage journeys over two hours">
+					description = <"Pain is bad but the patient can manage journeys over two hours.">
 				>
 				["at0097"] = <
-					text = <"Unable to do">
-					description = <"The patient is unable to get in and out of a car.">
+					text = <"Pain restricts me to journeys of less than one hour">
+					description = <"Pain restricts the patient to journeys of less than one hour.">
 				>
 			>
 		>
