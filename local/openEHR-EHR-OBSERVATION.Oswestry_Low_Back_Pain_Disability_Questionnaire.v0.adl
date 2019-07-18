@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"04b28784311242450c41676dcee901f1">
+		["MD5-CAM-1.0.1"] = <"f8f6e71fa0cfa8648098e23c16ed0fe8">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -106,7 +106,7 @@ definition
 											3|[local::at0077]
 										}
 									}
-									ELEMENT[at0083] occurrences matches {0..1} matches {    -- Hygiene - toilet
+									ELEMENT[at0083] occurrences matches {0..1} matches {    -- Sex life
 										value matches {
 											0|[local::at0084],
 											1|[local::at0085],
@@ -376,26 +376,26 @@ Section 6 – Standing
 					description = <"Pain prevents the patient from standing for more than 30 minutes.">
 				>
 				["at0083"] = <
-					text = <"Hygiene - toilet">
-					description = <"Patient-reported ability to get on and off the toilet">
+					text = <"Sex life">
+					description = <"Patient-reported impact on sex life due to back pain.">
 					comment = <"Questionnaire wording: 
-Hygiene are you able to get on and off the toilet? ">
+Section 8 – Sex life (if applicable)">
 				>
 				["at0084"] = <
-					text = <"Without ANY difficulty">
-					description = <"The patient can get on and off the toilet without any difficulty.">
+					text = <"My sex life is normal and causes no extra pain">
+					description = <"The patient's sex life is normal and causes no extra pain">
 				>
 				["at0085"] = <
-					text = <"With SOME difficulty">
-					description = <"The patient can get on and off the toilet with some difficulty.">
+					text = <"My sex life is normal but causes some extra pain">
+					description = <"The patient's sex life is normal but causes some extra pain.">
 				>
 				["at0086"] = <
-					text = <"With MUCH difficulty / assistance required">
-					description = <"The patient can get on and off the toilet with much difficulty.">
+					text = <"My sex life is nearly normal but is very painful">
+					description = <"The patient's sex life is nearly normal but is very painful.">
 				>
 				["at0087"] = <
-					text = <"Unable to do">
-					description = <"The patient is unable to get on and off the toilet.">
+					text = <"My sex life is severely restricted by pain">
+					description = <"The patient's sex life is severely restricted by pain.">
 				>
 				["at0088"] = <
 					text = <"Grip - open jars">
