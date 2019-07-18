@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"7d3b9e34c135d042f98bcaeac5a290f3">
+		["MD5-CAM-1.0.1"] = <"23cc9ac360ccf5487d273dfc374ea00d">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -333,20 +333,20 @@ Section 4 – Reading">
 Section 5 – Headaches">
 				>
 				["at0069"] = <
-					text = <"I can sit in any chair as long as I like">
-					description = <"The patient can sit in any chair as long as they like.">
+					text = <"I have no headaches at all">
+					description = <"The patient has no headaches at all.">
 				>
 				["at0070"] = <
-					text = <"I can only sit in my favourite chair as long as I like">
-					description = <"The patient can only sit in their favourite chair as long as they like.">
+					text = <"I have slight headaches, which come infrequently">
+					description = <"The patient has slight headaches, which come infrequently.">
 				>
 				["at0071"] = <
-					text = <"Pain prevents me sitting more than one hour">
-					description = <"Pain prevents the patient from sitting more than one hour.">
+					text = <"I have moderate headaches, which come infrequently">
+					description = <"The patient has moderate headaches, which come infrequently.">
 				>
 				["at0072"] = <
-					text = <"Pain prevents me from sitting more than 30 minutes">
-					description = <"Pain prevents the patient from sitting more than 30 minutes.">
+					text = <"I have moderate headaches, which come frequently">
+					description = <"The patient has moderate headaches, which come frequently.">
 				>
 				["at0073"] = <
 					text = <"Sleeping">
