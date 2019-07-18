@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"caeee166866bc7099a6f355a6c8797e6">
+		["MD5-CAM-1.0.1"] = <"5aacb7b00ebf49b11939b1a8a54c7ad0">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -80,7 +80,7 @@ definition
 											5|[local::at0103]
 										}
 									}
-									ELEMENT[at0063] occurrences matches {0..1} matches {    -- Walking
+									ELEMENT[at0063] occurrences matches {0..1} matches {    -- Reading
 										value matches {
 											0|[local::at0064],
 											1|[local::at0065],
@@ -305,7 +305,7 @@ Section 3 – Lifting">
 					description = <"Pain prevents the patient from lifting heavy weights, but they can manage light to medium weights if they are conveniently positioned.">
 				>
 				["at0063"] = <
-					text = <"Walking">
+					text = <"Reading">
 					description = <"Patient-reported ability to walk due to lower back pain.">
 					comment = <"Questionnaire wording: 
 Section 4 – Walking*">
