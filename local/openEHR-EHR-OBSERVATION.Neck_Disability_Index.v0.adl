@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"484a6e148049b5585488ccedb4a8d891">
+		["MD5-CAM-1.0.1"] = <"7d3b9e34c135d042f98bcaeac5a290f3">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -328,9 +328,9 @@ Section 4 – Reading">
 				>
 				["at0068"] = <
 					text = <"Headaches">
-					description = <"Patient-reported ability to sit due to lower back pain.">
+					description = <"Patient-reported suffering from headaches due to neck pain.">
 					comment = <"Questionnaire wording: 
-Section 5 – Sitting">
+Section 5 – Headaches">
 				>
 				["at0069"] = <
 					text = <"I can sit in any chair as long as I like">
