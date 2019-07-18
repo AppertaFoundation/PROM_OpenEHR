@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"c5d1d0a6a8d97128e2075b9c10fc2435">
+		["MD5-CAM-1.0.1"] = <"35bfdf99f15843f2345eb76ee97c6e9b">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -355,20 +355,20 @@ Section 5 – Headaches">
 Section 7 – Work">
 				>
 				["at0074"] = <
-					text = <"My sleep is never disturbed by pain">
-					description = <"The patient's sleep is never disturbed by pain.">
+					text = <"I can do as much work as I want to">
+					description = <"The patient can do as much work as they want to.">
 				>
 				["at0075"] = <
-					text = <"My sleep is occasionally disturbed by pain">
-					description = <"The patient's is occasionally disturbed by pain.">
+					text = <"I can only do my usual work, but no more">
+					description = <"The patient can only do their usual work, but no more.">
 				>
 				["at0076"] = <
-					text = <"Because of pain I have less than 6 hours sleep">
-					description = <"Because of pain the patient has less than 6 hours sleep.">
+					text = <"I can do most of my usual work, but no more">
+					description = <"The patient can do most of their usual work, but no more.">
 				>
 				["at0077"] = <
-					text = <"Because of pain I have less than 4 hours sleep">
-					description = <"Because of pain the patient has less than 4 hours sleep.">
+					text = <"I cannot do my usual work">
+					description = <"the patient cannot do their usual work.">
 				>
 				["at0078"] = <
 					text = <"Concentration">
