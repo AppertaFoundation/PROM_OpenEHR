@@ -18,8 +18,8 @@ description
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
-			purpose = <"For the recording and reporting of patient-reported outcome information following hip operations, based on the questionnaire from the Non Arthroplasty Hip Surgery Register (NAHSR) of the British Hip Society.">
-			keywords = <"Outcome, hip, questionnaire", ...>
+			purpose = <"For the recording and reporting of patient-reported outcome information following spine operations.">
+			keywords = <"Outcome, spine, questionnaire", ...>
 			use = <"Use tor record patient-reported outcome information following hip operations, based on the questionnaire from the Non Arthroplasty Hip Surgery Register (NAHSR) of the British Hip Society.
 
 While openEHR archetypes are all freely available under an open license, the specific content of this archetype may be copyright protected. Any use of this archetype within implementations must be in compliance with the terms established by the copyright owners where a copyright exists. ">
@@ -29,16 +29,16 @@ While openEHR archetypes are all freely available under an open license, the spe
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
 		["custodian_organisation"] = <"openEHR Foundation">
-		["references"] = <"https://www.britishhipsociety.com cited 03-Sep-2018.">
+		["references"] = <"">
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"144fa718d7c2018878eabfa1ee0805cb">
+		["MD5-CAM-1.0.1"] = <"281e7daeaa0e08b5b654848ec05475e1">
 		["build_uid"] = <"44635e5f-63c8-305d-9a86-7fb823f85734">
 	>
 
 definition
-	OBSERVATION[at0000] matches {    -- Hip outcome questionnaire
+	OBSERVATION[at0000] matches {    -- Spine outcome questionnaire
 		data matches {
 			HISTORY[at0001] matches {    -- History
 				events cardinality matches {0..*; unordered} matches {
@@ -133,8 +133,8 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"Hip outcome questionnaire">
-					description = <"Hip outcome questionnaire based on the Non Arthroplasty Hip Surgery Register (NAHSR) of the British Hip Society.">
+					text = <"Spine outcome questionnaire">
+					description = <"Spine outcome questionnaire.">
 				>
 				["at0001"] = <
 					text = <"History">
