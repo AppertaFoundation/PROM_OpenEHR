@@ -20,8 +20,7 @@ description
 			language = <[ISO_639-1::en]>
 			purpose = <"For the recording and reporting of patient-reported outcome information following spine operations.">
 			keywords = <"Outcome, spine, questionnaire", ...>
-			use = <"Use tor record patient-reported outcome information following spine operations.
-
+			use = <"Used tor record patient-reported outcome information following spine operations.
 While openEHR archetypes are all freely available under an open license, the specific content of this archetype may be copyright protected. Any use of this archetype within implementations must be in compliance with the terms established by the copyright owners where a copyright exists. ">
 			misuse = <"Not to be used unless the terms of copyright have been observed (if a copyright exists).">
 		>
@@ -30,7 +29,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
 		["custodian_organisation"] = <"Apperta Foundation CIC">
 		["references"] = <"">
-		["MD5-CAM-1.0.1"] = <"8a6e27b4176bfce42bcfc7ec9470a909">
+		["MD5-CAM-1.0.1"] = <"94a83e620d4b17fcbac13dcad1684bcb">
 		["build_uid"] = <"44635e5f-63c8-305d-9a86-7fb823f85734">
 	>
 
