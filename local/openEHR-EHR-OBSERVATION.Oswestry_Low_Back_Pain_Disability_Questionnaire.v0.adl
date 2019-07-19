@@ -36,13 +36,13 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"29675ede733c0830183899d988dcd6b1">
+		["MD5-CAM-1.0.1"] = <"0599ed4b27d0eae9c257f0532c3d7944">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
-	OBSERVATION[at0000] matches {    -- Oswestry Low Back Pain Disability Questionnaire
+	OBSERVATION[at0000] matches {    -- Oswestry Low Back Pain Disability Questionnaire (ODI)
 		data matches {
 			HISTORY[at0001] matches {    -- Event Series
 				events cardinality matches {1..*; unordered} matches {
@@ -200,7 +200,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"Oswestry Low Back Pain Disability Questionnaire">
+					text = <"Oswestry Low Back Pain Disability Questionnaire (ODI)">
 					description = <"Oswestry Low Back Pain Disability Questionnaire.">
 				>
 				["at0001"] = <
