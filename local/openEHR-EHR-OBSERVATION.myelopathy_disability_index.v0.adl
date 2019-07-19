@@ -36,13 +36,13 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"6f7d0614b93f9c2c9e76632ddb96577d">
+		["MD5-CAM-1.0.1"] = <"659eed06abb83dba66dd8e6369ffeff2">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
-	OBSERVATION[at0000] matches {    -- Myelopathy Disability Index Questionnaire
+	OBSERVATION[at0000] matches {    -- Myelopathy Disability Index Questionnaire (MDI)
 		data matches {
 			HISTORY[at0001] matches {    -- Event Series
 				events cardinality matches {1..*; unordered} matches {
@@ -180,7 +180,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"Myelopathy Disability Index Questionnaire">
+					text = <"Myelopathy Disability Index Questionnaire (MDI)">
 					description = <"Myelopathy Disability Index Questionnaire.">
 				>
 				["at0001"] = <
