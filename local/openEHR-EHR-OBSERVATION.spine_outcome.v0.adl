@@ -30,7 +30,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
 		["custodian_organisation"] = <"Apperta Foundation CIC">
 		["references"] = <"">
-		["MD5-CAM-1.0.1"] = <"4c2cc1840d1b4865ffd89898ef3da8fb">
+		["MD5-CAM-1.0.1"] = <"8a6e27b4176bfce42bcfc7ec9470a909">
 		["build_uid"] = <"44635e5f-63c8-305d-9a86-7fb823f85734">
 	>
 
@@ -67,22 +67,7 @@ definition
 											DV_BOOLEAN matches {*}
 										}
 									}
-									ELEMENT[at0016] occurrences matches {0..1} matches {    -- Wound infection?
-										value matches {
-											DV_BOOLEAN matches {*}
-										}
-									}
-									ELEMENT[at0017] occurrences matches {0..1} matches {    -- Deep infection of hip joint?
-										value matches {
-											DV_BOOLEAN matches {*}
-										}
-									}
-									ELEMENT[at0018] occurrences matches {0..1} matches {    -- Any other problems?
-										value matches {
-											DV_BOOLEAN matches {*}
-										}
-									}
-									ELEMENT[at0019] occurrences matches {0..1} matches {    -- Any other operations on operated hip?
+									ELEMENT[at0019] occurrences matches {0..1} matches {    -- Any other operations on operated spine?
 										value matches {
 											DV_BOOLEAN matches {*}
 										}
@@ -190,31 +175,19 @@ How satisfied are you with the outcome of your spine operation?">
 				>
 				["at0014"] = <
 					text = <"Venous thrombosis?">
-					description = <"Patient reported statement whether they suffered venous thrombosis after last hip operation.">
+					description = <"Patient reported statement whether they suffered venous thrombosis after last spine operation.">
 				>
 				["at0015"] = <
 					text = <"Pulmonary thrombosis?">
-					description = <"Patient reported statement whether they suffered pulmonary thrombosis after last hip operation.">
-				>
-				["at0016"] = <
-					text = <"Wound infection?">
-					description = <"Patient reported statement whether they suffered a wound infection after last hip operation.">
-				>
-				["at0017"] = <
-					text = <"Deep infection of hip joint?">
-					description = <"Patient reported statement whether they suffered a deep infection of hip joint after last hip operation.">
-				>
-				["at0018"] = <
-					text = <"Any other problems?">
-					description = <"Patient reported statement whether they suffered any other problems after last hip operation.">
+					description = <"Patient reported statement whether they suffered pulmonary thrombosis after last spine operation.">
 				>
 				["at0019"] = <
-					text = <"Any other operations on operated hip?">
-					description = <"Patient reported statement whether they had any other operations on operated hip since last hip operation.">
+					text = <"Any other operations on operated spine?">
+					description = <"Patient reported statement whether they had any other operations on operated spine since last hip operation.">
 				>
 				["at0021"] = <
 					text = <"Any other useful operation information">
-					description = <"Patient reported statement whether there is any other useful operation information about hip joint.">
+					description = <"Patient reported statement whether there is any other useful operation information about spine.">
 				>
 				["at0022"] = <
 					text = <"Details">
