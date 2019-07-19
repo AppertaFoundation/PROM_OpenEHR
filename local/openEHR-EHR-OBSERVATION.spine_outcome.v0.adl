@@ -30,7 +30,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
 		["custodian_organisation"] = <"Apperta Foundation CIC">
 		["references"] = <"">
-		["MD5-CAM-1.0.1"] = <"281e7daeaa0e08b5b654848ec05475e1">
+		["MD5-CAM-1.0.1"] = <"4c2cc1840d1b4865ffd89898ef3da8fb">
 		["build_uid"] = <"44635e5f-63c8-305d-9a86-7fb823f85734">
 	>
 
@@ -165,6 +165,8 @@ ontology
 				["at0008"] = <
 					text = <"Satisfaction">
 					description = <"Patient reported degree of satisfaction with outcome of hip operation.">
+					comment = <"Question:
+How satisfied are you with the outcome of your spine operation?">
 				>
 				["at0009"] = <
 					text = <"Very satisfied">
