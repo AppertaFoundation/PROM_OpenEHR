@@ -9,10 +9,10 @@ language
 
 description
 	original_author = <
-		["date"] = <"2018-09-03">
-		["name"] = <"Hildegard McNicoll">
-		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
-		["email"] = <"hildi@freshehr.com">
+		["date"] = <"2019-07-18">
+		["name"] = <"Alan Fish">
+		["organisation"] = <"The Apperta Foundation CIC">
+		["email"] = <"alan.fish@apperta.org">
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
@@ -20,7 +20,7 @@ description
 			language = <[ISO_639-1::en]>
 			purpose = <"For the recording and reporting of patient-reported outcome information following spine operations.">
 			keywords = <"Outcome, spine, questionnaire", ...>
-			use = <"Use tor record patient-reported outcome information following hip operations, based on the questionnaire from the Non Arthroplasty Hip Surgery Register (NAHSR) of the British Hip Society.
+			use = <"Use tor record patient-reported outcome information following spine operations.
 
 While openEHR archetypes are all freely available under an open license, the specific content of this archetype may be copyright protected. Any use of this archetype within implementations must be in compliance with the terms established by the copyright owners where a copyright exists. ">
 			misuse = <"Not to be used unless the terms of copyright have been observed (if a copyright exists).">
@@ -28,11 +28,8 @@ While openEHR archetypes are all freely available under an open license, the spe
 	>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
-		["custodian_organisation"] = <"openEHR Foundation">
+		["custodian_organisation"] = <"Apperta Foundation CIC">
 		["references"] = <"">
-		["original_namespace"] = <"org.openehr">
-		["original_publisher"] = <"openEHR Foundation">
-		["custodian_namespace"] = <"org.openehr">
 		["MD5-CAM-1.0.1"] = <"281e7daeaa0e08b5b654848ec05475e1">
 		["build_uid"] = <"44635e5f-63c8-305d-9a86-7fb823f85734">
 	>
