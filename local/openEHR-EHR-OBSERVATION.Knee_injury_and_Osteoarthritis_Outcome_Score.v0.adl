@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"ckm.apperta.org">
 		["original_publisher"] = <"Apperta Foundation CIC">
 		["custodian_namespace"] = <"ckm.apperta.org">
-		["MD5-CAM-1.0.1"] = <"f379a3695608645b12443cfa8dc61558">
+		["MD5-CAM-1.0.1"] = <"91ee4af7524e49967b88a4f6a33d4766">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -52,29 +52,29 @@ definition
 								items cardinality matches {0..*; unordered} matches {
 									ELEMENT[at0004] occurrences matches {0..1} matches {    -- S1 - Swelling
 										value matches {
-											0|[local::at0009],
-											1|[local::at0050],
+											4|[local::at0009],
+											3|[local::at0050],
 											2|[local::at0051],
-											3|[local::at0052],
-											4|[local::at0105]
+											1|[local::at0052],
+											0|[local::at0105]
 										}
 									}
 									ELEMENT[at0099] occurrences matches {0..1} matches {    -- S2 - Grinding
 										value matches {
-											0|[local::at0100],
-											1|[local::at0101],
+											4|[local::at0100],
+											3|[local::at0101],
 											2|[local::at0102],
-											3|[local::at0103],
-											4|[local::at0106]
+											1|[local::at0103],
+											0|[local::at0106]
 										}
 									}
 									ELEMENT[at0107] occurrences matches {0..1} matches {    -- S3 - Catching
 										value matches {
-											0|[local::at0108],
-											1|[local::at0109],
+											4|[local::at0108],
+											3|[local::at0109],
 											2|[local::at0110],
-											3|[local::at0111],
-											4|[local::at0112]
+											1|[local::at0111],
+											0|[local::at0112]
 										}
 									}
 									ELEMENT[at0113] occurrences matches {0..1} matches {    -- S4 - Straighten
