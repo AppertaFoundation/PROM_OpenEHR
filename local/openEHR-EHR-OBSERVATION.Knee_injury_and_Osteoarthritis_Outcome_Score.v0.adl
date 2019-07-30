@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"ckm.apperta.org">
 		["original_publisher"] = <"Apperta Foundation CIC">
 		["custodian_namespace"] = <"ckm.apperta.org">
-		["MD5-CAM-1.0.1"] = <"6df0d1d2300e2403a918f9eeb905d34d">
+		["MD5-CAM-1.0.1"] = <"8e05e382150369ea5fa0331adf7a6211">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -120,6 +120,15 @@ definition
 											2|[local::at0140],
 											3|[local::at0141],
 											4|[local::at0142]
+										}
+									}
+									ELEMENT[at0143] occurrences matches {0..1} matches {    -- P2 - Twisting
+										value matches {
+											0|[local::at0144],
+											1|[local::at0145],
+											2|[local::at0146],
+											3|[local::at0147],
+											4|[local::at0148]
 										}
 									}
 									ELEMENT[at0044] occurrences matches {0..1} matches {    -- Total score
@@ -420,6 +429,32 @@ P1. How often do you experience knee pain?">
 				["at0142"] = <
 					text = <"Never">
 					description = <"The patient never has knee pain.">
+				>
+				["at0143"] = <
+					text = <"P2 - Twisting">
+					description = <"Patient-reported knee pain frequency.">
+					comment = <"Questionnaire wording: 
+P2. Twisting/pivoting on your knee">
+				>
+				["at0144"] = <
+					text = <"Extreme">
+					description = <"The patient always has extreme knee pain twisting/pivoting.">
+				>
+				["at0145"] = <
+					text = <"Severe">
+					description = <"The patient always has severe knee pain twisting/pivoting.">
+				>
+				["at0146"] = <
+					text = <"Moderate">
+					description = <"The patient always has moderate knee pain twisting/pivoting.">
+				>
+				["at0147"] = <
+					text = <"Mild">
+					description = <"The patient always has mild knee pain twisting/pivoting.">
+				>
+				["at0148"] = <
+					text = <"None">
+					description = <"The patient always has no knee pain twisting/pivoting.">
 				>
 			>
 		>
