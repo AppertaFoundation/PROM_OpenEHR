@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"ckm.apperta.org">
 		["original_publisher"] = <"Apperta Foundation CIC">
 		["custodian_namespace"] = <"ckm.apperta.org">
-		["MD5-CAM-1.0.1"] = <"f5620497ec2e766a86976be3958ad3ba">
+		["MD5-CAM-1.0.1"] = <"11c29ffba207b67209dec98b3e2fb791">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -1563,11 +1563,9 @@ to your knee?">
 				>
 				["at0335"] = <
 					text = <"Q3 - Confidence">
-					description = <"Extent to which patient has modified their life style to avoid potentially damaging activities
-to their knee.">
+					description = <"Patient reported how much they are troubled with lack of confidence in their knee?">
 					comment = <"Questionnaire wording: 
-Q2. Have you modified your life style to avoid potentially damaging activities
-to your knee?">
+Q3. How much are you troubled with lack of confidence in your knee?">
 				>
 				["at0336"] = <
 					text = <"Totally">
