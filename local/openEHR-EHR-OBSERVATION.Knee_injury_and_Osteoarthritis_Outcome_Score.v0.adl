@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"ckm.apperta.org">
 		["original_publisher"] = <"Apperta Foundation CIC">
 		["custodian_namespace"] = <"ckm.apperta.org">
-		["MD5-CAM-1.0.1"] = <"a00b248bc92b1efa14703cd3613084c0">
+		["MD5-CAM-1.0.1"] = <"e269d95582feee5a7d0ff52382667ac0">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -1323,23 +1323,23 @@ A17. Light domestic duties (cooking, dusting, etc)">
 				>
 				["at0288"] = <
 					text = <"Extreme">
-					description = <"The patient always has extreme knee pain ascending stairs.">
+					description = <"The patient always has extreme knee pain performing light domestic duties.">
 				>
 				["at0289"] = <
 					text = <"Severe">
-					description = <"The patient always has severe knee pain ascending stairs.">
+					description = <"The patient always has severe knee pain performing light domestic duties.">
 				>
 				["at0290"] = <
 					text = <"Moderate">
-					description = <"The patient always has moderate knee pain ascending stairs.">
+					description = <"The patient always has moderate knee pain performing light domestic duties.">
 				>
 				["at0291"] = <
 					text = <"Mild">
-					description = <"The patient always has mild knee pain ascending stairs.">
+					description = <"The patient always has mild knee pain performing light domestic duties.">
 				>
 				["at0292"] = <
 					text = <"None">
-					description = <"The patient always has no knee pain ascending stairs.">
+					description = <"The patient always has no knee pain performing light domestic duties.">
 				>
 				["at0293"] = <
 					text = <"SP1 - Squatting">
