@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"ckm.apperta.org">
 		["original_publisher"] = <"Apperta Foundation CIC">
 		["custodian_namespace"] = <"ckm.apperta.org">
-		["MD5-CAM-1.0.1"] = <"432e81d8f901612e2f5938fffa52c276">
+		["MD5-CAM-1.0.1"] = <"33ba3c1fe5a946c74fb6b6c78663b841">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -1343,7 +1343,7 @@ A17. Light domestic duties (cooking, dusting, etc)">
 				>
 				["at0293"] = <
 					text = <"SP1 - Squatting">
-					description = <"Patient-reported knee pain ascending stairs.">
+					description = <"Patient-reported knee degree of difficulty squatting during the last week.">
 					comment = <"Questionnaire wording: 
 A2. Ascending stairs">
 				>
@@ -1369,7 +1369,7 @@ A2. Ascending stairs">
 				>
 				["at0299"] = <
 					text = <"SP2 - Running">
-					description = <"Patient-reported knee pain ascending stairs.">
+					description = <"Patient-reported knee degree of difficulty squatting during the last week.">
 					comment = <"Questionnaire wording: 
 A2. Ascending stairs">
 				>
@@ -1395,7 +1395,7 @@ A2. Ascending stairs">
 				>
 				["at0305"] = <
 					text = <"SP3 - Jumping">
-					description = <"Patient-reported knee pain ascending stairs.">
+					description = <"Patient-reported knee degree of difficulty squatting during the last week.">
 					comment = <"Questionnaire wording: 
 A2. Ascending stairs">
 				>
@@ -1421,7 +1421,7 @@ A2. Ascending stairs">
 				>
 				["at0311"] = <
 					text = <"SP4 - Twisitng/pivoting">
-					description = <"Patient-reported knee pain ascending stairs.">
+					description = <"Patient-reported knee degree of difficulty squatting during the last week.">
 					comment = <"Questionnaire wording: 
 A2. Ascending stairs">
 				>
@@ -1447,7 +1447,7 @@ A2. Ascending stairs">
 				>
 				["at0317"] = <
 					text = <"SP5 - Kneeling">
-					description = <"Patient-reported knee pain ascending stairs.">
+					description = <"Patient-reported knee degree of difficulty squatting during the last week.">
 					comment = <"Questionnaire wording: 
 A2. Ascending stairs">
 				>
