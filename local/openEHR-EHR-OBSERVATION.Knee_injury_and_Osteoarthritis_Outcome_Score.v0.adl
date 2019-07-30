@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"ckm.apperta.org">
 		["original_publisher"] = <"Apperta Foundation CIC">
 		["custodian_namespace"] = <"ckm.apperta.org">
-		["MD5-CAM-1.0.1"] = <"705e4a7d243d6e38bd0ce6f83509e964">
+		["MD5-CAM-1.0.1"] = <"1d8ff859ff431dd8d00ed4b93994f223">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -1265,29 +1265,29 @@ A14. Sitting">
 				>
 				["at0275"] = <
 					text = <"A15 - Toilet">
-					description = <"Patient-reported knee pain ascending stairs.">
+					description = <"Patient-reported knee pain getting on/off toilet.">
 					comment = <"Questionnaire wording: 
-A2. Ascending stairs">
+A15. Getting on/off toilet">
 				>
 				["at0276"] = <
 					text = <"Extreme">
-					description = <"The patient always has extreme knee pain ascending stairs.">
+					description = <"The patient always has extreme knee pain getting on/off toilet.">
 				>
 				["at0277"] = <
 					text = <"Severe">
-					description = <"The patient always has severe knee pain ascending stairs.">
+					description = <"The patient always has severe knee pain getting on/off toilet.">
 				>
 				["at0278"] = <
 					text = <"Moderate">
-					description = <"The patient always has moderate knee pain ascending stairs.">
+					description = <"The patient always has moderate knee pain getting on/off toilet.">
 				>
 				["at0279"] = <
 					text = <"Mild">
-					description = <"The patient always has mild knee pain ascending stairs.">
+					description = <"The patient always has mild knee pain getting on/off toilet.">
 				>
 				["at0280"] = <
 					text = <"None">
-					description = <"The patient always has no knee pain ascending stairs.">
+					description = <"The patient always has no knee pain getting on/off toilet.">
 				>
 				["at0281"] = <
 					text = <"A16 - Heavy domestic duties">
