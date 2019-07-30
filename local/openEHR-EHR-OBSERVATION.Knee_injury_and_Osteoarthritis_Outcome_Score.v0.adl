@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"ckm.apperta.org">
 		["original_publisher"] = <"Apperta Foundation CIC">
 		["custodian_namespace"] = <"ckm.apperta.org">
-		["MD5-CAM-1.0.1"] = <"b5d718cae9cba7b6284b708cedba9fa6">
+		["MD5-CAM-1.0.1"] = <"3a119220953f5511c65f46153a8fefb2">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -52,47 +52,56 @@ definition
 								items cardinality matches {0..*; unordered} matches {
 									ELEMENT[at0004] occurrences matches {0..1} matches {    -- S1 - Swelling
 										value matches {
-											0|[local::at0105],
-											1|[local::at0052],
-											2|[local::at0051],
+											4|[local::at0009],
 											3|[local::at0050],
-											4|[local::at0009]
+											2|[local::at0051],
+											1|[local::at0052],
+											0|[local::at0105]
 										}
 									}
 									ELEMENT[at0099] occurrences matches {0..1} matches {    -- S2 - Grinding
 										value matches {
-											0|[local::at0106],
-											1|[local::at0103],
-											2|[local::at0102],
+											4|[local::at0100],
 											3|[local::at0101],
-											4|[local::at0100]
+											2|[local::at0102],
+											1|[local::at0103],
+											0|[local::at0106]
 										}
 									}
 									ELEMENT[at0107] occurrences matches {0..1} matches {    -- S3 - Catching
 										value matches {
-											0|[local::at0112],
-											1|[local::at0111],
-											2|[local::at0110],
+											4|[local::at0108],
 											3|[local::at0109],
-											4|[local::at0108]
+											2|[local::at0110],
+											1|[local::at0111],
+											0|[local::at0112]
 										}
 									}
 									ELEMENT[at0113] occurrences matches {0..1} matches {    -- S4 - Straighten
 										value matches {
-											0|[local::at0114],
-											1|[local::at0115],
+											4|[local::at0114],
+											3|[local::at0115],
 											2|[local::at0116],
-											3|[local::at0117],
-											4|[local::at0118]
+											1|[local::at0117],
+											0|[local::at0118]
 										}
 									}
 									ELEMENT[at0119] occurrences matches {0..1} matches {    -- S5 - Bend
 										value matches {
-											0|[local::at0120],
-											1|[local::at0121],
+											4|[local::at0120],
+											3|[local::at0121],
 											2|[local::at0122],
-											3|[local::at0123],
-											4|[local::at0124]
+											1|[local::at0123],
+											0|[local::at0124]
+										}
+									}
+									ELEMENT[at0125] occurrences matches {0..1} matches {    -- S6 - Stiffness
+										value matches {
+											0|[local::at0126],
+											1|[local::at0127],
+											2|[local::at0128],
+											3|[local::at0129],
+											4|[local::at0130]
 										}
 									}
 									ELEMENT[at0044] occurrences matches {0..1} matches {    -- Total score
@@ -315,6 +324,32 @@ S5. Can you bend your knee fully?">
 				["at0124"] = <
 					text = <"Never">
 					description = <"The patient can never bend their knee in the last week.">
+				>
+				["at0125"] = <
+					text = <"S6 - Stiffness">
+					description = <"Patient-reported knee stiffness in the last week in the morning.">
+					comment = <"Questionnaire wording: 
+S6. How severe is your knee joint stiffness after first wakening in the morning?">
+				>
+				["at0126"] = <
+					text = <"Extreme">
+					description = <"The patient had extreme knee stiffness last week.">
+				>
+				["at0127"] = <
+					text = <"Severe">
+					description = <"The patient had severe knee stiffness last week.">
+				>
+				["at0128"] = <
+					text = <"Moderate">
+					description = <"The patient had moderate knee stiffness last week.">
+				>
+				["at0129"] = <
+					text = <"Mild">
+					description = <"The patient had mild knee stiffness last week.">
+				>
+				["at0130"] = <
+					text = <"None">
+					description = <"The patient had no knee stiffness last week.">
 				>
 			>
 		>
