@@ -36,13 +36,13 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"ckm.apperta.org">
 		["original_publisher"] = <"Apperta Foundation CIC">
 		["custodian_namespace"] = <"ckm.apperta.org">
-		["MD5-CAM-1.0.1"] = <"0caaedc1ca6cf9199b35f2fccf246582">
+		["MD5-CAM-1.0.1"] = <"45d878a1a1727bb401c6247d961d1ed4">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
-	OBSERVATION[at0000] matches {    -- Knee_injury_and_Osteoarthritis_Outcome_Score
+	OBSERVATION[at0000] matches {    -- Knee_injury_and_Osteoarthritis_Outcome_Score (KOOS)
 		data matches {
 			HISTORY[at0001] matches {    -- Event Series
 				events cardinality matches {1..*; unordered} matches {
@@ -118,7 +118,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"Knee_injury_and_Osteoarthritis_Outcome_Score">
+					text = <"Knee_injury_and_Osteoarthritis_Outcome_Score (KOOS)">
 					description = <"Knee injury and Osteoarthritis Outcome Score (KOOS).">
 				>
 				["at0001"] = <
