@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"ckm.apperta.org">
 		["original_publisher"] = <"Apperta Foundation CIC">
 		["custodian_namespace"] = <"ckm.apperta.org">
-		["MD5-CAM-1.0.1"] = <"f9a6e1c7818adcebb5d1bde485f30d4f">
+		["MD5-CAM-1.0.1"] = <"8dcfcf486a2516b017fa8bc594a9d680">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -1568,8 +1568,8 @@ to your knee?">
 Q3. How much are you troubled with lack of confidence in your knee?">
 				>
 				["at0336"] = <
-					text = <"Totally">
-					description = <"The patient is totally troubled troubled with lack of confidence in their knee.">
+					text = <"Extremely">
+					description = <"The patient is extremely troubled troubled with lack of confidence in their knee.">
 				>
 				["at0337"] = <
 					text = <"Severely">
