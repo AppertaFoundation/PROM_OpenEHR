@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"ckm.apperta.org">
 		["original_publisher"] = <"Apperta Foundation CIC">
 		["custodian_namespace"] = <"ckm.apperta.org">
-		["MD5-CAM-1.0.1"] = <"60facc801ede84df6c2d247453c617d7">
+		["MD5-CAM-1.0.1"] = <"418576b3fc968799b6852d5444800074">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -631,23 +631,23 @@ P7. At night while in bed">
 				>
 				["at0174"] = <
 					text = <"Extreme">
-					description = <"The patient always has extreme knee pain bending knee fully.">
+					description = <"The patient always has extreme knee pain at night while in bed.">
 				>
 				["at0175"] = <
 					text = <"Severe">
-					description = <"The patient always has severe knee pain bending knee fully.">
+					description = <"The patient always has severe knee pain at night while in bed.">
 				>
 				["at0176"] = <
 					text = <"Moderate">
-					description = <"The patient always has moderate knee pain bending knee fully.">
+					description = <"The patient always has moderate knee pain at night while in bed.">
 				>
 				["at0177"] = <
 					text = <"Mild">
-					description = <"The patient always has mild knee pain bending knee fully.">
+					description = <"The patient always has mild knee pain at night while in bed.">
 				>
 				["at0178"] = <
 					text = <"None">
-					description = <"The patient always has no knee pain bending knee fully.">
+					description = <"The patient always has no knee pain at night while in bed.">
 				>
 				["at0179"] = <
 					text = <"P8 - Sitting or lying">
@@ -657,23 +657,23 @@ P8. Sitting or lying">
 				>
 				["at0180"] = <
 					text = <"Extreme">
-					description = <"The patient always has extreme knee pain bending knee fully.">
+					description = <"The patient always has extreme knee pain sitting or lying.">
 				>
 				["at0181"] = <
 					text = <"Severe">
-					description = <"The patient always has severe knee pain bending knee fully.">
+					description = <"The patient always has severe knee pain sitting or lying.">
 				>
 				["at0182"] = <
 					text = <"Moderate">
-					description = <"The patient always has moderate knee pain bending knee fully.">
+					description = <"The patient always has moderate knee pain sitting or lying.">
 				>
 				["at0183"] = <
 					text = <"Mild">
-					description = <"The patient always has mild knee pain bending knee fully.">
+					description = <"The patient always has mild knee pain sitting or lying.">
 				>
 				["at0184"] = <
 					text = <"None">
-					description = <"The patient always has no knee pain bending knee fully.">
+					description = <"The patient always has no knee pain sitting or lying.">
 				>
 				["at0185"] = <
 					text = <"P9 - Standing">
@@ -683,23 +683,23 @@ P9. Standing upright">
 				>
 				["at0186"] = <
 					text = <"Extreme">
-					description = <"The patient always has extreme knee pain bending knee fully.">
+					description = <"The patient always has extreme knee pain standing upright.">
 				>
 				["at0187"] = <
 					text = <"Severe">
-					description = <"The patient always has severe knee pain bending knee fully.">
+					description = <"The patient always has severe knee pain standing upright.">
 				>
 				["at0188"] = <
 					text = <"Moderate">
-					description = <"The patient always has moderate knee pain bending knee fully.">
+					description = <"The patient always has moderate knee pain standing upright.">
 				>
 				["at0189"] = <
 					text = <"Mild">
-					description = <"The patient always has mild knee pain bending knee fully.">
+					description = <"The patient always has mild knee pain standing upright.">
 				>
 				["at0190"] = <
 					text = <"None">
-					description = <"The patient always has no knee pain bending knee fully.">
+					description = <"The patient always has no knee pain standing upright.">
 				>
 			>
 		>
