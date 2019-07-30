@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"ckm.apperta.org">
 		["original_publisher"] = <"Apperta Foundation CIC">
 		["custodian_namespace"] = <"ckm.apperta.org">
-		["MD5-CAM-1.0.1"] = <"a1f868a32b49876e7d7bae72a6be6e20">
+		["MD5-CAM-1.0.1"] = <"aedd08d23b14bfacfad9ff9d056b26a1">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -187,19 +187,19 @@ moves?">
 				>
 				["at0100"] = <
 					text = <"Never">
-					description = <"The patient never has swelling in their knee in the last week.">
+					description = <"The patient never has grinding, clicking or any other type of noise their knee in the last week.">
 				>
 				["at0101"] = <
 					text = <"Rarely">
-					description = <"The patient rarely has swelling in their knee in the last week.">
+					description = <"The patient rarely has grinding, clicking or any other type of noise their knee in the last week.">
 				>
 				["at0102"] = <
 					text = <"Sometimes">
-					description = <"The patient sometimes has swelling in their knee in the last week.">
+					description = <"The patient sometimes has grinding, clicking or any other type of noise their knee in the last week.">
 				>
 				["at0103"] = <
 					text = <"Often">
-					description = <"The patient often has swelling in their knee in the last week.">
+					description = <"The patient often has grinding, clicking or any other type of noise their knee in the last week.">
 				>
 			>
 		>
