@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"ckm.apperta.org">
 		["original_publisher"] = <"Apperta Foundation CIC">
 		["custodian_namespace"] = <"ckm.apperta.org">
-		["MD5-CAM-1.0.1"] = <"edf43660f153a1b6137d133d87a30a29">
+		["MD5-CAM-1.0.1"] = <"db9d2761177d6152bc7c474882467f51">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -1135,9 +1135,9 @@ A9. Putting on socks/stockings">
 				>
 				["at0245"] = <
 					text = <"A10 - Rising from bed">
-					description = <"Patient-reported knee pain taking off socks/stockings.">
+					description = <"Patient-reported knee pain rising from bed.">
 					comment = <"Questionnaire wording: 
-A11. Taking off socks/stockings">
+A10. Rising from bed">
 				>
 				["at0246"] = <
 					text = <"Extreme">
@@ -1161,9 +1161,9 @@ A11. Taking off socks/stockings">
 				>
 				["at0251"] = <
 					text = <"A11 - Socks off">
-					description = <"Patient-reported knee pain ascending stairs.">
+					description = <"Patient-reported knee pain taking off socks/stockings.">
 					comment = <"Questionnaire wording: 
-A2. Ascending stairs">
+A11. Taking off socks/stockings">
 				>
 				["at0252"] = <
 					text = <"Extreme">
