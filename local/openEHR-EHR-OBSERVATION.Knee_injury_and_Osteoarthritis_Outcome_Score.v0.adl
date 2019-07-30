@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"ckm.apperta.org">
 		["original_publisher"] = <"Apperta Foundation CIC">
 		["custodian_namespace"] = <"ckm.apperta.org">
-		["MD5-CAM-1.0.1"] = <"45d878a1a1727bb401c6247d961d1ed4">
+		["MD5-CAM-1.0.1"] = <"1c8af3658265959718f8a66a1643d05b">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -66,6 +66,15 @@ definition
 											2|[local::at0102],
 											3|[local::at0103],
 											4|[local::at0106]
+										}
+									}
+									ELEMENT[at0107] occurrences matches {0..1} matches {    -- S3 - Catching
+										value matches {
+											0|[local::at0108],
+											1|[local::at0109],
+											2|[local::at0110],
+											3|[local::at0111],
+											4|[local::at0112]
 										}
 									}
 									ELEMENT[at0044] occurrences matches {0..1} matches {    -- Total score
@@ -210,6 +219,32 @@ moves?">
 				["at0106"] = <
 					text = <"Always">
 					description = <"The patient always has grinding, clicking or any other type of noise their knee in the last week.">
+				>
+				["at0107"] = <
+					text = <"S3 - Catching">
+					description = <"Patient-reported knee catching or hanging up when moving.">
+					comment = <"Questionnaire wording: 
+S3. Does your knee catch or hang up when moving?">
+				>
+				["at0108"] = <
+					text = <"Never">
+					description = <"The patient never has catching or hanging up in their knee in the last week.">
+				>
+				["at0109"] = <
+					text = <"Rarely">
+					description = <"The patient rarely has catching or hanging up in their knee in the last week.">
+				>
+				["at0110"] = <
+					text = <"Sometimes">
+					description = <"The patient sometimes has catching or hanging up in their knee in the last week.">
+				>
+				["at0111"] = <
+					text = <"Often">
+					description = <"The patient often has catching or hanging up in their knee in the last week.">
+				>
+				["at0112"] = <
+					text = <"Always">
+					description = <"The patient always has catching or hanging up in their knee in the last week.">
 				>
 			>
 		>
