@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"ckm.apperta.org">
 		["original_publisher"] = <"Apperta Foundation CIC">
 		["custodian_namespace"] = <"ckm.apperta.org">
-		["MD5-CAM-1.0.1"] = <"48f2910fc2f19020839adbd2eeadecd0">
+		["MD5-CAM-1.0.1"] = <"8793e1e427c92d86ccda1238e837be2d">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -405,6 +405,15 @@ definition
 												numerator matches {|0.0..100.0|}
 												type matches {2}
 											}
+										}
+									}
+									ELEMENT[at0323] occurrences matches {0..1} matches {    -- Q1 - Aware of pain
+										value matches {
+											0|[local::at0324],
+											1|[local::at0325],
+											2|[local::at0326],
+											3|[local::at0327],
+											4|[local::at0328]
 										}
 									}
 								}
@@ -1468,6 +1477,32 @@ SP5. Kneeling">
 					description = <"The patient always has mild knee pain kneeling.">
 				>
 				["at0322"] = <
+					text = <"None">
+					description = <"The patient always has no knee pain kneeling.">
+				>
+				["at0323"] = <
+					text = <"Q1 - Aware of pain">
+					description = <"Patient-reported how often they are aware of their knee problem?">
+					comment = <"Questionnaire wording: 
+Q1. How often are you aware of your knee problem?">
+				>
+				["at0324"] = <
+					text = <"Extreme">
+					description = <"The patient always has extreme knee pain kneeling.">
+				>
+				["at0325"] = <
+					text = <"Severe">
+					description = <"The patient always has severe knee pain kneeling.">
+				>
+				["at0326"] = <
+					text = <"Moderate">
+					description = <"The patient always has moderate knee pain kneeling.">
+				>
+				["at0327"] = <
+					text = <"Mild">
+					description = <"The patient always has mild knee pain kneeling.">
+				>
+				["at0328"] = <
 					text = <"None">
 					description = <"The patient always has no knee pain kneeling.">
 				>
