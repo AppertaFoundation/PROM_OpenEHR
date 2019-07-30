@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"ckm.apperta.org">
 		["original_publisher"] = <"Apperta Foundation CIC">
 		["custodian_namespace"] = <"ckm.apperta.org">
-		["MD5-CAM-1.0.1"] = <"003d2ba99164eeee4e6ca1b73633079f">
+		["MD5-CAM-1.0.1"] = <"a1f868a32b49876e7d7bae72a6be6e20">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -56,6 +56,14 @@ definition
 											1|[local::at0050],
 											2|[local::at0051],
 											3|[local::at0052]
+										}
+									}
+									ELEMENT[at0099] occurrences matches {0..1} matches {    -- S2 - Grinding
+										value matches {
+											0|[local::at0100],
+											1|[local::at0101],
+											2|[local::at0102],
+											3|[local::at0103]
 										}
 									}
 									ELEMENT[at0044] occurrences matches {0..1} matches {    -- Total score
@@ -167,6 +175,29 @@ S1. Do you have swelling in your knee?">
 					description = <"The patient sometimes has swelling in their knee in the last week.">
 				>
 				["at0052"] = <
+					text = <"Often">
+					description = <"The patient often has swelling in their knee in the last week.">
+				>
+				["at0099"] = <
+					text = <"S2 - Grinding">
+					description = <"Patient-reported feeling grinding, hearing clicking or any other type of noise when your knee moves.">
+					comment = <"Questionnaire wording: 
+S2. Do you feel grinding, hear clicking or any other type of noise when your knee
+moves?">
+				>
+				["at0100"] = <
+					text = <"Never">
+					description = <"The patient never has swelling in their knee in the last week.">
+				>
+				["at0101"] = <
+					text = <"Rarely">
+					description = <"The patient rarely has swelling in their knee in the last week.">
+				>
+				["at0102"] = <
+					text = <"Sometimes">
+					description = <"The patient sometimes has swelling in their knee in the last week.">
+				>
+				["at0103"] = <
 					text = <"Often">
 					description = <"The patient often has swelling in their knee in the last week.">
 				>
