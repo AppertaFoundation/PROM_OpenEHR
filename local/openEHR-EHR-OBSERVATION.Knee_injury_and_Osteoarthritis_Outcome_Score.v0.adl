@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"ckm.apperta.org">
 		["original_publisher"] = <"Apperta Foundation CIC">
 		["custodian_namespace"] = <"ckm.apperta.org">
-		["MD5-CAM-1.0.1"] = <"418576b3fc968799b6852d5444800074">
+		["MD5-CAM-1.0.1"] = <"2226045886d67be6ac0b39fa4ced278d">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -185,12 +185,31 @@ definition
 											4|[local::at0184]
 										}
 									}
-									ELEMENT[at0045] occurrences matches {0..1} matches {    -- Total score as percentage
+									ELEMENT[at0185] occurrences matches {0..1} matches {    -- P9 - Standing
 										value matches {
-											DV_PROPORTION matches {
-												numerator matches {|0.0..100.0|}
-												type matches {2}
-											}
+											0|[local::at0186],
+											1|[local::at0187],
+											2|[local::at0188],
+											3|[local::at0189],
+											4|[local::at0190]
+										}
+									}
+									ELEMENT[at0191] occurrences matches {0..1} matches {    -- A1 - Descending stairs
+										value matches {
+											0|[local::at0192],
+											1|[local::at0193],
+											2|[local::at0194],
+											3|[local::at0195],
+											4|[local::at0196]
+										}
+									}
+									ELEMENT[at0197] occurrences matches {0..1} matches {    -- A2 - Ascending stairs
+										value matches {
+											0|[local::at0198],
+											1|[local::at0199],
+											2|[local::at0200],
+											3|[local::at0201],
+											4|[local::at0202]
 										}
 									}
 									ELEMENT[at0044] occurrences matches {0..1} matches {    -- Total score
@@ -200,13 +219,12 @@ definition
 											}
 										}
 									}
-									ELEMENT[at0185] occurrences matches {0..1} matches {    -- P9 - Standing
+									ELEMENT[at0045] occurrences matches {0..1} matches {    -- Total score as percentage
 										value matches {
-											0|[local::at0186],
-											1|[local::at0187],
-											2|[local::at0188],
-											3|[local::at0189],
-											4|[local::at0190]
+											DV_PROPORTION matches {
+												numerator matches {|0.0..100.0|}
+												type matches {2}
+											}
 										}
 									}
 								}
@@ -698,6 +716,58 @@ P9. Standing upright">
 					description = <"The patient always has mild knee pain standing upright.">
 				>
 				["at0190"] = <
+					text = <"None">
+					description = <"The patient always has no knee pain standing upright.">
+				>
+				["at0191"] = <
+					text = <"A1 - Descending stairs">
+					description = <"Patient-reported knee pain standing upright.">
+					comment = <"Questionnaire wording: 
+P9. Standing upright">
+				>
+				["at0192"] = <
+					text = <"Extreme">
+					description = <"The patient always has extreme knee pain standing upright.">
+				>
+				["at0193"] = <
+					text = <"Severe">
+					description = <"The patient always has severe knee pain standing upright.">
+				>
+				["at0194"] = <
+					text = <"Moderate">
+					description = <"The patient always has moderate knee pain standing upright.">
+				>
+				["at0195"] = <
+					text = <"Mild">
+					description = <"The patient always has mild knee pain standing upright.">
+				>
+				["at0196"] = <
+					text = <"None">
+					description = <"The patient always has no knee pain standing upright.">
+				>
+				["at0197"] = <
+					text = <"A2 - Ascending stairs">
+					description = <"Patient-reported knee pain standing upright.">
+					comment = <"Questionnaire wording: 
+P9. Standing upright">
+				>
+				["at0198"] = <
+					text = <"Extreme">
+					description = <"The patient always has extreme knee pain standing upright.">
+				>
+				["at0199"] = <
+					text = <"Severe">
+					description = <"The patient always has severe knee pain standing upright.">
+				>
+				["at0200"] = <
+					text = <"Moderate">
+					description = <"The patient always has moderate knee pain standing upright.">
+				>
+				["at0201"] = <
+					text = <"Mild">
+					description = <"The patient always has mild knee pain standing upright.">
+				>
+				["at0202"] = <
 					text = <"None">
 					description = <"The patient always has no knee pain standing upright.">
 				>
