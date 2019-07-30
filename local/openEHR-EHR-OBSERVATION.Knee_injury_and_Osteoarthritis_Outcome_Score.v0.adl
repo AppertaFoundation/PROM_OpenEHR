@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"ckm.apperta.org">
 		["original_publisher"] = <"Apperta Foundation CIC">
 		["custodian_namespace"] = <"ckm.apperta.org">
-		["MD5-CAM-1.0.1"] = <"aedd08d23b14bfacfad9ff9d056b26a1">
+		["MD5-CAM-1.0.1"] = <"da12bae51bfabb903413e6ed210bebbb">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -55,7 +55,8 @@ definition
 											0|[local::at0009],
 											1|[local::at0050],
 											2|[local::at0051],
-											3|[local::at0052]
+											3|[local::at0052],
+											4|[local::at0105]
 										}
 									}
 									ELEMENT[at0099] occurrences matches {0..1} matches {    -- S2 - Grinding
@@ -200,6 +201,10 @@ moves?">
 				["at0103"] = <
 					text = <"Often">
 					description = <"The patient often has grinding, clicking or any other type of noise their knee in the last week.">
+				>
+				["at0105"] = <
+					text = <"Always">
+					description = <"The patient always has swelling in their knee in the last week.">
 				>
 			>
 		>
