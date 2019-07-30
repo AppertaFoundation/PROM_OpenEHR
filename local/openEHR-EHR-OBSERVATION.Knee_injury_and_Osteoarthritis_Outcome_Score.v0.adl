@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"ckm.apperta.org">
 		["original_publisher"] = <"Apperta Foundation CIC">
 		["custodian_namespace"] = <"ckm.apperta.org">
-		["MD5-CAM-1.0.1"] = <"072fe62131d4f52fe77232315e886692">
+		["MD5-CAM-1.0.1"] = <"5c6dc6323396468edd92d7628e886976">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -579,23 +579,23 @@ P5. Walking on flat surface">
 				>
 				["at0162"] = <
 					text = <"Extreme">
-					description = <"The patient always has extreme knee pain bending knee fully.">
+					description = <"The patient always has extreme knee pain walking on a flat surface.">
 				>
 				["at0163"] = <
 					text = <"Severe">
-					description = <"The patient always has severe knee pain bending knee fully.">
+					description = <"The patient always has severe knee pain walking on a flat surface.">
 				>
 				["at0164"] = <
 					text = <"Moderate">
-					description = <"The patient always has moderate knee pain bending knee fully.">
+					description = <"The patient always has moderate knee pain walking on a flat surface.">
 				>
 				["at0165"] = <
 					text = <"Mild">
-					description = <"The patient always has mild knee pain bending knee fully.">
+					description = <"The patient always has mild knee pain walking on a flat surface.">
 				>
 				["at0166"] = <
 					text = <"None">
-					description = <"The patient always has no knee pain bending knee fully.">
+					description = <"The patient always has no knee pain walking on a flat surface.">
 				>
 				["at0167"] = <
 					text = <"P6- Stairs">
