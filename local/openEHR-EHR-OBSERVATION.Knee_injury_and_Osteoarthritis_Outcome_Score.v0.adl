@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"ckm.apperta.org">
 		["original_publisher"] = <"Apperta Foundation CIC">
 		["custodian_namespace"] = <"ckm.apperta.org">
-		["MD5-CAM-1.0.1"] = <"ed87675a0b4960bd863346f09242a37c">
+		["MD5-CAM-1.0.1"] = <"f379a3695608645b12443cfa8dc61558">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -84,6 +84,15 @@ definition
 											2|[local::at0116],
 											3|[local::at0117],
 											4|[local::at0118]
+										}
+									}
+									ELEMENT[at0119] occurrences matches {0..1} matches {    -- S5 - Bend
+										value matches {
+											0|[local::at0120],
+											1|[local::at0121],
+											2|[local::at0122],
+											3|[local::at0123],
+											4|[local::at0124]
 										}
 									}
 									ELEMENT[at0044] occurrences matches {0..1} matches {    -- Total score
@@ -280,6 +289,32 @@ S4. Can you straighten your knee fully?">
 				["at0118"] = <
 					text = <"Never">
 					description = <"The patient can never straighten their knee in the last week.">
+				>
+				["at0119"] = <
+					text = <"S5 - Bend">
+					description = <"Patient-reported ability to bend knee fully.">
+					comment = <"Questionnaire wording: 
+S5. Can you bend your knee fully?">
+				>
+				["at0120"] = <
+					text = <"Always">
+					description = <"The patient can always bend their knee in the last week.">
+				>
+				["at0121"] = <
+					text = <"Often">
+					description = <"The patient can often bend their knee in the last week.">
+				>
+				["at0122"] = <
+					text = <"Sometimes">
+					description = <"The patient can sometimes bend their knee in the last week.">
+				>
+				["at0123"] = <
+					text = <"Rarely">
+					description = <"The patient can rarely bend their knee in the last week.">
+				>
+				["at0124"] = <
+					text = <"Never">
+					description = <"The patient can never bend their knee in the last week.">
 				>
 			>
 		>
