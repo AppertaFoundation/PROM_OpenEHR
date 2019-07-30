@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"ckm.apperta.org">
 		["original_publisher"] = <"Apperta Foundation CIC">
 		["custodian_namespace"] = <"ckm.apperta.org">
-		["MD5-CAM-1.0.1"] = <"0759204717aa0f04fd83fde2b24fc325">
+		["MD5-CAM-1.0.1"] = <"b364441de9b8e18cdca9970af83a5c2f">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -1369,29 +1369,29 @@ SP1. Squatting">
 				>
 				["at0299"] = <
 					text = <"SP2 - Running">
-					description = <"Patient-reported knee degree of difficulty squatting during the last week.">
+					description = <"Patient-reported knee degree of difficulty running during the last week.">
 					comment = <"Questionnaire wording: 
-A2. Ascending stairs">
+SP2. Running">
 				>
 				["at0300"] = <
 					text = <"Extreme">
-					description = <"The patient always has extreme knee pain ascending stairs.">
+					description = <"The patient always has extreme knee pain running.">
 				>
 				["at0301"] = <
 					text = <"Severe">
-					description = <"The patient always has severe knee pain ascending stairs.">
+					description = <"The patient always has severe knee pain running.">
 				>
 				["at0302"] = <
 					text = <"Moderate">
-					description = <"The patient always has moderate knee pain ascending stairs.">
+					description = <"The patient always has moderate knee pain running.">
 				>
 				["at0303"] = <
 					text = <"Mild">
-					description = <"The patient always has mild knee pain ascending stairs.">
+					description = <"The patient always has mild knee pain running.">
 				>
 				["at0304"] = <
 					text = <"None">
-					description = <"The patient always has no knee pain ascending stairs.">
+					description = <"The patient always has no knee pain running.">
 				>
 				["at0305"] = <
 					text = <"SP3 - Jumping">
