@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"ckm.apperta.org">
 		["original_publisher"] = <"Apperta Foundation CIC">
 		["custodian_namespace"] = <"ckm.apperta.org">
-		["MD5-CAM-1.0.1"] = <"8793e1e427c92d86ccda1238e837be2d">
+		["MD5-CAM-1.0.1"] = <"2e89cf3060f27e256abef8a4d01a77a9">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -1487,24 +1487,24 @@ SP5. Kneeling">
 Q1. How often are you aware of your knee problem?">
 				>
 				["at0324"] = <
-					text = <"Extreme">
-					description = <"The patient always has extreme knee pain kneeling.">
+					text = <"Constantly">
+					description = <"The patient is constantly aware of their knee pain.">
 				>
 				["at0325"] = <
-					text = <"Severe">
-					description = <"The patient always has severe knee pain kneeling.">
+					text = <"Daily">
+					description = <"The patient is aware of their knee pain daily.">
 				>
 				["at0326"] = <
-					text = <"Moderate">
-					description = <"The patient always has moderate knee pain kneeling.">
+					text = <"Weekly">
+					description = <"The patient is aware of their knee pain weekly.">
 				>
 				["at0327"] = <
-					text = <"Mild">
-					description = <"The patient always has mild knee pain kneeling.">
+					text = <"Monthly">
+					description = <"The patient is aware of their knee pain monthly.">
 				>
 				["at0328"] = <
-					text = <"None">
-					description = <"The patient always has no knee pain kneeling.">
+					text = <"Never">
+					description = <"The patient is never aware of their knee pain.">
 				>
 			>
 		>
