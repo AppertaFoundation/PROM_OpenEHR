@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"ckm.apperta.org">
 		["original_publisher"] = <"Apperta Foundation CIC">
 		["custodian_namespace"] = <"ckm.apperta.org">
-		["MD5-CAM-1.0.1"] = <"27422dfca10134627eb97c48e6e0b494">
+		["MD5-CAM-1.0.1"] = <"045f30e91294b6086c63cbe54b10771b">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -727,23 +727,23 @@ A1. Descending stairs">
 				>
 				["at0192"] = <
 					text = <"Extreme">
-					description = <"The patient always has extreme knee pain standing upright.">
+					description = <"The patient always has extreme knee pain descending stairs.">
 				>
 				["at0193"] = <
 					text = <"Severe">
-					description = <"The patient always has severe knee pain standing upright.">
+					description = <"The patient always has severe knee pain descending stairs.">
 				>
 				["at0194"] = <
 					text = <"Moderate">
-					description = <"The patient always has moderate knee pain standing upright.">
+					description = <"The patient always has moderate knee pain descending stairs.">
 				>
 				["at0195"] = <
 					text = <"Mild">
-					description = <"The patient always has mild knee pain standing upright.">
+					description = <"The patient always has mild knee pain descending stairs.">
 				>
 				["at0196"] = <
 					text = <"None">
-					description = <"The patient always has no knee pain standing upright.">
+					description = <"The patient always has no knee pain descending stairs.">
 				>
 				["at0197"] = <
 					text = <"A2 - Ascending stairs">
@@ -753,23 +753,23 @@ A2. Ascending stairs">
 				>
 				["at0198"] = <
 					text = <"Extreme">
-					description = <"The patient always has extreme knee pain standing upright.">
+					description = <"The patient always has extreme knee pain ascending stairs.">
 				>
 				["at0199"] = <
 					text = <"Severe">
-					description = <"The patient always has severe knee pain standing upright.">
+					description = <"The patient always has severe knee pain ascending stairs.">
 				>
 				["at0200"] = <
 					text = <"Moderate">
-					description = <"The patient always has moderate knee pain standing upright.">
+					description = <"The patient always has moderate knee pain ascending stairs.">
 				>
 				["at0201"] = <
 					text = <"Mild">
-					description = <"The patient always has mild knee pain standing upright.">
+					description = <"The patient always has mild knee pain ascending stairs.">
 				>
 				["at0202"] = <
 					text = <"None">
-					description = <"The patient always has no knee pain standing upright.">
+					description = <"The patient always has no knee pain ascending stairs.">
 				>
 			>
 		>
