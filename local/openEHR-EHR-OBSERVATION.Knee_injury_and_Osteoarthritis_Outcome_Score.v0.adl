@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"ckm.apperta.org">
 		["original_publisher"] = <"Apperta Foundation CIC">
 		["custodian_namespace"] = <"ckm.apperta.org">
-		["MD5-CAM-1.0.1"] = <"b38b01fdfa4d27795ab574e28d305f46">
+		["MD5-CAM-1.0.1"] = <"072fe62131d4f52fe77232315e886692">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -149,11 +149,40 @@ definition
 											4|[local::at0160]
 										}
 									}
-									ELEMENT[at0044] occurrences matches {0..1} matches {    -- Total score
+									ELEMENT[at0161] occurrences matches {0..1} matches {    -- P5 - Walking
 										value matches {
-											DV_COUNT matches {
-												magnitude matches {|0..100|}
-											}
+											0|[local::at0162],
+											1|[local::at0163],
+											2|[local::at0164],
+											3|[local::at0165],
+											4|[local::at0166]
+										}
+									}
+									ELEMENT[at0167] occurrences matches {0..1} matches {    -- P6- Stairs
+										value matches {
+											0|[local::at0168],
+											1|[local::at0169],
+											2|[local::at0170],
+											3|[local::at0171],
+											4|[local::at0172]
+										}
+									}
+									ELEMENT[at0173] occurrences matches {0..1} matches {    -- P7 - In Bed
+										value matches {
+											0|[local::at0174],
+											1|[local::at0175],
+											2|[local::at0176],
+											3|[local::at0177],
+											4|[local::at0178]
+										}
+									}
+									ELEMENT[at0179] occurrences matches {0..1} matches {    -- P8 - Sitting or lying
+										value matches {
+											0|[local::at0180],
+											1|[local::at0181],
+											2|[local::at0182],
+											3|[local::at0183],
+											4|[local::at0184]
 										}
 									}
 									ELEMENT[at0045] occurrences matches {0..1} matches {    -- Total score as percentage
@@ -162,6 +191,22 @@ definition
 												numerator matches {|0.0..100.0|}
 												type matches {2}
 											}
+										}
+									}
+									ELEMENT[at0044] occurrences matches {0..1} matches {    -- Total score
+										value matches {
+											DV_COUNT matches {
+												magnitude matches {|0..100|}
+											}
+										}
+									}
+									ELEMENT[at0185] occurrences matches {0..1} matches {    -- P9 - Standing
+										value matches {
+											0|[local::at0186],
+											1|[local::at0187],
+											2|[local::at0188],
+											3|[local::at0189],
+											4|[local::at0190]
 										}
 									}
 								}
@@ -523,6 +568,136 @@ P4. Bending knee fully">
 					description = <"The patient always has mild knee pain bending knee fully.">
 				>
 				["at0160"] = <
+					text = <"None">
+					description = <"The patient always has no knee pain bending knee fully.">
+				>
+				["at0161"] = <
+					text = <"P5 - Walking">
+					description = <"Patient-reported knee pain walking on a flat surface.">
+					comment = <"Questionnaire wording: 
+P5. Walking on flat surface">
+				>
+				["at0162"] = <
+					text = <"Extreme">
+					description = <"The patient always has extreme knee pain bending knee fully.">
+				>
+				["at0163"] = <
+					text = <"Severe">
+					description = <"The patient always has severe knee pain bending knee fully.">
+				>
+				["at0164"] = <
+					text = <"Moderate">
+					description = <"The patient always has moderate knee pain bending knee fully.">
+				>
+				["at0165"] = <
+					text = <"Mild">
+					description = <"The patient always has mild knee pain bending knee fully.">
+				>
+				["at0166"] = <
+					text = <"None">
+					description = <"The patient always has no knee pain bending knee fully.">
+				>
+				["at0167"] = <
+					text = <"P6- Stairs">
+					description = <"Patient-reported knee pain going up or down stairs.">
+					comment = <"Questionnaire wording: 
+P6. Going up or down stairs">
+				>
+				["at0168"] = <
+					text = <"Extreme">
+					description = <"The patient always has extreme knee pain bending knee fully.">
+				>
+				["at0169"] = <
+					text = <"Severe">
+					description = <"The patient always has severe knee pain bending knee fully.">
+				>
+				["at0170"] = <
+					text = <"Moderate">
+					description = <"The patient always has moderate knee pain bending knee fully.">
+				>
+				["at0171"] = <
+					text = <"Mild">
+					description = <"The patient always has mild knee pain bending knee fully.">
+				>
+				["at0172"] = <
+					text = <"None">
+					description = <"The patient always has no knee pain bending knee fully.">
+				>
+				["at0173"] = <
+					text = <"P7 - In Bed">
+					description = <"Patient-reported knee pain at night while in bed.">
+					comment = <"Questionnaire wording: 
+P7. At night while in bed">
+				>
+				["at0174"] = <
+					text = <"Extreme">
+					description = <"The patient always has extreme knee pain bending knee fully.">
+				>
+				["at0175"] = <
+					text = <"Severe">
+					description = <"The patient always has severe knee pain bending knee fully.">
+				>
+				["at0176"] = <
+					text = <"Moderate">
+					description = <"The patient always has moderate knee pain bending knee fully.">
+				>
+				["at0177"] = <
+					text = <"Mild">
+					description = <"The patient always has mild knee pain bending knee fully.">
+				>
+				["at0178"] = <
+					text = <"None">
+					description = <"The patient always has no knee pain bending knee fully.">
+				>
+				["at0179"] = <
+					text = <"P8 - Sitting or lying">
+					description = <"Patient-reported knee pain sitting or lying.">
+					comment = <"Questionnaire wording: 
+P8. Sitting or lying">
+				>
+				["at0180"] = <
+					text = <"Extreme">
+					description = <"The patient always has extreme knee pain bending knee fully.">
+				>
+				["at0181"] = <
+					text = <"Severe">
+					description = <"The patient always has severe knee pain bending knee fully.">
+				>
+				["at0182"] = <
+					text = <"Moderate">
+					description = <"The patient always has moderate knee pain bending knee fully.">
+				>
+				["at0183"] = <
+					text = <"Mild">
+					description = <"The patient always has mild knee pain bending knee fully.">
+				>
+				["at0184"] = <
+					text = <"None">
+					description = <"The patient always has no knee pain bending knee fully.">
+				>
+				["at0185"] = <
+					text = <"P9 - Standing">
+					description = <"Patient-reported knee pain standing upright.">
+					comment = <"Questionnaire wording: 
+P9. Standing upright">
+				>
+				["at0186"] = <
+					text = <"Extreme">
+					description = <"The patient always has extreme knee pain bending knee fully.">
+				>
+				["at0187"] = <
+					text = <"Severe">
+					description = <"The patient always has severe knee pain bending knee fully.">
+				>
+				["at0188"] = <
+					text = <"Moderate">
+					description = <"The patient always has moderate knee pain bending knee fully.">
+				>
+				["at0189"] = <
+					text = <"Mild">
+					description = <"The patient always has mild knee pain bending knee fully.">
+				>
+				["at0190"] = <
 					text = <"None">
 					description = <"The patient always has no knee pain bending knee fully.">
 				>
