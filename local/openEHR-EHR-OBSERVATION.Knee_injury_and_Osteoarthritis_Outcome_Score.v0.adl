@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"ckm.apperta.org">
 		["original_publisher"] = <"Apperta Foundation CIC">
 		["custodian_namespace"] = <"ckm.apperta.org">
-		["MD5-CAM-1.0.1"] = <"8e05e382150369ea5fa0331adf7a6211">
+		["MD5-CAM-1.0.1"] = <"a4698aeb45b026c6c4865e5fa5c6e9c8">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -129,6 +129,15 @@ definition
 											2|[local::at0146],
 											3|[local::at0147],
 											4|[local::at0148]
+										}
+									}
+									ELEMENT[at0149] occurrences matches {0..1} matches {    -- P3 - Straightening
+										value matches {
+											0|[local::at0150],
+											1|[local::at0151],
+											2|[local::at0152],
+											3|[local::at0153],
+											4|[local::at0154]
 										}
 									}
 									ELEMENT[at0044] occurrences matches {0..1} matches {    -- Total score
@@ -432,7 +441,7 @@ P1. How often do you experience knee pain?">
 				>
 				["at0143"] = <
 					text = <"P2 - Twisting">
-					description = <"Patient-reported knee pain frequency.">
+					description = <"Patient-reported knee pain when teisting/pivoting.">
 					comment = <"Questionnaire wording: 
 P2. Twisting/pivoting on your knee">
 				>
@@ -455,6 +464,32 @@ P2. Twisting/pivoting on your knee">
 				["at0148"] = <
 					text = <"None">
 					description = <"The patient always has no knee pain twisting/pivoting.">
+				>
+				["at0149"] = <
+					text = <"P3 - Straightening">
+					description = <"Patient-reported knee pain straightneing knee fully.">
+					comment = <"Questionnaire wording: 
+P3. Straightening knee fully">
+				>
+				["at0150"] = <
+					text = <"Extreme">
+					description = <"The patient always has extreme knee pain straightening knee fully.">
+				>
+				["at0151"] = <
+					text = <"Severe">
+					description = <"The patient always has severe knee pain straightening knee fully.">
+				>
+				["at0152"] = <
+					text = <"Moderate">
+					description = <"The patient always has moderate knee pain straightening knee fully.">
+				>
+				["at0153"] = <
+					text = <"Mild">
+					description = <"The patient always has mild knee pain straightening knee fully.">
+				>
+				["at0154"] = <
+					text = <"None">
+					description = <"The patient always has no knee pain straightening knee fully.">
 				>
 			>
 		>
