@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"ckm.apperta.org">
 		["original_publisher"] = <"Apperta Foundation CIC">
 		["custodian_namespace"] = <"ckm.apperta.org">
-		["MD5-CAM-1.0.1"] = <"1d8ff859ff431dd8d00ed4b93994f223">
+		["MD5-CAM-1.0.1"] = <"a00b248bc92b1efa14703cd3613084c0">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -1291,35 +1291,35 @@ A15. Getting on/off toilet">
 				>
 				["at0281"] = <
 					text = <"A16 - Heavy domestic duties">
-					description = <"Patient-reported knee pain ascending stairs.">
+					description = <"Patient-reported knee degree of difficulty in the last week performing heavy domestic duties (moving heavy boxes, scrubbing floors, etc) due to knee pain.">
 					comment = <"Questionnaire wording: 
-A2. Ascending stairs">
+A16. Heavy domestic duties (moving heavy boxes, scrubbing floors, etc)">
 				>
 				["at0282"] = <
 					text = <"Extreme">
-					description = <"The patient always has extreme knee pain ascending stairs.">
+					description = <"The patient always has extreme knee pain performing heavy domestic duties.">
 				>
 				["at0283"] = <
 					text = <"Severe">
-					description = <"The patient always has severe knee pain ascending stairs.">
+					description = <"The patient always has severe knee pain performing heavy domestic duties.">
 				>
 				["at0284"] = <
 					text = <"Moderate">
-					description = <"The patient always has moderate knee pain ascending stairs.">
+					description = <"The patient always has moderate knee pain performing heavy domestic duties.">
 				>
 				["at0285"] = <
 					text = <"Mild">
-					description = <"The patient always has mild knee pain ascending stairs.">
+					description = <"The patient always has mild knee pain performing heavy domestic duties.">
 				>
 				["at0286"] = <
 					text = <"None">
-					description = <"The patient always has no knee pain ascending stairs.">
+					description = <"The patient always has no knee pain performing heavy domestic duties.">
 				>
 				["at0287"] = <
 					text = <"A17 - Light domestic duties">
-					description = <"Patient-reported knee pain ascending stairs.">
+					description = <"Patient-reported knee degree of difficulty in the last week performing light domestic duties (cooking, dusting, etc) due to knee pain.">
 					comment = <"Questionnaire wording: 
-A2. Ascending stairs">
+A17. Light domestic duties (cooking, dusting, etc)">
 				>
 				["at0288"] = <
 					text = <"Extreme">
