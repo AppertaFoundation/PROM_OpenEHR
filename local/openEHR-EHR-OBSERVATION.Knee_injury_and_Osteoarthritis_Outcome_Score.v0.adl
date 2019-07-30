@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"ckm.apperta.org">
 		["original_publisher"] = <"Apperta Foundation CIC">
 		["custodian_namespace"] = <"ckm.apperta.org">
-		["MD5-CAM-1.0.1"] = <"4a57c084849409a3f4d8dda7c954698e">
+		["MD5-CAM-1.0.1"] = <"c98b6af280ee359b6b9c84abfc775e48">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -1005,29 +1005,29 @@ A4. Standing">
 				>
 				["at0215"] = <
 					text = <"A5 - Bending to pick up">
-					description = <"Patient-reported knee pain ascending stairs.">
+					description = <"Patient-reported knee pain bending to floor/pick up an object.">
 					comment = <"Questionnaire wording: 
-A2. Ascending stairs">
+A5. Bending to floor/pick up an object">
 				>
 				["at0216"] = <
 					text = <"Extreme">
-					description = <"The patient always has extreme knee pain ascending stairs.">
+					description = <"The patient always has extreme knee pain bending to floor/pick up an object.">
 				>
 				["at0217"] = <
 					text = <"Severe">
-					description = <"The patient always has severe knee pain ascending stairs.">
+					description = <"The patient always has severe knee pain bending to floor/pick up an object.">
 				>
 				["at0218"] = <
 					text = <"Moderate">
-					description = <"The patient always has moderate knee pain ascending stairs.">
+					description = <"The patient always has moderate knee pain bending to floor/pick up an object.">
 				>
 				["at0219"] = <
 					text = <"Mild">
-					description = <"The patient always has mild knee pain ascending stairs.">
+					description = <"The patient always has mild knee pain bending to floor/pick up and object.">
 				>
 				["at0220"] = <
 					text = <"None">
-					description = <"The patient always has no knee pain ascending stairs.">
+					description = <"The patient always has no knee pain bending to floor/ pick up an object.">
 				>
 				["at0221"] = <
 					text = <"A6 - Walking on flat surface">
