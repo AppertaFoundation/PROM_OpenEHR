@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"ckm.apperta.org">
 		["original_publisher"] = <"Apperta Foundation CIC">
 		["custodian_namespace"] = <"ckm.apperta.org">
-		["MD5-CAM-1.0.1"] = <"8dcfcf486a2516b017fa8bc594a9d680">
+		["MD5-CAM-1.0.1"] = <"0b0e0c07bd836c5b57a2cb4daefc0cd8">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -1594,24 +1594,24 @@ Q3. How much are you troubled with lack of confidence in your knee?">
 Q4. In general, how much difficulty do you have with your knee?">
 				>
 				["at0342"] = <
-					text = <"Totally">
-					description = <"The patient has totally modified their life style to avoid potentially damaging activities to their knee.">
+					text = <"Extreme">
+					description = <"The patient, in general, has extreme difficulty with their knee.">
 				>
 				["at0343"] = <
-					text = <"Severely">
-					description = <"The patient has severely modified their life style to avoid potentially damaging activities to their knee.">
+					text = <"Severe">
+					description = <"The patient, in general, has severe difficulty with their knee.">
 				>
 				["at0344"] = <
-					text = <"Moderately">
-					description = <"The patient has moderately modified their life style to avoid potentially damaging activities to their knee.">
+					text = <"Moderate">
+					description = <"The patient, in general, has moderate difficulty with their knee.">
 				>
 				["at0345"] = <
-					text = <"Mildly">
-					description = <"The patient has mildly modified their life style to avoid potentially damaging activities to their knee.">
+					text = <"Mild">
+					description = <"The patient, in general, has mild difficulty with their knee.">
 				>
 				["at0346"] = <
-					text = <"Not at all">
-					description = <"The patient has not modified their life style to avoid potentially damaging activities to their knee.">
+					text = <"None">
+					description = <"The patient, in general, has no difficulty with their knee.">
 				>
 			>
 		>
