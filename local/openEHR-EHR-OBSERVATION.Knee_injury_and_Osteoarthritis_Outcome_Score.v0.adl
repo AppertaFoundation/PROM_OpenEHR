@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"ckm.apperta.org">
 		["original_publisher"] = <"Apperta Foundation CIC">
 		["custodian_namespace"] = <"ckm.apperta.org">
-		["MD5-CAM-1.0.1"] = <"c472ca2e373343777323e825f6007724">
+		["MD5-CAM-1.0.1"] = <"6df0d1d2300e2403a918f9eeb905d34d">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -111,6 +111,15 @@ definition
 											2|[local::at0134],
 											3|[local::at0135],
 											4|[local::at0136]
+										}
+									}
+									ELEMENT[at0137] occurrences matches {0..1} matches {    -- P1 - Pain frequency
+										value matches {
+											0|[local::at0138],
+											1|[local::at0139],
+											2|[local::at0140],
+											3|[local::at0141],
+											4|[local::at0142]
 										}
 									}
 									ELEMENT[at0044] occurrences matches {0..1} matches {    -- Total score
@@ -385,6 +394,32 @@ S7. How severe is your knee stiffness after sitting, lying or resting later in t
 				["at0136"] = <
 					text = <"None">
 					description = <"The patient had no knee stiffness last week.">
+				>
+				["at0137"] = <
+					text = <"P1 - Pain frequency">
+					description = <"Patient-reported knee pain frequency.">
+					comment = <"Questionnaire wording: 
+P1. How often do you experience knee pain?">
+				>
+				["at0138"] = <
+					text = <"Always">
+					description = <"The patient always has knee pain.">
+				>
+				["at0139"] = <
+					text = <"Daily">
+					description = <"The patient has daily knee pain.">
+				>
+				["at0140"] = <
+					text = <"Weekly">
+					description = <"The patient has weekly knee pain.">
+				>
+				["at0141"] = <
+					text = <"Monthly">
+					description = <"The patient has monthly knee pain.">
+				>
+				["at0142"] = <
+					text = <"Never">
+					description = <"The patient never has knee pain.">
 				>
 			>
 		>
