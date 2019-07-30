@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"ckm.apperta.org">
 		["original_publisher"] = <"Apperta Foundation CIC">
 		["custodian_namespace"] = <"ckm.apperta.org">
-		["MD5-CAM-1.0.1"] = <"e269d95582feee5a7d0ff52382667ac0">
+		["MD5-CAM-1.0.1"] = <"432e81d8f901612e2f5938fffa52c276">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -293,21 +293,6 @@ definition
 											4|[local::at0256]
 										}
 									}
-									ELEMENT[at0044] occurrences matches {0..1} matches {    -- Total score
-										value matches {
-											DV_COUNT matches {
-												magnitude matches {|0..100|}
-											}
-										}
-									}
-									ELEMENT[at0045] occurrences matches {0..1} matches {    -- Total score as percentage
-										value matches {
-											DV_PROPORTION matches {
-												numerator matches {|0.0..100.0|}
-												type matches {2}
-											}
-										}
-									}
 									ELEMENT[at0257] occurrences matches {0..1} matches {    -- A12 - Lying in bed
 										value matches {
 											0|[local::at0258],
@@ -360,6 +345,21 @@ definition
 											2|[local::at0290],
 											3|[local::at0291],
 											4|[local::at0292]
+										}
+									}
+									ELEMENT[at0044] occurrences matches {0..1} matches {    -- Total score
+										value matches {
+											DV_COUNT matches {
+												magnitude matches {|0..100|}
+											}
+										}
+									}
+									ELEMENT[at0045] occurrences matches {0..1} matches {    -- Total score as percentage
+										value matches {
+											DV_PROPORTION matches {
+												numerator matches {|0.0..100.0|}
+												type matches {2}
+											}
 										}
 									}
 									ELEMENT[at0293] occurrences matches {0..1} matches {    -- SP1 - Squatting
