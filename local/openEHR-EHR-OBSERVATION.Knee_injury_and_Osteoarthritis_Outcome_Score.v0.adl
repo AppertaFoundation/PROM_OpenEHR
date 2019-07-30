@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"ckm.apperta.org">
 		["original_publisher"] = <"Apperta Foundation CIC">
 		["custodian_namespace"] = <"ckm.apperta.org">
-		["MD5-CAM-1.0.1"] = <"1c8af3658265959718f8a66a1643d05b">
+		["MD5-CAM-1.0.1"] = <"ed87675a0b4960bd863346f09242a37c">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -75,6 +75,15 @@ definition
 											2|[local::at0110],
 											3|[local::at0111],
 											4|[local::at0112]
+										}
+									}
+									ELEMENT[at0113] occurrences matches {0..1} matches {    -- S4 - Straighten
+										value matches {
+											0|[local::at0114],
+											1|[local::at0115],
+											2|[local::at0116],
+											3|[local::at0117],
+											4|[local::at0118]
 										}
 									}
 									ELEMENT[at0044] occurrences matches {0..1} matches {    -- Total score
@@ -245,6 +254,32 @@ S3. Does your knee catch or hang up when moving?">
 				["at0112"] = <
 					text = <"Always">
 					description = <"The patient always has catching or hanging up in their knee in the last week.">
+				>
+				["at0113"] = <
+					text = <"S4 - Straighten">
+					description = <"Patient-reported ability to straighten knee fully.">
+					comment = <"Questionnaire wording: 
+S4. Can you straighten your knee fully?">
+				>
+				["at0114"] = <
+					text = <"Always">
+					description = <"The patient can always straighten their knee in the last week.">
+				>
+				["at0115"] = <
+					text = <"Often">
+					description = <"The patient can often straighten their knee in the last week.">
+				>
+				["at0116"] = <
+					text = <"Sometimes">
+					description = <"The patient can sometimes straighten their knee in the last week.">
+				>
+				["at0117"] = <
+					text = <"Rarely">
+					description = <"The patient can rarely straighten their knee in the last week.">
+				>
+				["at0118"] = <
+					text = <"Never">
+					description = <"The patient can never straighten their knee in the last week.">
 				>
 			>
 		>
