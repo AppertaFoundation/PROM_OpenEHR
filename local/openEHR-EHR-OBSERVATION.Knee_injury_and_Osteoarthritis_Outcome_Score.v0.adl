@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"ckm.apperta.org">
 		["original_publisher"] = <"Apperta Foundation CIC">
 		["custodian_namespace"] = <"ckm.apperta.org">
-		["MD5-CAM-1.0.1"] = <"db9d2761177d6152bc7c474882467f51">
+		["MD5-CAM-1.0.1"] = <"d9a8315a4baefbdf3bec51b6cb8801ad">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -1167,23 +1167,23 @@ A11. Taking off socks/stockings">
 				>
 				["at0252"] = <
 					text = <"Extreme">
-					description = <"The patient always has extreme knee pain ascending stairs.">
+					description = <"The patient always has extreme knee pain taking off socks/stockings.">
 				>
 				["at0253"] = <
 					text = <"Severe">
-					description = <"The patient always has severe knee pain ascending stairs.">
+					description = <"The patient always has severe knee pain taking off socks/stockings.">
 				>
 				["at0254"] = <
 					text = <"Moderate">
-					description = <"The patient always has moderate knee pain ascending stairs.">
+					description = <"The patient always has moderate knee pain taking off socks/stockings.">
 				>
 				["at0255"] = <
 					text = <"Mild">
-					description = <"The patient always has mild knee pain ascending stairs.">
+					description = <"The patient always has mild knee pain taking off socks/stockings.">
 				>
 				["at0256"] = <
 					text = <"None">
-					description = <"The patient always has no knee pain ascending stairs.">
+					description = <"The patient always has no knee pain taking off socks/stockings.">
 				>
 				["at0257"] = <
 					text = <"A12 - Lying in bed">
