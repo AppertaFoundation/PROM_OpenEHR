@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"ckm.apperta.org">
 		["original_publisher"] = <"Apperta Foundation CIC">
 		["custodian_namespace"] = <"ckm.apperta.org">
-		["MD5-CAM-1.0.1"] = <"418cf96c5c6dda524c641df6ee345fc8">
+		["MD5-CAM-1.0.1"] = <"f9a6e1c7818adcebb5d1bde485f30d4f">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -410,6 +410,15 @@ definition
 											4|[local::at0334]
 										}
 									}
+									ELEMENT[at0335] occurrences matches {0..1} matches {    -- Q3 - Confidence
+										value matches {
+											0|[local::at0336],
+											1|[local::at0337],
+											2|[local::at0338],
+											3|[local::at0339],
+											4|[local::at0340]
+										}
+									}
 									ELEMENT[at0044] occurrences matches {0..1} matches {    -- Total score
 										value matches {
 											DV_COUNT matches {
@@ -423,15 +432,6 @@ definition
 												numerator matches {|0.0..100.0|}
 												type matches {2}
 											}
-										}
-									}
-									ELEMENT[at0335] occurrences matches {0..1} matches {    -- Q3 - Confidence
-										value matches {
-											0|[local::at0336],
-											1|[local::at0337],
-											2|[local::at0338],
-											3|[local::at0339],
-											4|[local::at0340]
 										}
 									}
 									ELEMENT[at0341] occurrences matches {0..1} matches {    -- Q4 - General difficulty
@@ -1589,11 +1589,9 @@ Q3. How much are you troubled with lack of confidence in your knee?">
 				>
 				["at0341"] = <
 					text = <"Q4 - General difficulty">
-					description = <"Extent to which patient has modified their life style to avoid potentially damaging activities
-to their knee.">
+					description = <"Extent to which patient, in general, has difficulty with their knee.">
 					comment = <"Questionnaire wording: 
-Q2. Have you modified your life style to avoid potentially damaging activities
-to your knee?">
+Q4. In general, how much difficulty do you have with your knee?">
 				>
 				["at0342"] = <
 					text = <"Totally">
