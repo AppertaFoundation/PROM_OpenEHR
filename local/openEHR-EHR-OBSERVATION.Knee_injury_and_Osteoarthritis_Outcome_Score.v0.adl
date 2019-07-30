@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"ckm.apperta.org">
 		["original_publisher"] = <"Apperta Foundation CIC">
 		["custodian_namespace"] = <"ckm.apperta.org">
-		["MD5-CAM-1.0.1"] = <"b364441de9b8e18cdca9970af83a5c2f">
+		["MD5-CAM-1.0.1"] = <"7aa45b348c005774f4d88c4e581d271a">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -389,7 +389,7 @@ definition
 											4|[local::at0310]
 										}
 									}
-									ELEMENT[at0311] occurrences matches {0..1} matches {    -- SP4 - Twisitng/pivoting
+									ELEMENT[at0311] occurrences matches {0..1} matches {    -- SP4 - Twisiting/pivoting
 										value matches {
 											0|[local::at0312],
 											1|[local::at0313],
@@ -1395,61 +1395,61 @@ SP2. Running">
 				>
 				["at0305"] = <
 					text = <"SP3 - Jumping">
-					description = <"Patient-reported knee degree of difficulty squatting during the last week.">
+					description = <"Patient-reported knee degree of difficulty jumping during the last week.">
 					comment = <"Questionnaire wording: 
-A2. Ascending stairs">
+SP3. Jumping">
 				>
 				["at0306"] = <
 					text = <"Extreme">
-					description = <"The patient always has extreme knee pain ascending stairs.">
+					description = <"The patient always has extreme knee jumping.">
 				>
 				["at0307"] = <
 					text = <"Severe">
-					description = <"The patient always has severe knee pain ascending stairs.">
+					description = <"The patient always has severe knee pain jumping.">
 				>
 				["at0308"] = <
 					text = <"Moderate">
-					description = <"The patient always has moderate knee pain ascending stairs.">
+					description = <"The patient always has moderate knee pain jumping.">
 				>
 				["at0309"] = <
 					text = <"Mild">
-					description = <"The patient always has mild knee pain ascending stairs.">
+					description = <"The patient always has mild knee pain jumping.">
 				>
 				["at0310"] = <
 					text = <"None">
-					description = <"The patient always has no knee pain ascending stairs.">
+					description = <"The patient always has no knee pain jumping.">
 				>
 				["at0311"] = <
-					text = <"SP4 - Twisitng/pivoting">
-					description = <"Patient-reported knee degree of difficulty squatting during the last week.">
+					text = <"SP4 - Twisiting/pivoting">
+					description = <"Patient-reported knee degree of difficulty twisting/pivoting on your injured knee during the last week.">
 					comment = <"Questionnaire wording: 
-A2. Ascending stairs">
+SP4. Twisting/pivoting on your injured knee">
 				>
 				["at0312"] = <
 					text = <"Extreme">
-					description = <"The patient always has extreme knee pain ascending stairs.">
+					description = <"The patient always has extreme knee pain twisting/pivoting the injured knee.">
 				>
 				["at0313"] = <
 					text = <"Severe">
-					description = <"The patient always has severe knee pain ascending stairs.">
+					description = <"The patient always has severe knee pain twisting/pivoting the injured knee.">
 				>
 				["at0314"] = <
 					text = <"Moderate">
-					description = <"The patient always has moderate knee pain ascending stairs.">
+					description = <"The patient always has moderate knee twisting/pivoting the injured knee.">
 				>
 				["at0315"] = <
 					text = <"Mild">
-					description = <"The patient always has mild knee pain ascending stairs.">
+					description = <"The patient always has mild knee pain twisting/pivoting the injured knee.">
 				>
 				["at0316"] = <
 					text = <"None">
-					description = <"The patient always has no knee pain ascending stairs.">
+					description = <"The patient always has no knee pain twisting/pivoting the injured knee.">
 				>
 				["at0317"] = <
 					text = <"SP5 - Kneeling">
-					description = <"Patient-reported knee degree of difficulty squatting during the last week.">
+					description = <"Patient-reported knee degree of difficulty kneeling during the last week.">
 					comment = <"Questionnaire wording: 
-A2. Ascending stairs">
+SP5. Kneeling">
 				>
 				["at0318"] = <
 					text = <"Extreme">
