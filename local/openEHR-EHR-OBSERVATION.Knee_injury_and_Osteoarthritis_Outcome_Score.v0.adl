@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"ckm.apperta.org">
 		["original_publisher"] = <"Apperta Foundation CIC">
 		["custodian_namespace"] = <"ckm.apperta.org">
-		["MD5-CAM-1.0.1"] = <"0b0e0c07bd836c5b57a2cb4daefc0cd8">
+		["MD5-CAM-1.0.1"] = <"2bc34785272e86203122df4d497f82ec">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -419,6 +419,15 @@ definition
 											4|[local::at0340]
 										}
 									}
+									ELEMENT[at0341] occurrences matches {0..1} matches {    -- Q4 - General difficulty
+										value matches {
+											0|[local::at0342],
+											1|[local::at0343],
+											2|[local::at0344],
+											3|[local::at0345],
+											4|[local::at0346]
+										}
+									}
 									ELEMENT[at0044] occurrences matches {0..1} matches {    -- Total score
 										value matches {
 											DV_COUNT matches {
@@ -432,15 +441,6 @@ definition
 												numerator matches {|0.0..100.0|}
 												type matches {2}
 											}
-										}
-									}
-									ELEMENT[at0341] occurrences matches {0..1} matches {    -- Q4 - General difficulty
-										value matches {
-											0|[local::at0342],
-											1|[local::at0343],
-											2|[local::at0344],
-											3|[local::at0345],
-											4|[local::at0346]
 										}
 									}
 								}
