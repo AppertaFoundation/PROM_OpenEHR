@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"ckm.apperta.org">
 		["original_publisher"] = <"Apperta Foundation CIC">
 		["custodian_namespace"] = <"ckm.apperta.org">
-		["MD5-CAM-1.0.1"] = <"2e89cf3060f27e256abef8a4d01a77a9">
+		["MD5-CAM-1.0.1"] = <"99ec54f40ee5f09c722f7c7e7b658ebf">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -414,6 +414,15 @@ definition
 											2|[local::at0326],
 											3|[local::at0327],
 											4|[local::at0328]
+										}
+									}
+									ELEMENT[at0329] occurrences matches {0..1} matches {    -- Q2 - Lifestyle
+										value matches {
+											0|[local::at0330],
+											1|[local::at0331],
+											2|[local::at0332],
+											3|[local::at0333],
+											4|[local::at0334]
 										}
 									}
 								}
@@ -1505,6 +1514,34 @@ Q1. How often are you aware of your knee problem?">
 				["at0328"] = <
 					text = <"Never">
 					description = <"The patient is never aware of their knee pain.">
+				>
+				["at0329"] = <
+					text = <"Q2 - Lifestyle">
+					description = <"Extent to which patient has modified their life style to avoid potentially damaging activities
+to their knee.">
+					comment = <"Questionnaire wording: 
+Q2. Have you modified your life style to avoid potentially damaging activities
+to your knee?">
+				>
+				["at0330"] = <
+					text = <"Totally">
+					description = <"The patient has totally modified their life style to avoid potentially damaging activities to their knee.">
+				>
+				["at0331"] = <
+					text = <"Severely">
+					description = <"The patient has severely modified their life style to avoid potentially damaging activities to their knee.">
+				>
+				["at0332"] = <
+					text = <"Moderately">
+					description = <"The patient has moderately modified their life style to avoid potentially damaging activities to their knee.">
+				>
+				["at0333"] = <
+					text = <"Mildly">
+					description = <"The patient has mildly modified their life style to avoid potentially damaging activities to their knee.">
+				>
+				["at0334"] = <
+					text = <"Not at all">
+					description = <"The patient has not modified their life style to avoid potentially damaging activities to their knee.">
 				>
 			>
 		>
