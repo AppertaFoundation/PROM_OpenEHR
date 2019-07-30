@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"ckm.apperta.org">
 		["original_publisher"] = <"Apperta Foundation CIC">
 		["custodian_namespace"] = <"ckm.apperta.org">
-		["MD5-CAM-1.0.1"] = <"a2d0fd041bbc83fbafdf0f16b88de861">
+		["MD5-CAM-1.0.1"] = <"f5620497ec2e766a86976be3958ad3ba">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -392,21 +392,6 @@ definition
 											4|[local::at0322]
 										}
 									}
-									ELEMENT[at0044] occurrences matches {0..1} matches {    -- Total score
-										value matches {
-											DV_COUNT matches {
-												magnitude matches {|0..100|}
-											}
-										}
-									}
-									ELEMENT[at0045] occurrences matches {0..1} matches {    -- Total score as percentage
-										value matches {
-											DV_PROPORTION matches {
-												numerator matches {|0.0..100.0|}
-												type matches {2}
-											}
-										}
-									}
 									ELEMENT[at0323] occurrences matches {0..1} matches {    -- Q1 - Aware of pain
 										value matches {
 											0|[local::at0324],
@@ -425,7 +410,22 @@ definition
 											4|[local::at0334]
 										}
 									}
-									ELEMENT[at0335] occurrences matches {0..1} matches {    -- Q2 - Lifestyle
+									ELEMENT[at0044] occurrences matches {0..1} matches {    -- Total score
+										value matches {
+											DV_COUNT matches {
+												magnitude matches {|0..100|}
+											}
+										}
+									}
+									ELEMENT[at0045] occurrences matches {0..1} matches {    -- Total score as percentage
+										value matches {
+											DV_PROPORTION matches {
+												numerator matches {|0.0..100.0|}
+												type matches {2}
+											}
+										}
+									}
+									ELEMENT[at0335] occurrences matches {0..1} matches {    -- Q3 - Confidence
 										value matches {
 											0|[local::at0336],
 											1|[local::at0337],
@@ -434,7 +434,7 @@ definition
 											4|[local::at0340]
 										}
 									}
-									ELEMENT[at0341] occurrences matches {0..1} matches {    -- Q2 - Lifestyle
+									ELEMENT[at0341] occurrences matches {0..1} matches {    -- Q4 - General difficulty
 										value matches {
 											0|[local::at0342],
 											1|[local::at0343],
@@ -1562,7 +1562,7 @@ to your knee?">
 					description = <"The patient has not modified their life style to avoid potentially damaging activities to their knee.">
 				>
 				["at0335"] = <
-					text = <"Q2 - Lifestyle">
+					text = <"Q3 - Confidence">
 					description = <"Extent to which patient has modified their life style to avoid potentially damaging activities
 to their knee.">
 					comment = <"Questionnaire wording: 
@@ -1590,7 +1590,7 @@ to your knee?">
 					description = <"The patient has not modified their life style to avoid potentially damaging activities to their knee.">
 				>
 				["at0341"] = <
-					text = <"Q2 - Lifestyle">
+					text = <"Q4 - General difficulty">
 					description = <"Extent to which patient has modified their life style to avoid potentially damaging activities
 to their knee.">
 					comment = <"Questionnaire wording: 
