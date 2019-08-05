@@ -37,7 +37,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"028b0df8930b0afce4a6832e2ceed7ba">
+		["MD5-CAM-1.0.1"] = <"6fe0a35a4d5894c66bd4e6689f153fb7">
 		["build_uid"] = <"4218ce62-ec18-464b-84bb-5fe9b815a1ea">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -96,6 +96,15 @@ definition
 											4|[local::at0037]
 										}
 									}
+									ELEMENT[at0056] occurrences matches {0..1} matches {    -- 6 Limping
+										value matches {
+											0|[local::at0057],
+											1|[local::at0058],
+											2|[local::at0059],
+											3|[local::at0060],
+											4|[local::at0061]
+										}
+									}
 									ELEMENT[at0038] occurrences matches {0..1} matches {    -- 6 Walk duration
 										value matches {
 											0|[local::at0039],
@@ -121,15 +130,6 @@ definition
 											2|[local::at0053],
 											3|[local::at0054],
 											4|[local::at0055]
-										}
-									}
-									ELEMENT[at0056] occurrences matches {0..1} matches {    -- 9 Limping
-										value matches {
-											0|[local::at0057],
-											1|[local::at0058],
-											2|[local::at0059],
-											3|[local::at0060],
-											4|[local::at0061]
 										}
 									}
 									ELEMENT[at0062] occurrences matches {0..1} matches {    -- 10 Sudden pain
@@ -422,30 +422,30 @@ up from a chair because of your hip?">
 					description = <"The patient found it not at all painful to stand after a meal due to hip pain over the last 4 weeks.">
 				>
 				["at0056"] = <
-					text = <"9 Limping">
-					description = <"Patient-reported extent to which they were limping when walking because of hip pain during past 4 weeks.">
+					text = <"6 Limping">
+					description = <"Patient-reported extent to which they were limping when walking because of knee pain during past 4 weeks.">
 					comment = <"Questionnaire wording:
-Have you been limping when walking, because of your hip?">
+Have you been limping when walking, because of your knee?">
 				>
 				["at0057"] = <
 					text = <"All of the time">
-					description = <"The patient has been limping when walking all of the time, because of hip pain during past 4 weeks.">
+					description = <"The patient has been limping when walking all of the time, because of knee pain during past 4 weeks.">
 				>
 				["at0058"] = <
 					text = <"Most of the time">
-					description = <"The patient has been limping when walking most of the time, because of hip pain during past 4 weeks.">
+					description = <"The patient has been limping when walking most of the time, because of knee pain during past 4 weeks.">
 				>
 				["at0059"] = <
 					text = <"Often, not just at first">
-					description = <"The patient has been limping when walking often, not just at first, because of hip pain during past 4 weeks.">
+					description = <"The patient has been limping when walking often, not just at first, because of knee pain during past 4 weeks.">
 				>
 				["at0060"] = <
 					text = <"Sometimes, or just at first">
-					description = <"The patient has been limping when walking sometimes, or just at first, because of hip pain during past 4 weeks.">
+					description = <"The patient has been limping when walking sometimes, or just at first, because of knee pain during past 4 weeks.">
 				>
 				["at0061"] = <
 					text = <"Rarely / never">
-					description = <"The patient has been rarely / never been limping when walking, because of hip pain during past 4 weeks.">
+					description = <"The patient has been rarely / never been limping when walking, because of knee pain during past 4 weeks.">
 				>
 				["at0062"] = <
 					text = <"10 Sudden pain">
