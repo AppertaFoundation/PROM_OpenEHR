@@ -37,7 +37,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"6fe0a35a4d5894c66bd4e6689f153fb7">
+		["MD5-CAM-1.0.1"] = <"47614d4ce2b5d9424f3a09045e9b933b">
 		["build_uid"] = <"4218ce62-ec18-464b-84bb-5fe9b815a1ea">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -105,31 +105,31 @@ definition
 											4|[local::at0061]
 										}
 									}
-									ELEMENT[at0038] occurrences matches {0..1} matches {    -- 6 Walk duration
+									ELEMENT[at0120] occurrences matches {0..1} matches {    -- 7 Kneeling
 										value matches {
-											0|[local::at0039],
-											1|[local::at0040],
-											2|[local::at0041],
-											3|[local::at0042],
-											4|[local::at0043]
+											0|[local::at0121],
+											1|[local::at0122],
+											2|[local::at0123],
+											3|[local::at0124],
+											4|[local::at0125]
 										}
 									}
-									ELEMENT[at0044] occurrences matches {0..1} matches {    -- 7 Stairs
+									ELEMENT[at0074] occurrences matches {0..1} matches {    -- 8 Night pain
 										value matches {
-											0|[local::at0110],
-											1|[local::at0111],
-											2|[local::at0112],
-											3|[local::at0113],
-											4|[local::at0114]
+											0|[local::at0075],
+											1|[local::at0076],
+											2|[local::at0077],
+											3|[local::at0078],
+											4|[local::at0079]
 										}
 									}
-									ELEMENT[at0050] occurrences matches {0..1} matches {    -- 8 Standing after meal
+									ELEMENT[at0068] occurrences matches {0..1} matches {    -- 9 Interfered with work
 										value matches {
-											0|[local::at0051],
-											1|[local::at0052],
-											2|[local::at0053],
-											3|[local::at0054],
-											4|[local::at0055]
+											0|[local::at0069],
+											1|[local::at0070],
+											2|[local::at0071],
+											3|[local::at0072],
+											4|[local::at0073]
 										}
 									}
 									ELEMENT[at0062] occurrences matches {0..1} matches {    -- 10 Sudden pain
@@ -141,22 +141,13 @@ definition
 											4|[local::at0067]
 										}
 									}
-									ELEMENT[at0068] occurrences matches {0..1} matches {    -- 11 Interfered with work
+									ELEMENT[at0044] occurrences matches {0..1} matches {    -- 7 Stairs
 										value matches {
-											0|[local::at0069],
-											1|[local::at0070],
-											2|[local::at0071],
-											3|[local::at0072],
-											4|[local::at0073]
-										}
-									}
-									ELEMENT[at0074] occurrences matches {0..1} matches {    -- 12 Night pain
-										value matches {
-											0|[local::at0075],
-											1|[local::at0076],
-											2|[local::at0077],
-											3|[local::at0078],
-											4|[local::at0079]
+											0|[local::at0110],
+											1|[local::at0111],
+											2|[local::at0112],
+											3|[local::at0113],
+											4|[local::at0114]
 										}
 									}
 									ELEMENT[at0104] occurrences matches {0..1} matches {    -- Total score
@@ -362,64 +353,11 @@ After a meal (sat at a table), how painful has it been for you to stand up from 
 					text = <"Not at all painful">
 					description = <"The patient did not find it painful to stand up from a table after a meal in the past 4 weeks.">
 				>
-				["at0038"] = <
-					text = <"6 Walk duration">
-					description = <"Patient-reported extent to which they duration they were able to walk due to hip pain in past 4 weeks.">
-					comment = <"Questionnaire wording:
-For how long have you been able to walk before pain from your hip becomes severe? (with or without a stick)">
-				>
-				["at0039"] = <
-					text = <"Not at all - pain severe on walking">
-					description = <"The patient found that they can't walk without pain becoming severe during the past 4 weeks.">
-				>
-				["at0040"] = <
-					text = <"Around the house only">
-					description = <"The patient found that they could walk around the house only before pain becomes severe during the past 4 weeks.">
-				>
-				["at0041"] = <
-					text = <"5 to 15 minutes">
-					description = <"The patient found that they could walk 5 to 15 minutes before pain becomes severe during the past 4 weeks.">
-				>
-				["at0042"] = <
-					text = <"16 to 30 minutes">
-					description = <"The patient found that they could walk 16 to 30 minutes before pain becomes severe during the past 4 weeks.">
-				>
-				["at0043"] = <
-					text = <"No pain / More than 30 minutes">
-					description = <"The patient found that they could walk with no pain or more than 30 minutes before pain becomes severe during the past 4 weeks.">
-				>
 				["at0044"] = <
 					text = <"7 Stairs">
 					description = <"Patient-reported extent to which they could climb stairs during the past 4 weeks.">
 					comment = <"Questionnaire wording:
 Have you been able to climb a flight of stairs?">
-				>
-				["at0050"] = <
-					text = <"8 Standing after meal">
-					description = <"Patient-reported extent to which they could stand from a chair after a meal during past 4 weeks.">
-					comment = <"Questionnaire wording:
-After a meal (sat at a table), how painful has it been for you to stand
-up from a chair because of your hip?">
-				>
-				["at0051"] = <
-					text = <"Unbearable">
-					description = <"The patient found it unbearable to stand after a meal due to hip pain over the last 4 weeks.">
-				>
-				["at0052"] = <
-					text = <"Very painful">
-					description = <"The patient found it very painful to stand after a meal due to hip pain over the last 4 weeks.">
-				>
-				["at0053"] = <
-					text = <"Moderately painful">
-					description = <"The patient found it moderately painful to stand after a meal due to hip pain over the last 4 weeks.">
-				>
-				["at0054"] = <
-					text = <"Slightly painful">
-					description = <"The patient found it slightly painful to stand after a meal due to hip pain over the last 4 weeks.">
-				>
-				["at0055"] = <
-					text = <"Not at all painful">
-					description = <"The patient found it not at all painful to stand after a meal due to hip pain over the last 4 weeks.">
 				>
 				["at0056"] = <
 					text = <"6 Limping">
@@ -474,7 +412,7 @@ Have you had any sudden, severe pain - 'shooting', 'stabbing' or 'spasms' - from
 					description = <"The patient had severe hip pain no days during past 4 weeks.">
 				>
 				["at0068"] = <
-					text = <"11 Interfered with work">
+					text = <"9 Interfered with work">
 					description = <"Patient-reported extent to which hip pain has interfered with work during past 4 weeks.">
 					comment = <"Questionnaire wording:
 How much has pain from your hip interfered with your usual work (including housework)?">
@@ -500,7 +438,7 @@ How much has pain from your hip interfered with your usual work (including house
 					description = <"The patient reports that hip pain has not interfered with their work in last 4 weeks.">
 				>
 				["at0074"] = <
-					text = <"12 Night pain">
+					text = <"8 Night pain">
 					description = <"Patient-reported extent of pain in hip at night during past 4 weeks.">
 					comment = <"Questionnaire wording:
 Have you been troubled by pain from your hip in bed at night?">
@@ -576,6 +514,32 @@ Have you been troubled by pain from your hip in bed at night?">
 				["at0119"] = <
 					text = <"Satisfactory">
 					description = <"May indicate satisfactory joint function.">
+				>
+				["at0120"] = <
+					text = <"7 Kneeling">
+					description = <"Patient-reported extent to which they were able to kneel and get up again during past 4 weeks.">
+					comment = <"Questionnaire wording:
+Could you kneel down and get up again afterwards?">
+				>
+				["at0121"] = <
+					text = <"No impossible">
+					description = <"The patient finds it impossible to kneel and get up again, because of knee pain during past 4 weeks.">
+				>
+				["at0122"] = <
+					text = <"With extreme difficulty">
+					description = <"The patient was able to kneel and get up again with extreme difficulty, because of knee pain during past 4 weeks.">
+				>
+				["at0123"] = <
+					text = <"With moderate difficulty">
+					description = <"The patient was able to kneel and get up again with moderate difficulty, because of knee pain during past 4 weeks.">
+				>
+				["at0124"] = <
+					text = <"With little difficulty">
+					description = <"The patient was able to kneel and get up again with little difficulty, because of knee pain during past 4 weeks.">
+				>
+				["at0125"] = <
+					text = <"Yes, easily">
+					description = <"The patient was able to kneel and get up again easily, because of knee pain during past 4 weeks.">
 				>
 			>
 		>
