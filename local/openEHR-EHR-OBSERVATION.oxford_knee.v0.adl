@@ -37,7 +37,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"0d5954777688b81f026bb02640366d92">
+		["MD5-CAM-1.0.1"] = <"cad9c13324647fd63d481752218edeed">
 		["build_uid"] = <"4218ce62-ec18-464b-84bb-5fe9b815a1ea">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -236,26 +236,26 @@ ontology
 				>
 				["at0008"] = <
 					text = <"1 Usual pain">
-					description = <"Patient-reported extent of usual pain in hip during past 4 weeks.">
+					description = <"Patient-reported extent of usual pain in knee during past 4 weeks.">
 					comment = <"Questionnaire wording: 
 
-How would you describe the pain you usually had from your hip?">
+How would you describe the pain you usually have from your knee?">
 				>
 				["at0009"] = <
 					text = <"Moderate">
-					description = <"The patient has experienced moderate pain in hip during past 4 weeks.">
+					description = <"The patient has experienced moderate pain in knee during past 4 weeks.">
 				>
 				["at0010"] = <
 					text = <"Mild">
-					description = <"The patient has experienced mild pain in hip during past 4 weeks.">
+					description = <"The patient has experienced mild pain in knee during past 4 weeks.">
 				>
 				["at0011"] = <
 					text = <"Very mild">
-					description = <"The patient has experienced very mild pain in hip during past 4 weeks.">
+					description = <"The patient has experienced very mild pain in knee during past 4 weeks.">
 				>
 				["at0012"] = <
 					text = <"None">
-					description = <"The patient has experienced no pain in hip during past 4 weeks.">
+					description = <"The patient has experienced no pain in knee during past 4 weeks.">
 				>
 				["at0014"] = <
 					text = <"2 Washing and drying">
@@ -537,7 +537,7 @@ Have you been troubled by pain from your hip in bed at night?">
 				>
 				["at0109"] = <
 					text = <"Severe">
-					description = <"The patient has experienced severe pain in hip during past 4 weeks.">
+					description = <"The patient has experienced severe pain in knee during past 4 weeks.">
 				>
 				["at0110"] = <
 					text = <"No, impossible">
