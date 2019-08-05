@@ -37,7 +37,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"830bd480251b52aee0c9861903ce4560">
+		["MD5-CAM-1.0.1"] = <"028b0df8930b0afce4a6832e2ceed7ba">
 		["build_uid"] = <"4218ce62-ec18-464b-84bb-5fe9b815a1ea">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -87,7 +87,7 @@ definition
 											4|[local::at0031]
 										}
 									}
-									ELEMENT[at0032] occurrences matches {0..1} matches {    -- 5 Household shopping
+									ELEMENT[at0032] occurrences matches {0..1} matches {    -- 5 Stand from table
 										value matches {
 											0|[local::at0033],
 											1|[local::at0034],
@@ -337,30 +337,30 @@ For how long have you been able to walk before pain from your knee becomes sever
 					description = <"The patient can walk without pain or for more than 30 minutes before pain from the knee becomes severe.">
 				>
 				["at0032"] = <
-					text = <"5 Household shopping">
-					description = <"Patient-reported extent to which they complete household shopping because of pain in hip in past 4 weeks.">
+					text = <"5 Stand from table">
+					description = <"Patient-reported how painful it has been to stand up from a chair after a meal in the past 4 weeks.">
 					comment = <"Questionnaire wording:
-Could you do the household shopping on your own?">
+After a meal (sat at a table), how painful has it been for you to stand up from a chair because of your knee?">
 				>
 				["at0033"] = <
-					text = <"No, impossible">
-					description = <"The patient found it impossible to complete household shopping because of hip pain all of the time during past 4 weeks.">
+					text = <"Unbearable">
+					description = <"The patient found it unbearable to stand up from a table after a meal in the past 4 weeks.">
 				>
 				["at0034"] = <
-					text = <"With extreme difficulty">
-					description = <"The patient can complete household shopping with extreme difficulty because of hip pain all of the time during past 4 weeks.">
+					text = <"Very painful">
+					description = <"The patient found it very painful to stand up from a table after a meal in the past 4 weeks.">
 				>
 				["at0035"] = <
-					text = <"With moderate difficulty">
-					description = <"The patient can complete household shopping with moderate difficulty because of hip pain all of the time during past 4 weeks.">
+					text = <"Moderately painful">
+					description = <"The patient found it moderately painful to stand up from a table after a meal in the past 4 weeks.">
 				>
 				["at0036"] = <
-					text = <"With little difficulty">
-					description = <"The patient can complete household shopping with little difficulty because of hip pain all of the time during past 4 weeks.">
+					text = <"Slightly painful">
+					description = <"The patient found it slightly painful to stand up from a table after a meal in the past 4 weeks.">
 				>
 				["at0037"] = <
-					text = <"Yes, easily">
-					description = <"The patient can complete household shopping easily because of hip pain all of the time during past 4 weeks.">
+					text = <"Not at all painful">
+					description = <"The patient did not find it painful to stand up from a table after a meal in the past 4 weeks.">
 				>
 				["at0038"] = <
 					text = <"6 Walk duration">
