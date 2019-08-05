@@ -37,7 +37,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"cffce625082a4c4e94c0fc070d0714e9">
+		["MD5-CAM-1.0.1"] = <"1fc203dd42abd053d384262736e1bb1b">
 		["build_uid"] = <"4218ce62-ec18-464b-84bb-5fe9b815a1ea">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -141,13 +141,22 @@ definition
 											4|[local::at0067]
 										}
 									}
-									ELEMENT[at0044] occurrences matches {0..1} matches {    -- 7 Stairs
+									ELEMENT[at0044] occurrences matches {0..1} matches {    -- 11 Shopping
 										value matches {
 											0|[local::at0110],
 											1|[local::at0111],
 											2|[local::at0112],
 											3|[local::at0113],
 											4|[local::at0114]
+										}
+									}
+									ELEMENT[at0126] occurrences matches {0..1} matches {    -- 12 Stairs
+										value matches {
+											0|[local::at0127],
+											1|[local::at0128],
+											2|[local::at0129],
+											3|[local::at0130],
+											4|[local::at0131]
 										}
 									}
 									ELEMENT[at0104] occurrences matches {0..1} matches {    -- Total score
@@ -354,7 +363,7 @@ After a meal (sat at a table), how painful has it been for you to stand up from 
 					description = <"The patient did not find it painful to stand up from a table after a meal in the past 4 weeks.">
 				>
 				["at0044"] = <
-					text = <"7 Stairs">
+					text = <"11 Shopping">
 					description = <"Patient-reported extent to which they could climb stairs during the past 4 weeks.">
 					comment = <"Questionnaire wording:
 Have you been able to climb a flight of stairs?">
@@ -540,6 +549,32 @@ Could you kneel down and get up again afterwards?">
 				["at0125"] = <
 					text = <"Yes, easily">
 					description = <"The patient was able to kneel and get up again easily, because of knee pain during past 4 weeks.">
+				>
+				["at0126"] = <
+					text = <"12 Stairs">
+					description = <"Patient-reported extent to which they could climb stairs during the past 4 weeks.">
+					comment = <"Questionnaire wording:
+Have you been able to climb a flight of stairs?">
+				>
+				["at0127"] = <
+					text = <"No, impossible">
+					description = <"The patient found it impossible to climb stairs due to hip pain during past 4 weeks.">
+				>
+				["at0128"] = <
+					text = <"With extreme difficulty">
+					description = <"The patient found it extremely difficult to climb stairs due to hip pain during past 4 weeks.">
+				>
+				["at0129"] = <
+					text = <"With moderate difficulty">
+					description = <"The patient found it moderately difficult to climb stairs due to hip pain during past 4 weeks.">
+				>
+				["at0130"] = <
+					text = <"With little difficulty">
+					description = <"The patient found it a little difficult to climb stairs due to hip pain during past 4 weeks.">
+				>
+				["at0131"] = <
+					text = <"Yes, easily">
+					description = <"The patient found it they could easily climb stairs due to hip pain during past 4 weeks.">
 				>
 			>
 		>
