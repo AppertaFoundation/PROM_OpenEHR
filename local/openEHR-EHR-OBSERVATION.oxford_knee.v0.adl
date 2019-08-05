@@ -37,7 +37,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"1fc203dd42abd053d384262736e1bb1b">
+		["MD5-CAM-1.0.1"] = <"fc1770e59228c2e9f74fd5c0327724f1">
 		["build_uid"] = <"4218ce62-ec18-464b-84bb-5fe9b815a1ea">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -396,29 +396,29 @@ Have you been limping when walking, because of your knee?">
 				>
 				["at0062"] = <
 					text = <"10 Sudden pain">
-					description = <"Patient-reported extent to which experienced sudden severe hip pain during past 4 weeks.">
+					description = <"Patient-reported extent to they felt their knee would give way or let them down pain during past 4 weeks.">
 					comment = <"Questionnaire wording:
-Have you had any sudden, severe pain - 'shooting', 'stabbing' or 'spasms' - from the affected hip?">
+Have you felt that your knee might suddenly 'give way' or let you down?">
 				>
 				["at0063"] = <
-					text = <"Every day">
-					description = <"The patient had severe hip pain every day during past 4 weeks.">
+					text = <"All of the time">
+					description = <"The patient felt their knee might suddenly give way all of the time during past 4 weeks.">
 				>
 				["at0064"] = <
-					text = <"Most days">
-					description = <"The patient had severe hip pain most days during past 4 weeks.">
+					text = <"Most of the time">
+					description = <"The patient felt their knee might suddenly give way most of the time during past 4 weeks.">
 				>
 				["at0065"] = <
-					text = <"Some days">
-					description = <"The patient had severe hip pain some days during past 4 weeks.">
+					text = <"Often, not just at first">
+					description = <"The patient felt their knee might suddenly give way often, not just at first during past 4 weeks.">
 				>
 				["at0066"] = <
-					text = <"Only 1 or 2 days">
-					description = <"The patient had severe hip pain only 1 or 2 days during past 4 weeks.">
+					text = <"Sometimes, or just at first">
+					description = <"The patient felt their knee might suddenly give way sometimes, or just at first during past 4 weeks.">
 				>
 				["at0067"] = <
-					text = <"No days">
-					description = <"The patient had severe hip pain no days during past 4 weeks.">
+					text = <"Rarely/never">
+					description = <"The patient felt their knee might suddenly give way rarely/never during past 4 weeks.">
 				>
 				["at0068"] = <
 					text = <"9 Interfered with work">
