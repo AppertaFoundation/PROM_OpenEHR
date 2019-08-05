@@ -37,7 +37,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"8118871588ec8a77a6e6d212fbd4c01c">
+		["MD5-CAM-1.0.1"] = <"830bd480251b52aee0c9861903ce4560">
 		["build_uid"] = <"4218ce62-ec18-464b-84bb-5fe9b815a1ea">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -78,7 +78,7 @@ definition
 											4|[local::at0025]
 										}
 									}
-									ELEMENT[at0026] occurrences matches {0..1} matches {    -- 4 Socks
+									ELEMENT[at0026] occurrences matches {0..1} matches {    -- 4 Walking duration
 										value matches {
 											0|[local::at0027],
 											1|[local::at0028],
@@ -311,30 +311,30 @@ Have you had any trouble getting in and out of a car or using public transport b
 					description = <"The patient has no trouble at all getting into a vehicle during the past 4 weeks due to pain in knee.">
 				>
 				["at0026"] = <
-					text = <"4 Socks">
-					description = <"Patient-reported extent to which they experience pain in hip during past 4 weeks when putting on socks, stockings or tights.">
+					text = <"4 Walking duration">
+					description = <"Patient-reported extent of how long have they been able to walk before pain from their knee becomes severe? (with or without a stick)">
 					comment = <"Questionnaire wording:
-Have you been able to put on a pair of socks, stockings or tights?">
+For how long have you been able to walk before pain from your knee becomes severe? (with or without a stick)">
 				>
 				["at0027"] = <
-					text = <"No, impossible">
-					description = <"The patient found it impossible to put on socks, stockings or tights during past 4 weeks because of pain in the shoulder.">
+					text = <"Not at all - pain severe when walking">
+					description = <"The patient cannot walk before pain from the knee becomes severe.">
 				>
 				["at0028"] = <
-					text = <"With extreme difficulty">
-					description = <"The patient had extreme difficulty putting on socks, stockings or tights during past 4 weeks because of pain in the shoulder.">
+					text = <"Around the house only">
+					description = <"The patient can walk around the house before pain from the knee becomes severe.">
 				>
 				["at0029"] = <
-					text = <"With moderate difficulty">
-					description = <"The patient had moderate difficulty putting on socks, stockings or tights during past 4 weeks because of pain in the shoulder.">
+					text = <"5 to 15 minutes">
+					description = <"The patient can walk 5 to 15 minutes before pain from the knee becomes severe.">
 				>
 				["at0030"] = <
-					text = <"With little difficulty">
-					description = <"The patient had little difficulty putting on socks, stockings or tights during the past 4 weeks because of pain in the shoulder.">
+					text = <"16 to 30 minutes">
+					description = <"The patient can walk 16 to 30 minutes before pain from the knee becomes severe.">
 				>
 				["at0031"] = <
-					text = <"Yes, easily">
-					description = <"The patient found it easy to put on socks, stockings or tights during the past 4 weeks because of pain in the shoulder..">
+					text = <"No pain/More than 30 minutes">
+					description = <"The patient can walk without pain or for more than 30 minutes before pain from the knee becomes severe.">
 				>
 				["at0032"] = <
 					text = <"5 Household shopping">
