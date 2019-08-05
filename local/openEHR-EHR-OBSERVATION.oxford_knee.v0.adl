@@ -37,7 +37,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"47614d4ce2b5d9424f3a09045e9b933b">
+		["MD5-CAM-1.0.1"] = <"120c98e276cdcec30eb99d059beb88a7">
 		["build_uid"] = <"4218ce62-ec18-464b-84bb-5fe9b815a1ea">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -439,29 +439,29 @@ How much has pain from your hip interfered with your usual work (including house
 				>
 				["at0074"] = <
 					text = <"8 Night pain">
-					description = <"Patient-reported extent of pain in hip at night during past 4 weeks.">
+					description = <"Patient-reported extent of pain in knee at night during past 4 weeks.">
 					comment = <"Questionnaire wording:
-Have you been troubled by pain from your hip in bed at night?">
+Have you been troubled by pain from your knee in bed at night?">
 				>
 				["at0075"] = <
 					text = <"Every night">
-					description = <"The patient has experienced hip pain every night in past 4 weeks.">
+					description = <"The patient has experienced knee pain every night in past 4 weeks.">
 				>
 				["at0076"] = <
 					text = <"Most nights">
-					description = <"The patient has experienced hip pain most nights in past 4 weeks.">
+					description = <"The patient has experienced knee pain most nights in past 4 weeks.">
 				>
 				["at0077"] = <
 					text = <"Some nights">
-					description = <"The patient has experienced hip pain some nights in past 4 weeks.">
+					description = <"The patient has experienced knee pain some nights in past 4 weeks.">
 				>
 				["at0078"] = <
 					text = <"Only 1 or 2 nights">
-					description = <"The patient has experienced hip pain only 1 or 2 nights in past 4 weeks.">
+					description = <"The patient has experienced knee pain only 1 or 2 nights in past 4 weeks.">
 				>
 				["at0079"] = <
 					text = <"No nights">
-					description = <"The patient has experienced hip pain no nights in past 4 weeks.">
+					description = <"The patient has experienced knee pain no nights in past 4 weeks.">
 				>
 				["at0104"] = <
 					text = <"Total score">
