@@ -37,7 +37,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"120c98e276cdcec30eb99d059beb88a7">
+		["MD5-CAM-1.0.1"] = <"cffce625082a4c4e94c0fc070d0714e9">
 		["build_uid"] = <"4218ce62-ec18-464b-84bb-5fe9b815a1ea">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -413,29 +413,29 @@ Have you had any sudden, severe pain - 'shooting', 'stabbing' or 'spasms' - from
 				>
 				["at0068"] = <
 					text = <"9 Interfered with work">
-					description = <"Patient-reported extent to which hip pain has interfered with work during past 4 weeks.">
+					description = <"Patient-reported extent to which knee pain has interfered with work during past 4 weeks.">
 					comment = <"Questionnaire wording:
-How much has pain from your hip interfered with your usual work (including housework)?">
+How much has pain from your knee interfered with your usual work (including housework)?">
 				>
 				["at0069"] = <
 					text = <"Totally">
-					description = <"The patient reports that hip pain has interfered totally with their work in last 4 weeks.">
+					description = <"The patient reports that knee pain has interfered totally with their work in last 4 weeks.">
 				>
 				["at0070"] = <
 					text = <"Greatly">
-					description = <"The patient reports that hip pain has interfered greatly with their work in last 4 weeks.">
+					description = <"The patient reports that knee pain has interfered greatly with their work in last 4 weeks.">
 				>
 				["at0071"] = <
 					text = <"Moderately">
-					description = <"The patient reports that hip pain has interfered moderately with their work in last 4 weeks.">
+					description = <"The patient reports that knee pain has interfered moderately with their work in last 4 weeks.">
 				>
 				["at0072"] = <
 					text = <"A little bit">
-					description = <"The patient reports that hip pain has interfered a little bit with their work in last 4 weeks.">
+					description = <"The patient reports that knee pain has interfered a little bit with their work in last 4 weeks.">
 				>
 				["at0073"] = <
 					text = <"Not at all">
-					description = <"The patient reports that hip pain has not interfered with their work in last 4 weeks.">
+					description = <"The patient reports that knee pain has not interfered with their work in last 4 weeks.">
 				>
 				["at0074"] = <
 					text = <"8 Night pain">
