@@ -37,7 +37,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"cad9c13324647fd63d481752218edeed">
+		["MD5-CAM-1.0.1"] = <"fbd53848d402bc3354ac054408de7c1e">
 		["build_uid"] = <"4218ce62-ec18-464b-84bb-5fe9b815a1ea">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -259,31 +259,30 @@ How would you describe the pain you usually have from your knee?">
 				>
 				["at0014"] = <
 					text = <"2 Washing and drying">
-					description = <"Patient-reported trouble washing and drying because of hip pain.">
+					description = <"Patient-reported trouble washing and drying because of knee pain.">
 					comment = <"Questionnaire wording: 
 
-Have you had any trouble with washing and drying yourself
-(all over) because of your hip?">
+Have you had any trouble with washing and drying yourself (all over) because of your knee?">
 				>
 				["at0015"] = <
 					text = <"All of the time">
-					description = <"The patient has trouble all the time washing and drying in the last 4 weeks because of pain in the hip.">
+					description = <"The patient has trouble all the time washing and drying in the last 4 weeks because of pain in the knee.">
 				>
 				["at0016"] = <
 					text = <"No trouble at all">
-					description = <"The patient has no trouble washing and drying in the last 4 weeks because of pain in the hip.">
+					description = <"The patient has no trouble washing and drying in the last 4 weeks because of pain in the knee.">
 				>
 				["at0017"] = <
 					text = <"Little trouble">
-					description = <"The patient has little trouble washing and drying in the last 4 weeks because of pain in the hip.">
+					description = <"The patient has little trouble washing and drying in the last 4 weeks because of pain in the knee.">
 				>
 				["at0018"] = <
 					text = <"Moderate trouble">
-					description = <"The patient has moderate trouble washing and drying in the last 4 weeks because of pain in the hip.">
+					description = <"The patient has moderate trouble washing and drying in the last 4 weeks because of pain in the knee.">
 				>
 				["at0019"] = <
 					text = <"Extreme difficulty">
-					description = <"The patient has extreme difficulty trouble washing and drying in the last 4 weeks because of pain in the hip.">
+					description = <"The patient has extreme difficulty trouble washing and drying in the last 4 weeks because of pain in the knee.">
 				>
 				["at0020"] = <
 					text = <"3 Vehicle use">
