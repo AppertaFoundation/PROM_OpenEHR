@@ -37,7 +37,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"fbd53848d402bc3354ac054408de7c1e">
+		["MD5-CAM-1.0.1"] = <"8118871588ec8a77a6e6d212fbd4c01c">
 		["build_uid"] = <"4218ce62-ec18-464b-84bb-5fe9b815a1ea">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -286,30 +286,29 @@ Have you had any trouble with washing and drying yourself (all over) because of 
 				>
 				["at0020"] = <
 					text = <"3 Vehicle use">
-					description = <"Patient-reported extent to which they are able to access vehicles due to pain in their hip. ">
+					description = <"Patient-reported extent to which they are able to access vehicles due to pain in their knee. ">
 					comment = <"Questionnaire wording:
-Have you had any trouble getting in and out of a car or using
-public transport because of your hip? (whichever you tend to use)">
+Have you had any trouble getting in and out of a car or using public transport because of your knee? (whichever you tend to use)">
 				>
 				["at0021"] = <
 					text = <"Impossible to do">
-					description = <"The patient found it impossible to get into a vehicle during the past 4 weeks due to pain in hip.">
+					description = <"The patient found it impossible to get into a vehicle during the past 4 weeks due to pain in knee.">
 				>
 				["at0022"] = <
 					text = <"Extreme difficulty">
-					description = <"The patient has extreme difficulty at all getting into a vehicle during the past 4 weeks due to pain in hip.">
+					description = <"The patient has extreme difficulty at all getting into a vehicle during the past 4 weeks due to pain in knee.">
 				>
 				["at0023"] = <
 					text = <"Moderate trouble">
-					description = <"The patient has moderate trouble at all getting into a vehicle during the past 4 weeks due to pain in hip..">
+					description = <"The patient has moderate trouble at all getting into a vehicle during the past 4 weeks due to pain in knee.">
 				>
 				["at0024"] = <
 					text = <"Very little trouble">
-					description = <"The patient has very little trouble at all getting into a vehicle during the past 4 weeks due to pain in hip.">
+					description = <"The patient has very little trouble at all getting into a vehicle during the past 4 weeks due to pain in knee.">
 				>
 				["at0025"] = <
 					text = <"No trouble at all">
-					description = <"The patient has no trouble at all getting into a vehicle during the past 4 weeks due to pain in hip.">
+					description = <"The patient has no trouble at all getting into a vehicle during the past 4 weeks due to pain in knee.">
 				>
 				["at0026"] = <
 					text = <"4 Socks">
