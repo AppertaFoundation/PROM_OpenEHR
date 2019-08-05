@@ -37,7 +37,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"5276f77a4fd6715c60ecc82413ccd0e9">
+		["MD5-CAM-1.0.1"] = <"e004c8db039b93e2aa9ea42537482acf">
 		["build_uid"] = <"4218ce62-ec18-464b-84bb-5fe9b815a1ea">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -552,29 +552,29 @@ Could you kneel down and get up again afterwards?">
 				>
 				["at0126"] = <
 					text = <"12 Stairs">
-					description = <"Patient-reported extent to which they could climb stairs during the past 4 weeks.">
+					description = <"Patient-reported extent to which they could walk down one flight of stairs during the past 4 weeks.">
 					comment = <"Questionnaire wording:
-Have you been able to climb a flight of stairs?">
+Could you walk down one flight of stairs?">
 				>
 				["at0127"] = <
 					text = <"No, impossible">
-					description = <"The patient found it impossible to climb stairs due to hip pain during past 4 weeks.">
+					description = <"The patient found it impossible to walk down stairs due to knee pain during past 4 weeks.">
 				>
 				["at0128"] = <
 					text = <"With extreme difficulty">
-					description = <"The patient found it extremely difficult to climb stairs due to hip pain during past 4 weeks.">
+					description = <"The patient found it extremely difficult to walk down stairs due to knee pain during past 4 weeks.">
 				>
 				["at0129"] = <
 					text = <"With moderate difficulty">
-					description = <"The patient found it moderately difficult to climb stairs due to hip pain during past 4 weeks.">
+					description = <"The patient found it moderately difficult to walk down stairs due to knee pain during past 4 weeks.">
 				>
 				["at0130"] = <
 					text = <"With little difficulty">
-					description = <"The patient found it a little difficult to climb stairs due to hip pain during past 4 weeks.">
+					description = <"The patient found it a little difficult to walk down stairs due to knee pain during past 4 weeks.">
 				>
 				["at0131"] = <
 					text = <"Yes, easily">
-					description = <"The patient found it they could easily climb stairs due to hip pain during past 4 weeks.">
+					description = <"The patient found it they could easily walk down stairs due to knee pain during past 4 weeks.">
 				>
 			>
 		>
