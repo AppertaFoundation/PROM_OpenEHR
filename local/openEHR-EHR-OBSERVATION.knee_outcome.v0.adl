@@ -29,7 +29,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
 		["custodian_organisation"] = <"Apperta Foundation CIC">
 		["references"] = <"">
-		["MD5-CAM-1.0.1"] = <"bc71718eeecde38787679813ecba64d1">
+		["MD5-CAM-1.0.1"] = <"d2b65040174968d85603a11c3d313590">
 		["build_uid"] = <"44635e5f-63c8-305d-9a86-7fb823f85734">
 	>
 
@@ -76,7 +76,7 @@ definition
 											DV_BOOLEAN matches {*}
 										}
 									}
-									ELEMENT[at0019] occurrences matches {0..1} matches {    -- Any other operations on operated spine?
+									ELEMENT[at0019] occurrences matches {0..1} matches {    -- Any other operations on operated knee?
 										value matches {
 											DV_BOOLEAN matches {*}
 										}
@@ -191,8 +191,8 @@ How satisfied are you with the outcome of your knee operation?">
 					description = <"Patient reported statement whether they suffered pulmonary thrombosis after last knee operation.">
 				>
 				["at0019"] = <
-					text = <"Any other operations on operated spine?">
-					description = <"Patient reported statement whether they had any other operations on operated spine since last hip operation.">
+					text = <"Any other operations on operated knee?">
+					description = <"Patient reported statement whether they had any other operations on operated knee since last operation.">
 				>
 				["at0021"] = <
 					text = <"Any other useful operation information">
