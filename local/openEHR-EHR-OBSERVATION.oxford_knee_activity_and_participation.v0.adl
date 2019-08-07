@@ -37,7 +37,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"a8769773766c5db0ace5c246f9a1bc2c">
+		["MD5-CAM-1.0.1"] = <"2ee8365b6444220b594f0f832366b994">
 		["build_uid"] = <"4218ce62-ec18-464b-84bb-5fe9b815a1ea">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -276,23 +276,23 @@ It is a problem for me to carry heavy things (e.g. items at work, shopping or a 
 				>
 				["at0145"] = <
 					text = <"Strongly agree">
-					description = <"The patient strongly agrees that they have modified work or every day activities because of their knee in the past 4 weeks.">
+					description = <"The patient strongly agrees that they have to plan before going out for the day because of their knee in the past 4 weeks.">
 				>
 				["at0146"] = <
 					text = <"Tend to agree">
-					description = <"The patient tends to agree that they have modified work or every day activities because of their knee in the past 4 weeks.">
+					description = <"The patient tends to agree that they have to plan before going out for the day because of their knee in the past 4 weeks.">
 				>
 				["at0147"] = <
 					text = <"Neither agree nor disagree">
-					description = <"The patient neither agrees nor disagrees that they have modified work or every day activities because of their knee in the past 4 weeks.">
+					description = <"The patient neither agrees nor disagrees that they have to plan before going out for the day because of their knee in the past 4 weeks.">
 				>
 				["at0148"] = <
 					text = <"Tend to disagree">
-					description = <"The patient tend to agree that they have modified work or every day activities because of their knee in the past 4 weeks.">
+					description = <"The patient tend to agree that they have to plan before going out for the day because of their knee in the past 4 weeks.">
 				>
 				["at0149"] = <
 					text = <"Strongly disagree">
-					description = <"The patient strongly disagrees that they have modified work or every day activities because of their knee in the past 4 weeks.">
+					description = <"The patient strongly disagrees that they have to plan before going out for the day because of their knee in the past 4 weeks.">
 				>
 			>
 		>
