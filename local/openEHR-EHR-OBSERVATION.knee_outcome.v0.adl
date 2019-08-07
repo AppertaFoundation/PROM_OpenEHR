@@ -29,7 +29,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
 		["custodian_organisation"] = <"Apperta Foundation CIC">
 		["references"] = <"">
-		["MD5-CAM-1.0.1"] = <"087fbf9754bbdb80f0d2b81ab7251b9b">
+		["MD5-CAM-1.0.1"] = <"bc71718eeecde38787679813ecba64d1">
 		["build_uid"] = <"44635e5f-63c8-305d-9a86-7fb823f85734">
 	>
 
@@ -208,7 +208,7 @@ How satisfied are you with the outcome of your knee operation?">
 				>
 				["at0024"] = <
 					text = <"Deep infection?">
-					description = <"Patient reported statement whether they had any other operations on operated spine since last hip operation.">
+					description = <"Patient reported statement whether they suffered deep infection of the knee joint after last knee operation.">
 				>
 			>
 		>
