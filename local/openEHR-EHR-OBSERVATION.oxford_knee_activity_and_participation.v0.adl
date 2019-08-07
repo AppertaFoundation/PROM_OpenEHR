@@ -37,7 +37,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"c066e599a658f04d33f98aa053074571">
+		["MD5-CAM-1.0.1"] = <"2208e2abd1a50727346044b940a596c7">
 		["build_uid"] = <"4218ce62-ec18-464b-84bb-5fe9b815a1ea">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -58,6 +58,15 @@ definition
 											2|[local::at0010],
 											3|[local::at0011],
 											4|[local::at0012]
+										}
+									}
+									ELEMENT[at0132] occurrences matches {0..1} matches {    -- 2 Carrying
+										value matches {
+											0|[local::at0133],
+											1|[local::at0134],
+											2|[local::at0135],
+											3|[local::at0136],
+											4|[local::at0137]
 										}
 									}
 									ELEMENT[at0104] occurrences matches {0..1} matches {    -- Total score
@@ -188,6 +197,32 @@ It is a problem for me to do activities (e.g. sports, dancing, walking) to the l
 				["at0119"] = <
 					text = <"Satisfactory">
 					description = <"May indicate satisfactory joint function.">
+				>
+				["at0132"] = <
+					text = <"2 Carrying">
+					description = <"Patient-reported extent of impact on ability to carry heavy things beacuse of knee pain in the past 4 weeks.">
+					comment = <"Questionnaire wording: 
+It is a problem for me to carry heavy things (e.g. items at work, shopping or a child), because of my knee.">
+				>
+				["at0133"] = <
+					text = <"Strongly agree">
+					description = <"The patient strongly agrees that it is a problem to carry heavy things because of their knee in the past 4 weeks.">
+				>
+				["at0134"] = <
+					text = <"Tend to agree">
+					description = <"The patient tends to agree that it is a problem to carry heavy things because of their knee in the past 4 weeks.">
+				>
+				["at0135"] = <
+					text = <"Neither agree nor disagree">
+					description = <"The patient neither agrees nor disagrees  that it is a problem to carry heavy things because of their knee in the past 4 weeks.">
+				>
+				["at0136"] = <
+					text = <"Tend to disagree">
+					description = <"The patient tend to agree that it is a problem to carry heavy things because of their knee in the past 4 weeks.">
+				>
+				["at0137"] = <
+					text = <"Strongly disagree">
+					description = <"The patient strongly disagrees that it is a problem to carry heavy things because of their knee in the past 4 weeks.">
 				>
 			>
 		>
