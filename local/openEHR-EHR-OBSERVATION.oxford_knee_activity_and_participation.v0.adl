@@ -18,10 +18,10 @@ description
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
-			purpose = <"Use to capture and report Oxford Knee Questionnaire Score (OKS) score details.">
+			purpose = <"Use to capture and report Oxford Knee Score – Activity and Participation Questionnaire (OKS-APQ) score details.">
 			keywords = <"orthopaedics, knee", ...>
 			copyright = <"© Apperta UK CIC">
-			use = <"Use to capture and report Oxford Knee Questionnaire Score (OKS).
+			use = <"Use to capture and report Oxford Knee Score – Activity and Participation Questionnaire (OKS-APQ).
 
 While openEHR archetypes are all freely available under an open license, the specific content of this archetype may be copyright protected. Any use of this archetype within implementations must be in compliance with the terms established by the copyright owners where a copyright exists. 
 
@@ -32,18 +32,18 @@ While openEHR archetypes are all freely available under an open license, the spe
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
 		["custodian_organisation"] = <"UK Clinical Models">
-		["references"] = <"https://innovation.ox.ac.uk/outcome-measures/oxford-knee-score-oks/">
+		["references"] = <"https://innovation.ox.ac.uk/outcome-measures/oxford-knee-score-activity-participation-questionnaire-oks-apq/">
 		["current_contact"] = <"Alan Fish, Apperta Foundation CIC.<alan.fish@apperta.org>">
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"dad86f02c983cde809fffe408feb18b9">
+		["MD5-CAM-1.0.1"] = <"76909676b2c15a6d90ae07e8e02a91ae">
 		["build_uid"] = <"4218ce62-ec18-464b-84bb-5fe9b815a1ea">
 		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
-	OBSERVATION[at0000] matches {    -- oxford_knee_activity_and_participation
+	OBSERVATION[at0000] matches {    -- Oxford Knee Score – Activity and Participation Questionnaire (OKS-APQ)
 		data matches {
 			HISTORY[at0001] matches {    -- Event Series
 				events cardinality matches {1..*; unordered} matches {
@@ -210,8 +210,8 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"oxford_knee_activity_and_participation">
-					description = <"Oxford Knee Questionnaire Score (OKS).">
+					text = <"Oxford Knee Score – Activity and Participation Questionnaire (OKS-APQ)">
+					description = <"Oxford Knee Score – Activity and Participation Questionnaire (OKS-APQ).">
 				>
 				["at0001"] = <
 					text = <"Event Series">
