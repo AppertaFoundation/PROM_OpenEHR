@@ -20,7 +20,7 @@ description
 			language = <[ISO_639-1::en]>
 			purpose = <"For the recording and reporting of patient-reported outcome information following knee operations.">
 			keywords = <"Outcome, knee, questionnaire", ...>
-			use = <"Used tor record patient-reported outcome information following spine operations.
+			use = <"Used tor record patient-reported outcome information following knee operations.
 While openEHR archetypes are all freely available under an open license, the specific content of this archetype may be copyright protected. Any use of this archetype within implementations must be in compliance with the terms established by the copyright owners where a copyright exists. ">
 			misuse = <"Not to be used unless the terms of copyright have been observed (if a copyright exists).">
 		>
@@ -29,7 +29,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
 		["custodian_organisation"] = <"Apperta Foundation CIC">
 		["references"] = <"">
-		["MD5-CAM-1.0.1"] = <"63413a7db96f5a4fd91e619d5229b503">
+		["MD5-CAM-1.0.1"] = <"087fbf9754bbdb80f0d2b81ab7251b9b">
 		["build_uid"] = <"44635e5f-63c8-305d-9a86-7fb823f85734">
 	>
 
@@ -62,6 +62,16 @@ definition
 										}
 									}
 									ELEMENT[at0015] occurrences matches {0..1} matches {    -- Pulmonary thrombosis?
+										value matches {
+											DV_BOOLEAN matches {*}
+										}
+									}
+									ELEMENT[at0023] occurrences matches {0..1} matches {    -- Wound infection?
+										value matches {
+											DV_BOOLEAN matches {*}
+										}
+									}
+									ELEMENT[at0024] occurrences matches {0..1} matches {    -- Deep infection?
 										value matches {
 											DV_BOOLEAN matches {*}
 										}
@@ -148,37 +158,37 @@ ontology
 				>
 				["at0008"] = <
 					text = <"Satisfaction">
-					description = <"Patient reported degree of satisfaction with outcome of hip operation.">
+					description = <"Patient reported degree of satisfaction with outcome of knee operation.">
 					comment = <"Question:
-How satisfied are you with the outcome of your spine operation?">
+How satisfied are you with the outcome of your knee operation?">
 				>
 				["at0009"] = <
 					text = <"Very satisfied">
-					description = <"Patient reports that they are very satisfied with the outcome of their hip operation.">
+					description = <"Patient reports that they are very satisfied with the outcome of their knee operation.">
 				>
 				["at0010"] = <
 					text = <"Quite satisfied">
-					description = <"Patient reports that they are very satisfied with the outcome of their hip operation.">
+					description = <"Patient reports that they are very satisfied with the outcome of their knee operation.">
 				>
 				["at0011"] = <
 					text = <"Neither satisfied nor dissatisfied">
-					description = <"Patient reports that they are neither satisfied nor dissatisfied with the outcome of their hip operation.">
+					description = <"Patient reports that they are neither satisfied nor dissatisfied with the outcome of their knee operation.">
 				>
 				["at0012"] = <
 					text = <"Quite dissatisfied">
-					description = <"Patient reports that they are quite dissatisfied with the outcome of their hip operation.">
+					description = <"Patient reports that they are quite dissatisfied with the outcome of their knee operation.">
 				>
 				["at0013"] = <
 					text = <"Very dissatisfied">
-					description = <"Patient reports that they are very dissatisfied with the outcome of their hip operation.">
+					description = <"Patient reports that they are very dissatisfied with the outcome of their knee operation.">
 				>
 				["at0014"] = <
 					text = <"Venous thrombosis?">
-					description = <"Patient reported statement whether they suffered venous thrombosis after last spine operation.">
+					description = <"Patient reported statement whether they suffered venous thrombosis after last knee operation.">
 				>
 				["at0015"] = <
 					text = <"Pulmonary thrombosis?">
-					description = <"Patient reported statement whether they suffered pulmonary thrombosis after last spine operation.">
+					description = <"Patient reported statement whether they suffered pulmonary thrombosis after last knee operation.">
 				>
 				["at0019"] = <
 					text = <"Any other operations on operated spine?">
@@ -186,11 +196,19 @@ How satisfied are you with the outcome of your spine operation?">
 				>
 				["at0021"] = <
 					text = <"Any other useful operation information">
-					description = <"Patient reported statement whether there is any other useful operation information about spine.">
+					description = <"Patient reported statement whether there is any other useful operation information about knee.">
 				>
 				["at0022"] = <
 					text = <"Details">
 					description = <"Patient provided details of other problems, other operations and other useful operation information to supplement yes answers to previous questions.">
+				>
+				["at0023"] = <
+					text = <"Wound infection?">
+					description = <"Patient reported statement whether they suffered wound infection after last knee operation.">
+				>
+				["at0024"] = <
+					text = <"Deep infection?">
+					description = <"Patient reported statement whether they had any other operations on operated spine since last hip operation.">
 				>
 			>
 		>
