@@ -29,7 +29,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
 		["custodian_organisation"] = <"Apperta Foundation CIC">
 		["references"] = <"">
-		["MD5-CAM-1.0.1"] = <"d2b65040174968d85603a11c3d313590">
+		["MD5-CAM-1.0.1"] = <"086afd474d6a6c769788047f77cbb45b">
 		["build_uid"] = <"44635e5f-63c8-305d-9a86-7fb823f85734">
 	>
 
@@ -76,6 +76,11 @@ definition
 											DV_BOOLEAN matches {*}
 										}
 									}
+									ELEMENT[at0025] occurrences matches {0..1} matches {    -- Any other problems after knee operation?
+										value matches {
+											DV_BOOLEAN matches {*}
+										}
+									}
 									ELEMENT[at0019] occurrences matches {0..1} matches {    -- Any other operations on operated knee?
 										value matches {
 											DV_BOOLEAN matches {*}
@@ -86,7 +91,7 @@ definition
 											DV_BOOLEAN matches {*}
 										}
 									}
-									ELEMENT[at0022] occurrences matches {0..1} matches {    -- Details
+									ELEMENT[at0026] occurrences matches {0..1} matches {    -- Details
 										value matches {
 											DV_TEXT matches {*}
 										}
@@ -198,10 +203,6 @@ How satisfied are you with the outcome of your knee operation?">
 					text = <"Any other useful operation information">
 					description = <"Patient reported statement whether there is any other useful operation information about knee.">
 				>
-				["at0022"] = <
-					text = <"Details">
-					description = <"Patient provided details of other problems, other operations and other useful operation information to supplement yes answers to previous questions.">
-				>
 				["at0023"] = <
 					text = <"Wound infection?">
 					description = <"Patient reported statement whether they suffered wound infection after last knee operation.">
@@ -209,6 +210,14 @@ How satisfied are you with the outcome of your knee operation?">
 				["at0024"] = <
 					text = <"Deep infection?">
 					description = <"Patient reported statement whether they suffered deep infection of the knee joint after last knee operation.">
+				>
+				["at0025"] = <
+					text = <"Any other problems after knee operation?">
+					description = <"Patient reported statement whether they had any other operations on operated knee since last operation.">
+				>
+				["at0026"] = <
+					text = <"Details">
+					description = <"Patient provided details of other problems, other operations and other useful operation information to supplement yes answers to previous questions.">
 				>
 			>
 		>
