@@ -37,7 +37,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"cf30d23a3d42305907c366583272dafd">
+		["MD5-CAM-1.0.1"] = <"9ed7ba2d2cd8c634e06e8ed8e9e7c730">
 		["build_uid"] = <"4218ce62-ec18-464b-84bb-5fe9b815a1ea">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -112,6 +112,15 @@ definition
 											2|[local::at0165],
 											3|[local::at0166],
 											4|[local::at0167]
+										}
+									}
+									ELEMENT[at0168] occurrences matches {0..1} matches {    -- 8 Activity duration
+										value matches {
+											0|[local::at0169],
+											1|[local::at0170],
+											2|[local::at0171],
+											3|[local::at0172],
+											4|[local::at0173]
 										}
 									}
 									ELEMENT[at0104] occurrences matches {0..1} matches {    -- Total score
@@ -398,6 +407,32 @@ It is a problem for me to carry heavy things (e.g. items at work, shopping or a 
 				["at0167"] = <
 					text = <"Strongly disagree">
 					description = <"The patient strongly disagrees that they have a problem twisting and turning because of their knee in the past 4 weeks.">
+				>
+				["at0168"] = <
+					text = <"8 Activity duration">
+					description = <"Patient-reported extent of problem taking longer to do everyday activities beacuse of knee pain in the past 4 weeks.">
+					comment = <"Questionnaire wording: 
+8. It is a problem for me that I need to take longer to do everyday activities, because of my knee.">
+				>
+				["at0169"] = <
+					text = <"Strongly agree">
+					description = <"The patient strongly agrees that they have a problem taking longer to do everyday activities because of their knee in the past 4 weeks.">
+				>
+				["at0170"] = <
+					text = <"Tend to agree">
+					description = <"The patient tends to agree that they have a problem taking longer to do everyday activities because of their knee in the past 4 weeks.">
+				>
+				["at0171"] = <
+					text = <"Neither agree nor disagree">
+					description = <"The patient neither agrees nor disagrees that they have a problem taking longer to do every day activities because of their knee in the past 4 weeks.">
+				>
+				["at0172"] = <
+					text = <"Tend to disagree">
+					description = <"The patient tend to agree that they have a problem taking longer to do every day activities because of their knee in the past 4 weeks.">
+				>
+				["at0173"] = <
+					text = <"Strongly disagree">
+					description = <"The patient strongly disagrees that they have a problem taking longer to do everday activities because of their knee in the past 4 weeks.">
 				>
 			>
 		>
