@@ -37,7 +37,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"2ee8365b6444220b594f0f832366b994">
+		["MD5-CAM-1.0.1"] = <"1d63534348d6409dc91ba7871c21285d">
 		["build_uid"] = <"4218ce62-ec18-464b-84bb-5fe9b815a1ea">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -85,6 +85,15 @@ definition
 											2|[local::at0147],
 											3|[local::at0148],
 											4|[local::at0149]
+										}
+									}
+									ELEMENT[at0150] occurrences matches {0..1} matches {    -- 5 Family activities
+										value matches {
+											0|[local::at0151],
+											1|[local::at0152],
+											2|[local::at0153],
+											3|[local::at0154],
+											4|[local::at0155]
 										}
 									}
 									ELEMENT[at0104] occurrences matches {0..1} matches {    -- Total score
@@ -293,6 +302,32 @@ It is a problem for me to carry heavy things (e.g. items at work, shopping or a 
 				["at0149"] = <
 					text = <"Strongly disagree">
 					description = <"The patient strongly disagrees that they have to plan before going out for the day because of their knee in the past 4 weeks.">
+				>
+				["at0150"] = <
+					text = <"5 Family activities">
+					description = <"Patient-reported extent of impact on taking part in events with family and friends beacuse of knee pain in the past 4 weeks.">
+					comment = <"Questionnaire wording: 
+5. It is a problem for me to fully take part in activities with friends and family, because of my knee">
+				>
+				["at0151"] = <
+					text = <"Strongly agree">
+					description = <"The patient strongly agrees that they have a problem fully taking part in activities with family and friends because of their knee in the past 4 weeks.">
+				>
+				["at0152"] = <
+					text = <"Tend to agree">
+					description = <"The patient tends to agree that they have a problem fully taking part in activities with family and friends because of their knee in the past 4 weeks.">
+				>
+				["at0153"] = <
+					text = <"Neither agree nor disagree">
+					description = <"The patient neither agrees nor disagrees that they have a problem fully taking part in activities with family and friends because of their knee in the past 4 weeks.">
+				>
+				["at0154"] = <
+					text = <"Tend to disagree">
+					description = <"The patient tend to agree that they have a problem fully taking part in activities with family and friends because of their knee in the past 4 weeks.">
+				>
+				["at0155"] = <
+					text = <"Strongly disagree">
+					description = <"The patient strongly disagrees that they have a problem fully taking part in activities with family and friends because of their knee in the past 4 weeks.">
 				>
 			>
 		>
