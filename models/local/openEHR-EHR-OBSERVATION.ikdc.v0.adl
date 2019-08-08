@@ -33,7 +33,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"3be7126e6307e00533ea71abc46e0e1f">
+		["MD5-CAM-1.0.1"] = <"e7a4ad645e91e7e3df366302a8ac485c">
 		["build_uid"] = <"32c02cb4-dbd5-371a-a073-44724ebd1c9b">
 	>
 
@@ -638,7 +638,7 @@ What is the highest level of activity you can participate in on a regular basis?
 				>
 				["at0099"] = <
 					text = <"Function">
-					description = <"*">
+					description = <"Patient reported knee function before injury and current state.">
 				>
 			>
 		>
