@@ -29,7 +29,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
 		["custodian_organisation"] = <"Apperta Foundation CIC">
 		["references"] = <"">
-		["MD5-CAM-1.0.1"] = <"b157bc1332240ab8dae6d024c44257ec">
+		["MD5-CAM-1.0.1"] = <"a6aba620b85d41ab888a6fb4c41637d4">
 		["build_uid"] = <"44635e5f-63c8-305d-9a86-7fb823f85734">
 	>
 
@@ -44,8 +44,12 @@ definition
 								items cardinality matches {0..*; unordered} matches {
 									ELEMENT[at0028] occurrences matches {0..1} matches {    -- Before Level
 										value matches {
+											0|[local::at0030],
 											1|[local::at0029],
-											0|[local::at0030]
+											2|[local::at0031],
+											3|[local::at0032],
+											4|[local::at0033],
+											5|[local::at0034]
 										}
 									}
 									ELEMENT[at0019] occurrences matches {0..1} matches {    -- Any other operations on operated knee?
@@ -144,6 +148,22 @@ Please indicate in the spaces below the HIGHEST level of activity that you parti
 				["at0030"] = <
 					text = <"Level 0">
 					description = <"Sick leave or disability pension because of knee problems.">
+				>
+				["at0031"] = <
+					text = <"Level 2">
+					description = <"Work- light labour. Walking on uneven ground possible, but impossible to back pack or hike.">
+				>
+				["at0032"] = <
+					text = <"Level 3">
+					description = <"Work- light labour (nursing, etc.).">
+				>
+				["at0033"] = <
+					text = <"Level 4">
+					description = <"Work- moderately heavy labour (e.g. truck driving, etc.).">
+				>
+				["at0034"] = <
+					text = <"Level 5">
+					description = <"Work- heavy labour (construction, etc.) Competitive sports- cycling, cross-country skiing. Recreational sports- jogging on uneven ground at least twice weekly.">
 				>
 			>
 		>
