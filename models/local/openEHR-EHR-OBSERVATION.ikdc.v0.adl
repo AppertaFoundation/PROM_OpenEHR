@@ -33,7 +33,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"b7e1a3c79115904efa758652d9eba7fc">
+		["MD5-CAM-1.0.1"] = <"cc1f3401cae07c3e461b24b80e61f67a">
 		["build_uid"] = <"32c02cb4-dbd5-371a-a073-44724ebd1c9b">
 	>
 
@@ -341,11 +341,11 @@ What is the highest level of activity you can participate in on a regular basis?
 				>
 				["at0044"] = <
 					text = <"How does knee affect your ability to">
-					description = <"*">
+					description = <"Collection of questions relating to the patients ability to participate in various activities.">
 				>
 				["at0045"] = <
 					text = <"Go up stairs">
-					description = <"*">
+					description = <"Patient reported ability to go up stairs.">
 				>
 			>
 		>
