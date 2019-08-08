@@ -29,7 +29,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
 		["custodian_organisation"] = <"Apperta Foundation CIC">
 		["references"] = <"">
-		["MD5-CAM-1.0.1"] = <"53a4ca542d3e2d632e6359db9645262c">
+		["MD5-CAM-1.0.1"] = <"f8c764f2a94c3b4f2c4d71565ca2287a">
 		["build_uid"] = <"44635e5f-63c8-305d-9a86-7fb823f85734">
 	>
 
@@ -95,17 +95,6 @@ definition
 								}
 							}
 						}
-						state matches {
-							ITEM_TREE[at0004] matches {    -- ItemTree
-								items cardinality matches {0..*; unordered} matches {
-									ELEMENT[at0007] occurrences matches {0..*} matches {    -- Confounding factors
-										value matches {
-											DV_TEXT matches {*}
-										}
-									}
-								}
-							}
-						}
 					}
 				}
 			}
@@ -140,10 +129,6 @@ ontology
 					text = <"ItemTree">
 					description = <"@ internal @">
 				>
-				["at0004"] = <
-					text = <"ItemTree">
-					description = <"@ internal @">
-				>
 				["at0005"] = <
 					text = <"ItemTree">
 					description = <"@ internal @">
@@ -152,10 +137,6 @@ ontology
 					text = <"Extension">
 					description = <"Additional information required to capture local context or to align with other reference models/formalisms.">
 					comment = <"e.g. Local hospital departmental information or additional metadata to align with HL7 or CDISC equivalents.">
-				>
-				["at0007"] = <
-					text = <"Confounding factors">
-					description = <"Record any issues or factors that may impact on the score or interpretation.">
 				>
 				["at0019"] = <
 					text = <"Any other operations on operated knee?">
