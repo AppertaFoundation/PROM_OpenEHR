@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"ckm.apperta.org">
 		["original_publisher"] = <"Apperta Foundation CIC">
 		["custodian_namespace"] = <"ckm.apperta.org">
-		["MD5-CAM-1.0.1"] = <"c2ad3c38494c1168d4e4324d4e6b5d62">
+		["MD5-CAM-1.0.1"] = <"e143ebf0841b7c8e2bb7a371d3969348">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -359,7 +359,7 @@ definition
 											}
 										}
 									}
-									CLUSTER[at0350] occurrences matches {0..1} matches {    -- CLUSTER
+									CLUSTER[at0350] occurrences matches {0..1} matches {    -- Sports and recreation
 										items cardinality matches {1..*; unordered} matches {
 											ELEMENT[at0293] occurrences matches {0..1} matches {    -- SP1 - Squatting
 												value matches {
@@ -1647,8 +1647,9 @@ Q4. In general, how much difficulty do you have with your knee?">
 					description = <"*">
 				>
 				["at0350"] = <
-					text = <"CLUSTER">
-					description = <"*">
+					text = <"Sports and recreation">
+					description = <"Patient reported levels of physical function.">
+					comment = <"The following questions concern your physical function when being active on a higher level. The questions should be answered thinking of what degree of difficulty you have experienced during the last week due to your knee.">
 				>
 				["at0351"] = <
 					text = <"Function">
