@@ -29,7 +29,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
 		["custodian_organisation"] = <"Apperta Foundation CIC">
 		["references"] = <"">
-		["MD5-CAM-1.0.1"] = <"57e3968fac706b8a436a91865e9c8f89">
+		["MD5-CAM-1.0.1"] = <"53a4ca542d3e2d632e6359db9645262c">
 		["build_uid"] = <"44635e5f-63c8-305d-9a86-7fb823f85734">
 	>
 
@@ -78,6 +78,16 @@ definition
 										}
 									}
 									ELEMENT[at0026] occurrences matches {0..1} matches {    -- Details
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0052] occurrences matches {0..1} matches {    -- Date of surgery
+										value matches {
+											DV_DATE_TIME matches {*}
+										}
+									}
+									ELEMENT[at0053] occurrences matches {0..1} matches {    -- Who performed surgery?
 										value matches {
 											DV_TEXT matches {*}
 										}
@@ -254,6 +264,16 @@ Please indicate in the spaces below the HIGHEST level of activity that you parti
 				["at0051"] = <
 					text = <"Level 10">
 					description = <"Competitive sports- soccer, football, rugby (national elite).">
+				>
+				["at0052"] = <
+					text = <"Date of surgery">
+					description = <"Details of surgery date.">
+					comment = <"When was the surgery performed? ">
+				>
+				["at0053"] = <
+					text = <"Who performed surgery?">
+					description = <"Details of who performed the surgery.">
+					comment = <"Who performed the surgery?">
 				>
 			>
 		>
