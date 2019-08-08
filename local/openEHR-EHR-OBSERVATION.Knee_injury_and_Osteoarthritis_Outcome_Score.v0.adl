@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"ckm.apperta.org">
 		["original_publisher"] = <"Apperta Foundation CIC">
 		["custodian_namespace"] = <"ckm.apperta.org">
-		["MD5-CAM-1.0.1"] = <"e143ebf0841b7c8e2bb7a371d3969348">
+		["MD5-CAM-1.0.1"] = <"070012f4a8a6b48e3f533f9b3236a708">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -408,7 +408,7 @@ definition
 											}
 										}
 									}
-									CLUSTER[at0349] occurrences matches {0..1} matches {    -- CLUSTER
+									CLUSTER[at0349] occurrences matches {0..1} matches {    -- Quality of life
 										items cardinality matches {1..*; unordered} matches {
 											ELEMENT[at0323] occurrences matches {0..1} matches {    -- Q1 - Aware of pain
 												value matches {
@@ -1643,8 +1643,8 @@ Q4. In general, how much difficulty do you have with your knee?">
 					description = <"Patient reported frequency and pain levels.">
 				>
 				["at0349"] = <
-					text = <"CLUSTER">
-					description = <"*">
+					text = <"Quality of life">
+					description = <"Patient reported quality of life.">
 				>
 				["at0350"] = <
 					text = <"Sports and recreation">
