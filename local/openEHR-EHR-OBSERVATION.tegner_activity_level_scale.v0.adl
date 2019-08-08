@@ -29,12 +29,12 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
 		["custodian_organisation"] = <"Apperta Foundation CIC">
 		["references"] = <"">
-		["MD5-CAM-1.0.1"] = <"75734cfd9610d5c9f00d4ee873e3c750">
+		["MD5-CAM-1.0.1"] = <"0f4be0e366c131bcf16cfba1c28521d3">
 		["build_uid"] = <"44635e5f-63c8-305d-9a86-7fb823f85734">
 	>
 
 definition
-	OBSERVATION[at0000] matches {    -- tegner_activity_level_scale
+	OBSERVATION[at0000] matches {    -- Tegner Activity Level Scale
 		data matches {
 			HISTORY[at0001] matches {    -- History
 				events cardinality matches {0..*; unordered} matches {
@@ -129,7 +129,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"tegner_activity_level_scale">
+					text = <"Tegner Activity Level Scale">
 					description = <"Knee outcome questionnaire.">
 				>
 				["at0001"] = <
