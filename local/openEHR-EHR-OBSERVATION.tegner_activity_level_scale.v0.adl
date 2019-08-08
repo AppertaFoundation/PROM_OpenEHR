@@ -29,7 +29,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
 		["custodian_organisation"] = <"Apperta Foundation CIC">
 		["references"] = <"">
-		["MD5-CAM-1.0.1"] = <"0f4be0e366c131bcf16cfba1c28521d3">
+		["MD5-CAM-1.0.1"] = <"b157bc1332240ab8dae6d024c44257ec">
 		["build_uid"] = <"44635e5f-63c8-305d-9a86-7fb823f85734">
 	>
 
@@ -42,51 +42,13 @@ definition
 						data matches {
 							ITEM_TREE[at0003] matches {    -- ItemTree
 								items cardinality matches {0..*; unordered} matches {
-									ELEMENT[at0008] occurrences matches {0..1} matches {    -- Satisfaction
+									ELEMENT[at0028] occurrences matches {0..1} matches {    -- Before Level
 										value matches {
-											DV_CODED_TEXT matches {
-												defining_code matches {
-													[local::
-													at0009,    -- Very satisfied
-													at0010,    -- Quite satisfied
-													at0011,    -- Neither satisfied nor dissatisfied
-													at0012,    -- Quite dissatisfied
-													at0013]    -- Very dissatisfied
-												}
-											}
-										}
-									}
-									ELEMENT[at0014] occurrences matches {0..1} matches {    -- Venous thrombosis?
-										value matches {
-											DV_BOOLEAN matches {*}
-										}
-									}
-									ELEMENT[at0015] occurrences matches {0..1} matches {    -- Pulmonary thrombosis?
-										value matches {
-											DV_BOOLEAN matches {*}
-										}
-									}
-									ELEMENT[at0023] occurrences matches {0..1} matches {    -- Wound infection?
-										value matches {
-											DV_BOOLEAN matches {*}
-										}
-									}
-									ELEMENT[at0024] occurrences matches {0..1} matches {    -- Deep infection?
-										value matches {
-											DV_BOOLEAN matches {*}
-										}
-									}
-									ELEMENT[at0025] occurrences matches {0..1} matches {    -- Any other problems after knee operation?
-										value matches {
-											DV_BOOLEAN matches {*}
+											1|[local::at0029],
+											0|[local::at0030]
 										}
 									}
 									ELEMENT[at0019] occurrences matches {0..1} matches {    -- Any other operations on operated knee?
-										value matches {
-											DV_BOOLEAN matches {*}
-										}
-									}
-									ELEMENT[at0021] occurrences matches {0..1} matches {    -- Any other useful operation information
 										value matches {
 											DV_BOOLEAN matches {*}
 										}
@@ -130,7 +92,7 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"Tegner Activity Level Scale">
-					description = <"Knee outcome questionnaire.">
+					description = <"Tegner Activity Level Scale.">
 				>
 				["at0001"] = <
 					text = <"History">
@@ -161,63 +123,27 @@ ontology
 					text = <"Confounding factors">
 					description = <"Record any issues or factors that may impact on the score or interpretation.">
 				>
-				["at0008"] = <
-					text = <"Satisfaction">
-					description = <"Patient reported degree of satisfaction with outcome of knee operation.">
-					comment = <"Question:
-How satisfied are you with the outcome of your knee operation?">
-				>
-				["at0009"] = <
-					text = <"Very satisfied">
-					description = <"Patient reports that they are very satisfied with the outcome of their knee operation.">
-				>
-				["at0010"] = <
-					text = <"Quite satisfied">
-					description = <"Patient reports that they are very satisfied with the outcome of their knee operation.">
-				>
-				["at0011"] = <
-					text = <"Neither satisfied nor dissatisfied">
-					description = <"Patient reports that they are neither satisfied nor dissatisfied with the outcome of their knee operation.">
-				>
-				["at0012"] = <
-					text = <"Quite dissatisfied">
-					description = <"Patient reports that they are quite dissatisfied with the outcome of their knee operation.">
-				>
-				["at0013"] = <
-					text = <"Very dissatisfied">
-					description = <"Patient reports that they are very dissatisfied with the outcome of their knee operation.">
-				>
-				["at0014"] = <
-					text = <"Venous thrombosis?">
-					description = <"Patient reported statement whether they suffered venous thrombosis after last knee operation.">
-				>
-				["at0015"] = <
-					text = <"Pulmonary thrombosis?">
-					description = <"Patient reported statement whether they suffered pulmonary thrombosis after last knee operation.">
-				>
 				["at0019"] = <
 					text = <"Any other operations on operated knee?">
-					description = <"Patient reported statement whether they had any other operations on operated knee since last operation.">
-				>
-				["at0021"] = <
-					text = <"Any other useful operation information">
-					description = <"Patient reported statement whether there is any other useful operation information about knee.">
-				>
-				["at0023"] = <
-					text = <"Wound infection?">
-					description = <"Patient reported statement whether they suffered wound infection after last knee operation.">
-				>
-				["at0024"] = <
-					text = <"Deep infection?">
-					description = <"Patient reported statement whether they suffered deep infection of the knee joint after last knee operation.">
-				>
-				["at0025"] = <
-					text = <"Any other problems after knee operation?">
 					description = <"Patient reported statement whether they had any other operations on operated knee since last operation.">
 				>
 				["at0026"] = <
 					text = <"Details">
 					description = <"Patient provided details of other problems, other operations and other useful operation information to supplement yes answers to previous questions.">
+				>
+				["at0028"] = <
+					text = <"Before Level">
+					description = <"Patient described level of the highest level of activity before injury.">
+					comment = <"Question:
+Please indicate in the spaces below the HIGHEST level of activity that you participated in BEFORE YOUR INJURY and the highest level you are able to participate in CURRENTLY.">
+				>
+				["at0029"] = <
+					text = <"Level 1">
+					description = <"Work- sedentary (secretarial, etc.).">
+				>
+				["at0030"] = <
+					text = <"Level 0">
+					description = <"Sick leave or disability pension because of knee problems.">
 				>
 			>
 		>
