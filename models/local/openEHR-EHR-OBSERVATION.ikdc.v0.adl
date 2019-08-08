@@ -33,7 +33,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"872006e41899c76d55f94f211779c8a1">
+		["MD5-CAM-1.0.1"] = <"9dfe691c75ca3d2b307eb3bc21e7ef5f">
 		["build_uid"] = <"32c02cb4-dbd5-371a-a073-44724ebd1c9b">
 	>
 
@@ -105,6 +105,7 @@ definition
 											}
 										}
 									}
+									CLUSTER[at0037] occurrences matches {0..1} matches {*}    -- Sport Activities
 								}
 							}
 						}
@@ -286,6 +287,10 @@ What is the highest level of activity you can perform without significant giving
 				["at0035"] = <
 					text = <"Very strenuous activities">
 					description = <"Patient reports that they are able to perform very strenuous activities like jumping or pivoting as in gymnastics or football.">
+				>
+				["at0037"] = <
+					text = <"Sport Activities">
+					description = <"*">
 				>
 			>
 		>
