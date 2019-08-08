@@ -29,7 +29,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
 		["custodian_organisation"] = <"Apperta Foundation CIC">
 		["references"] = <"">
-		["MD5-CAM-1.0.1"] = <"886c0ebe4f6b11081cdbb79098944118">
+		["MD5-CAM-1.0.1"] = <"57e3968fac706b8a436a91865e9c8f89">
 		["build_uid"] = <"44635e5f-63c8-305d-9a86-7fb823f85734">
 	>
 
@@ -55,6 +55,21 @@ definition
 											8|[local::at0037],
 											9|[local::at0038],
 											10|[local::at0039]
+										}
+									}
+									ELEMENT[at0040] occurrences matches {0..1} matches {    -- Current Level
+										value matches {
+											0|[local::at0041],
+											1|[local::at0042],
+											2|[local::at0043],
+											3|[local::at0044],
+											4|[local::at0045],
+											5|[local::at0046],
+											6|[local::at0047],
+											7|[local::at0048],
+											8|[local::at0049],
+											9|[local::at0050],
+											10|[local::at0051]
 										}
 									}
 									ELEMENT[at0019] occurrences matches {0..1} matches {    -- Any other operations on operated knee?
@@ -187,6 +202,56 @@ Please indicate in the spaces below the HIGHEST level of activity that you parti
 					description = <"Competitive sports- soccer, football, rugby (lower divisions), ice hockey, wrestling, gymnastics, basketball.">
 				>
 				["at0039"] = <
+					text = <"Level 10">
+					description = <"Competitive sports- soccer, football, rugby (national elite).">
+				>
+				["at0040"] = <
+					text = <"Current Level">
+					description = <"Patient described level of the highest level of activity currently.">
+					comment = <"Question:
+Please indicate in the spaces below the HIGHEST level of activity that you participated in BEFORE YOUR INJURY and the highest level you are able to participate in CURRENTLY.">
+				>
+				["at0041"] = <
+					text = <"Level 0">
+					description = <"Sick leave or disability pension because of knee problems.">
+				>
+				["at0042"] = <
+					text = <"Level 1">
+					description = <"Work- sedentary (secretarial, etc.).">
+				>
+				["at0043"] = <
+					text = <"Level 2">
+					description = <"Work- light labour. Walking on uneven ground possible, but impossible to back pack or hike.">
+				>
+				["at0044"] = <
+					text = <"Level 3">
+					description = <"Work- light labour (nursing, etc.).">
+				>
+				["at0045"] = <
+					text = <"Level 4">
+					description = <"Work- moderately heavy labour (e.g. truck driving, etc.).">
+				>
+				["at0046"] = <
+					text = <"Level 5">
+					description = <"Work- heavy labour (construction, etc.) Competitive sports- cycling, cross-country skiing. Recreational sports- jogging on uneven ground at least twice weekly.">
+				>
+				["at0047"] = <
+					text = <"Level 6">
+					description = <"Recreational sports- tennis and badminton, handball, racquetball, down-hill skiing, jogging at least 5 times per week.">
+				>
+				["at0048"] = <
+					text = <"Level 7">
+					description = <"Competitive sports- tennis, running, motorcars speedway, handball.  Recreational sports- soccer, football, rugby, bandy, ice hockey, basketball, squash, racquetball, running.">
+				>
+				["at0049"] = <
+					text = <"Level 8">
+					description = <"Competitive sports- racquetball or bandy, squash or badminton, track and field athletics (jumping, etc.), down-hill skiing.">
+				>
+				["at0050"] = <
+					text = <"Level 9">
+					description = <"Competitive sports- soccer, football, rugby (lower divisions), ice hockey, wrestling, gymnastics, basketball.">
+				>
+				["at0051"] = <
 					text = <"Level 10">
 					description = <"Competitive sports- soccer, football, rugby (national elite).">
 				>
