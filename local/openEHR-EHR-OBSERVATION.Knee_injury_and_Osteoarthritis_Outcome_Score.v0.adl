@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"ckm.apperta.org">
 		["original_publisher"] = <"Apperta Foundation CIC">
 		["custodian_namespace"] = <"ckm.apperta.org">
-		["MD5-CAM-1.0.1"] = <"070012f4a8a6b48e3f533f9b3236a708">
+		["MD5-CAM-1.0.1"] = <"a8c90c420bb415428ea60d37714f2db2">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -529,7 +529,7 @@ S1. Do you have swelling in your knee?">
 				>
 				["at0045"] = <
 					text = <"Total score as percentage">
-					description = <"Total score from questions 1 to 10 as a percentage.">
+					description = <"Total score from all questions as a percentage.">
 				>
 				["at0046"] = <
 					text = <"Tree">
