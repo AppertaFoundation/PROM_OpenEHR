@@ -33,7 +33,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"305eba392a86e6ad67997217a4c9e57f">
+		["MD5-CAM-1.0.1"] = <"51ed7a4407e06e4a0116cf267acac3af">
 		["build_uid"] = <"32c02cb4-dbd5-371a-a073-44724ebd1c9b">
 	>
 
@@ -231,17 +231,6 @@ definition
 								}
 							}
 						}
-						state matches {
-							ITEM_TREE[at0004] matches {    -- ItemTree
-								items cardinality matches {0..*; unordered} matches {
-									ELEMENT[at0005] occurrences matches {0..*} matches {    -- Confounding factors
-										value matches {
-											DV_TEXT matches {*}
-										}
-									}
-								}
-							}
-						}
 					}
 				}
 			}
@@ -277,14 +266,6 @@ ontology
 				["at0003"] = <
 					text = <"ItemTree">
 					description = <"@ internal @">
-				>
-				["at0004"] = <
-					text = <"ItemTree">
-					description = <"@ internal @">
-				>
-				["at0005"] = <
-					text = <"Confounding factors">
-					description = <"Record any issues or factors that may impact on the score or interpretation.">
 				>
 				["at0006"] = <
 					text = <"ItemTree">
