@@ -29,7 +29,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
 		["custodian_organisation"] = <"Apperta Foundation CIC">
 		["references"] = <"">
-		["MD5-CAM-1.0.1"] = <"a6aba620b85d41ab888a6fb4c41637d4">
+		["MD5-CAM-1.0.1"] = <"886c0ebe4f6b11081cdbb79098944118">
 		["build_uid"] = <"44635e5f-63c8-305d-9a86-7fb823f85734">
 	>
 
@@ -49,7 +49,12 @@ definition
 											2|[local::at0031],
 											3|[local::at0032],
 											4|[local::at0033],
-											5|[local::at0034]
+											5|[local::at0034],
+											6|[local::at0035],
+											7|[local::at0036],
+											8|[local::at0037],
+											9|[local::at0038],
+											10|[local::at0039]
 										}
 									}
 									ELEMENT[at0019] occurrences matches {0..1} matches {    -- Any other operations on operated knee?
@@ -164,6 +169,26 @@ Please indicate in the spaces below the HIGHEST level of activity that you parti
 				["at0034"] = <
 					text = <"Level 5">
 					description = <"Work- heavy labour (construction, etc.) Competitive sports- cycling, cross-country skiing. Recreational sports- jogging on uneven ground at least twice weekly.">
+				>
+				["at0035"] = <
+					text = <"Level 6">
+					description = <"Recreational sports- tennis and badminton, handball, racquetball, down-hill skiing, jogging at least 5 times per week.">
+				>
+				["at0036"] = <
+					text = <"Level 7">
+					description = <"Competitive sports- tennis, running, motorcars speedway, handball.  Recreational sports- soccer, football, rugby, bandy, ice hockey, basketball, squash, racquetball, running.">
+				>
+				["at0037"] = <
+					text = <"Level 8">
+					description = <"Competitive sports- racquetball or bandy, squash or badminton, track and field athletics (jumping, etc.), down-hill skiing.">
+				>
+				["at0038"] = <
+					text = <"Level 9">
+					description = <"Competitive sports- soccer, football, rugby (lower divisions), ice hockey, wrestling, gymnastics, basketball.">
+				>
+				["at0039"] = <
+					text = <"Level 10">
+					description = <"Competitive sports- soccer, football, rugby (national elite).">
 				>
 			>
 		>
