@@ -33,7 +33,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"e7a4ad645e91e7e3df366302a8ac485c">
+		["MD5-CAM-1.0.1"] = <"5ee7137f6c9fa7ca1922ae34a23b205b">
 		["build_uid"] = <"32c02cb4-dbd5-371a-a073-44724ebd1c9b">
 	>
 
@@ -203,7 +203,17 @@ definition
 											}
 										}
 									}
-									CLUSTER[at0099] occurrences matches {0..1} matches {*}    -- Function
+									CLUSTER[at0099] occurrences matches {0..1} matches {    -- Function
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0100] occurrences matches {0..1} matches {    -- Frequency of pain
+												value matches {
+													DV_COUNT matches {
+														magnitude matches {|>0..<10|}
+													}
+												}
+											}
+										}
+									}
 								}
 							}
 						}
@@ -639,6 +649,10 @@ What is the highest level of activity you can participate in on a regular basis?
 				["at0099"] = <
 					text = <"Function">
 					description = <"Patient reported knee function before injury and current state.">
+				>
+				["at0100"] = <
+					text = <"Frequency of pain">
+					description = <"Patient reported function prior to knee injury where 0 represents couldn't perform daily activities and 10 represents no limitation in daily activities.">
 				>
 			>
 		>
