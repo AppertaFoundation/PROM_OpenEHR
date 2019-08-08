@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"ckm.apperta.org">
 		["original_publisher"] = <"Apperta Foundation CIC">
 		["custodian_namespace"] = <"ckm.apperta.org">
-		["MD5-CAM-1.0.1"] = <"2bc34785272e86203122df4d497f82ec">
+		["MD5-CAM-1.0.1"] = <"2a30e043446d8b96fc67ce36bb290029">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -50,382 +50,402 @@ definition
 						data matches {
 							ITEM_TREE[at0003] matches {    -- Tree
 								items cardinality matches {0..*; unordered} matches {
-									ELEMENT[at0004] occurrences matches {0..1} matches {    -- S1 - Swelling
-										value matches {
-											4|[local::at0009],
-											3|[local::at0050],
-											2|[local::at0051],
-											1|[local::at0052],
-											0|[local::at0105]
+									CLUSTER[at0347] occurrences matches {0..1} matches {    -- CLUSTER
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0004] occurrences matches {0..1} matches {    -- S1 - Swelling
+												value matches {
+													4|[local::at0009],
+													3|[local::at0050],
+													2|[local::at0051],
+													1|[local::at0052],
+													0|[local::at0105]
+												}
+											}
+											ELEMENT[at0099] occurrences matches {0..1} matches {    -- S2 - Grinding
+												value matches {
+													4|[local::at0100],
+													3|[local::at0101],
+													2|[local::at0102],
+													1|[local::at0103],
+													0|[local::at0106]
+												}
+											}
+											ELEMENT[at0107] occurrences matches {0..1} matches {    -- S3 - Catching
+												value matches {
+													4|[local::at0108],
+													3|[local::at0109],
+													2|[local::at0110],
+													1|[local::at0111],
+													0|[local::at0112]
+												}
+											}
+											ELEMENT[at0113] occurrences matches {0..1} matches {    -- S4 - Straighten
+												value matches {
+													4|[local::at0114],
+													3|[local::at0115],
+													2|[local::at0116],
+													1|[local::at0117],
+													0|[local::at0118]
+												}
+											}
+											ELEMENT[at0119] occurrences matches {0..1} matches {    -- S5 - Bend
+												value matches {
+													4|[local::at0120],
+													3|[local::at0121],
+													2|[local::at0122],
+													1|[local::at0123],
+													0|[local::at0124]
+												}
+											}
+											ELEMENT[at0125] occurrences matches {0..1} matches {    -- S6 - Morning Stiffness
+												value matches {
+													0|[local::at0126],
+													1|[local::at0127],
+													2|[local::at0128],
+													3|[local::at0129],
+													4|[local::at0130]
+												}
+											}
+											ELEMENT[at0131] occurrences matches {0..1} matches {    -- S7 - Stiffness after sitting
+												value matches {
+													0|[local::at0132],
+													1|[local::at0133],
+													2|[local::at0134],
+													3|[local::at0135],
+													4|[local::at0136]
+												}
+											}
 										}
 									}
-									ELEMENT[at0099] occurrences matches {0..1} matches {    -- S2 - Grinding
-										value matches {
-											4|[local::at0100],
-											3|[local::at0101],
-											2|[local::at0102],
-											1|[local::at0103],
-											0|[local::at0106]
+									CLUSTER[at0348] occurrences matches {0..1} matches {    -- CLUSTER
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0137] occurrences matches {0..1} matches {    -- P1 - Pain frequency
+												value matches {
+													0|[local::at0138],
+													1|[local::at0139],
+													2|[local::at0140],
+													3|[local::at0141],
+													4|[local::at0142]
+												}
+											}
+											ELEMENT[at0143] occurrences matches {0..1} matches {    -- P2 - Twisting
+												value matches {
+													0|[local::at0144],
+													1|[local::at0145],
+													2|[local::at0146],
+													3|[local::at0147],
+													4|[local::at0148]
+												}
+											}
+											ELEMENT[at0149] occurrences matches {0..1} matches {    -- P3 - Straightening
+												value matches {
+													0|[local::at0150],
+													1|[local::at0151],
+													2|[local::at0152],
+													3|[local::at0153],
+													4|[local::at0154]
+												}
+											}
+											ELEMENT[at0155] occurrences matches {0..1} matches {    -- P4 - Bending
+												value matches {
+													0|[local::at0156],
+													1|[local::at0157],
+													2|[local::at0158],
+													3|[local::at0159],
+													4|[local::at0160]
+												}
+											}
+											ELEMENT[at0161] occurrences matches {0..1} matches {    -- P5 - Walking
+												value matches {
+													0|[local::at0162],
+													1|[local::at0163],
+													2|[local::at0164],
+													3|[local::at0165],
+													4|[local::at0166]
+												}
+											}
+											ELEMENT[at0167] occurrences matches {0..1} matches {    -- P6- Stairs
+												value matches {
+													0|[local::at0168],
+													1|[local::at0169],
+													2|[local::at0170],
+													3|[local::at0171],
+													4|[local::at0172]
+												}
+											}
+											ELEMENT[at0173] occurrences matches {0..1} matches {    -- P7 - In Bed
+												value matches {
+													0|[local::at0174],
+													1|[local::at0175],
+													2|[local::at0176],
+													3|[local::at0177],
+													4|[local::at0178]
+												}
+											}
+											ELEMENT[at0179] occurrences matches {0..1} matches {    -- P8 - Sitting or lying
+												value matches {
+													0|[local::at0180],
+													1|[local::at0181],
+													2|[local::at0182],
+													3|[local::at0183],
+													4|[local::at0184]
+												}
+											}
+											ELEMENT[at0185] occurrences matches {0..1} matches {    -- P9 - Standing
+												value matches {
+													0|[local::at0186],
+													1|[local::at0187],
+													2|[local::at0188],
+													3|[local::at0189],
+													4|[local::at0190]
+												}
+											}
 										}
 									}
-									ELEMENT[at0107] occurrences matches {0..1} matches {    -- S3 - Catching
-										value matches {
-											4|[local::at0108],
-											3|[local::at0109],
-											2|[local::at0110],
-											1|[local::at0111],
-											0|[local::at0112]
+									CLUSTER[at0351] occurrences matches {0..1} matches {    -- CLUSTER
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0191] occurrences matches {0..1} matches {    -- A1 - Descending stairs
+												value matches {
+													0|[local::at0192],
+													1|[local::at0193],
+													2|[local::at0194],
+													3|[local::at0195],
+													4|[local::at0196]
+												}
+											}
+											ELEMENT[at0197] occurrences matches {0..1} matches {    -- A2 - Ascending stairs
+												value matches {
+													0|[local::at0198],
+													1|[local::at0199],
+													2|[local::at0200],
+													3|[local::at0201],
+													4|[local::at0202]
+												}
+											}
+											ELEMENT[at0203] occurrences matches {0..1} matches {    -- A3 - Rising from sitting
+												value matches {
+													0|[local::at0204],
+													1|[local::at0205],
+													2|[local::at0206],
+													3|[local::at0207],
+													4|[local::at0208]
+												}
+											}
+											ELEMENT[at0209] occurrences matches {0..1} matches {    -- A4 - Standing
+												value matches {
+													0|[local::at0210],
+													1|[local::at0211],
+													2|[local::at0212],
+													3|[local::at0213],
+													4|[local::at0214]
+												}
+											}
+											ELEMENT[at0215] occurrences matches {0..1} matches {    -- A5 - Bending to pick up
+												value matches {
+													0|[local::at0216],
+													1|[local::at0217],
+													2|[local::at0218],
+													3|[local::at0219],
+													4|[local::at0220]
+												}
+											}
+											ELEMENT[at0221] occurrences matches {0..1} matches {    -- A6 - Walking on flat surface
+												value matches {
+													0|[local::at0222],
+													1|[local::at0223],
+													2|[local::at0224],
+													3|[local::at0225],
+													4|[local::at0226]
+												}
+											}
+											ELEMENT[at0227] occurrences matches {0..1} matches {    -- A7 - Getting in/out car
+												value matches {
+													0|[local::at0228],
+													1|[local::at0229],
+													2|[local::at0230],
+													3|[local::at0231],
+													4|[local::at0232]
+												}
+											}
+											ELEMENT[at0233] occurrences matches {0..1} matches {    -- A8 - Shopping
+												value matches {
+													0|[local::at0234],
+													1|[local::at0235],
+													2|[local::at0236],
+													3|[local::at0237],
+													4|[local::at0238]
+												}
+											}
+											ELEMENT[at0239] occurrences matches {0..1} matches {    -- A9 - Socks on
+												value matches {
+													0|[local::at0240],
+													1|[local::at0241],
+													2|[local::at0242],
+													3|[local::at0243],
+													4|[local::at0244]
+												}
+											}
+											ELEMENT[at0245] occurrences matches {0..1} matches {    -- A10 - Rising from bed
+												value matches {
+													0|[local::at0246],
+													1|[local::at0247],
+													2|[local::at0248],
+													3|[local::at0249],
+													4|[local::at0250]
+												}
+											}
+											ELEMENT[at0251] occurrences matches {0..1} matches {    -- A11 - Socks off
+												value matches {
+													0|[local::at0252],
+													1|[local::at0253],
+													2|[local::at0254],
+													3|[local::at0255],
+													4|[local::at0256]
+												}
+											}
+											ELEMENT[at0257] occurrences matches {0..1} matches {    -- A12 - Lying in bed
+												value matches {
+													0|[local::at0258],
+													1|[local::at0259],
+													2|[local::at0260],
+													3|[local::at0261],
+													4|[local::at0262]
+												}
+											}
+											ELEMENT[at0263] occurrences matches {0..1} matches {    -- A13 - Bathing
+												value matches {
+													0|[local::at0264],
+													1|[local::at0265],
+													2|[local::at0266],
+													3|[local::at0267],
+													4|[local::at0268]
+												}
+											}
+											ELEMENT[at0269] occurrences matches {0..1} matches {    -- A14 - Sitting
+												value matches {
+													0|[local::at0270],
+													1|[local::at0271],
+													2|[local::at0272],
+													3|[local::at0273],
+													4|[local::at0274]
+												}
+											}
+											ELEMENT[at0275] occurrences matches {0..1} matches {    -- A15 - Toilet
+												value matches {
+													0|[local::at0276],
+													1|[local::at0277],
+													2|[local::at0278],
+													3|[local::at0279],
+													4|[local::at0280]
+												}
+											}
+											ELEMENT[at0281] occurrences matches {0..1} matches {    -- A16 - Heavy domestic duties
+												value matches {
+													0|[local::at0282],
+													1|[local::at0283],
+													2|[local::at0284],
+													3|[local::at0285],
+													4|[local::at0286]
+												}
+											}
+											ELEMENT[at0287] occurrences matches {0..1} matches {    -- A17 - Light domestic duties
+												value matches {
+													0|[local::at0288],
+													1|[local::at0289],
+													2|[local::at0290],
+													3|[local::at0291],
+													4|[local::at0292]
+												}
+											}
 										}
 									}
-									ELEMENT[at0113] occurrences matches {0..1} matches {    -- S4 - Straighten
-										value matches {
-											4|[local::at0114],
-											3|[local::at0115],
-											2|[local::at0116],
-											1|[local::at0117],
-											0|[local::at0118]
+									CLUSTER[at0350] occurrences matches {0..1} matches {    -- CLUSTER
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0293] occurrences matches {0..1} matches {    -- SP1 - Squatting
+												value matches {
+													0|[local::at0294],
+													1|[local::at0295],
+													2|[local::at0296],
+													3|[local::at0297],
+													4|[local::at0298]
+												}
+											}
+											ELEMENT[at0299] occurrences matches {0..1} matches {    -- SP2 - Running
+												value matches {
+													0|[local::at0300],
+													1|[local::at0301],
+													2|[local::at0302],
+													3|[local::at0303],
+													4|[local::at0304]
+												}
+											}
+											ELEMENT[at0305] occurrences matches {0..1} matches {    -- SP3 - Jumping
+												value matches {
+													0|[local::at0306],
+													1|[local::at0307],
+													2|[local::at0308],
+													3|[local::at0309],
+													4|[local::at0310]
+												}
+											}
+											ELEMENT[at0311] occurrences matches {0..1} matches {    -- SP4 - Twisiting/pivoting
+												value matches {
+													0|[local::at0312],
+													1|[local::at0313],
+													2|[local::at0314],
+													3|[local::at0315],
+													4|[local::at0316]
+												}
+											}
+											ELEMENT[at0317] occurrences matches {0..1} matches {    -- SP5 - Kneeling
+												value matches {
+													0|[local::at0318],
+													1|[local::at0319],
+													2|[local::at0320],
+													3|[local::at0321],
+													4|[local::at0322]
+												}
+											}
 										}
 									}
-									ELEMENT[at0119] occurrences matches {0..1} matches {    -- S5 - Bend
-										value matches {
-											4|[local::at0120],
-											3|[local::at0121],
-											2|[local::at0122],
-											1|[local::at0123],
-											0|[local::at0124]
-										}
-									}
-									ELEMENT[at0125] occurrences matches {0..1} matches {    -- S6 - Morning Stiffness
-										value matches {
-											0|[local::at0126],
-											1|[local::at0127],
-											2|[local::at0128],
-											3|[local::at0129],
-											4|[local::at0130]
-										}
-									}
-									ELEMENT[at0131] occurrences matches {0..1} matches {    -- S7 - Stiffness after sitting
-										value matches {
-											0|[local::at0132],
-											1|[local::at0133],
-											2|[local::at0134],
-											3|[local::at0135],
-											4|[local::at0136]
-										}
-									}
-									ELEMENT[at0137] occurrences matches {0..1} matches {    -- P1 - Pain frequency
-										value matches {
-											0|[local::at0138],
-											1|[local::at0139],
-											2|[local::at0140],
-											3|[local::at0141],
-											4|[local::at0142]
-										}
-									}
-									ELEMENT[at0143] occurrences matches {0..1} matches {    -- P2 - Twisting
-										value matches {
-											0|[local::at0144],
-											1|[local::at0145],
-											2|[local::at0146],
-											3|[local::at0147],
-											4|[local::at0148]
-										}
-									}
-									ELEMENT[at0149] occurrences matches {0..1} matches {    -- P3 - Straightening
-										value matches {
-											0|[local::at0150],
-											1|[local::at0151],
-											2|[local::at0152],
-											3|[local::at0153],
-											4|[local::at0154]
-										}
-									}
-									ELEMENT[at0155] occurrences matches {0..1} matches {    -- P4 - Bending
-										value matches {
-											0|[local::at0156],
-											1|[local::at0157],
-											2|[local::at0158],
-											3|[local::at0159],
-											4|[local::at0160]
-										}
-									}
-									ELEMENT[at0161] occurrences matches {0..1} matches {    -- P5 - Walking
-										value matches {
-											0|[local::at0162],
-											1|[local::at0163],
-											2|[local::at0164],
-											3|[local::at0165],
-											4|[local::at0166]
-										}
-									}
-									ELEMENT[at0167] occurrences matches {0..1} matches {    -- P6- Stairs
-										value matches {
-											0|[local::at0168],
-											1|[local::at0169],
-											2|[local::at0170],
-											3|[local::at0171],
-											4|[local::at0172]
-										}
-									}
-									ELEMENT[at0173] occurrences matches {0..1} matches {    -- P7 - In Bed
-										value matches {
-											0|[local::at0174],
-											1|[local::at0175],
-											2|[local::at0176],
-											3|[local::at0177],
-											4|[local::at0178]
-										}
-									}
-									ELEMENT[at0179] occurrences matches {0..1} matches {    -- P8 - Sitting or lying
-										value matches {
-											0|[local::at0180],
-											1|[local::at0181],
-											2|[local::at0182],
-											3|[local::at0183],
-											4|[local::at0184]
-										}
-									}
-									ELEMENT[at0185] occurrences matches {0..1} matches {    -- P9 - Standing
-										value matches {
-											0|[local::at0186],
-											1|[local::at0187],
-											2|[local::at0188],
-											3|[local::at0189],
-											4|[local::at0190]
-										}
-									}
-									ELEMENT[at0191] occurrences matches {0..1} matches {    -- A1 - Descending stairs
-										value matches {
-											0|[local::at0192],
-											1|[local::at0193],
-											2|[local::at0194],
-											3|[local::at0195],
-											4|[local::at0196]
-										}
-									}
-									ELEMENT[at0197] occurrences matches {0..1} matches {    -- A2 - Ascending stairs
-										value matches {
-											0|[local::at0198],
-											1|[local::at0199],
-											2|[local::at0200],
-											3|[local::at0201],
-											4|[local::at0202]
-										}
-									}
-									ELEMENT[at0203] occurrences matches {0..1} matches {    -- A3 - Rising from sitting
-										value matches {
-											0|[local::at0204],
-											1|[local::at0205],
-											2|[local::at0206],
-											3|[local::at0207],
-											4|[local::at0208]
-										}
-									}
-									ELEMENT[at0209] occurrences matches {0..1} matches {    -- A4 - Standing
-										value matches {
-											0|[local::at0210],
-											1|[local::at0211],
-											2|[local::at0212],
-											3|[local::at0213],
-											4|[local::at0214]
-										}
-									}
-									ELEMENT[at0215] occurrences matches {0..1} matches {    -- A5 - Bending to pick up
-										value matches {
-											0|[local::at0216],
-											1|[local::at0217],
-											2|[local::at0218],
-											3|[local::at0219],
-											4|[local::at0220]
-										}
-									}
-									ELEMENT[at0221] occurrences matches {0..1} matches {    -- A6 - Walking on flat surface
-										value matches {
-											0|[local::at0222],
-											1|[local::at0223],
-											2|[local::at0224],
-											3|[local::at0225],
-											4|[local::at0226]
-										}
-									}
-									ELEMENT[at0227] occurrences matches {0..1} matches {    -- A7 - Getting in/out car
-										value matches {
-											0|[local::at0228],
-											1|[local::at0229],
-											2|[local::at0230],
-											3|[local::at0231],
-											4|[local::at0232]
-										}
-									}
-									ELEMENT[at0233] occurrences matches {0..1} matches {    -- A8 - Shopping
-										value matches {
-											0|[local::at0234],
-											1|[local::at0235],
-											2|[local::at0236],
-											3|[local::at0237],
-											4|[local::at0238]
-										}
-									}
-									ELEMENT[at0239] occurrences matches {0..1} matches {    -- A9 - Socks on
-										value matches {
-											0|[local::at0240],
-											1|[local::at0241],
-											2|[local::at0242],
-											3|[local::at0243],
-											4|[local::at0244]
-										}
-									}
-									ELEMENT[at0245] occurrences matches {0..1} matches {    -- A10 - Rising from bed
-										value matches {
-											0|[local::at0246],
-											1|[local::at0247],
-											2|[local::at0248],
-											3|[local::at0249],
-											4|[local::at0250]
-										}
-									}
-									ELEMENT[at0251] occurrences matches {0..1} matches {    -- A11 - Socks off
-										value matches {
-											0|[local::at0252],
-											1|[local::at0253],
-											2|[local::at0254],
-											3|[local::at0255],
-											4|[local::at0256]
-										}
-									}
-									ELEMENT[at0257] occurrences matches {0..1} matches {    -- A12 - Lying in bed
-										value matches {
-											0|[local::at0258],
-											1|[local::at0259],
-											2|[local::at0260],
-											3|[local::at0261],
-											4|[local::at0262]
-										}
-									}
-									ELEMENT[at0263] occurrences matches {0..1} matches {    -- A13 - Bathing
-										value matches {
-											0|[local::at0264],
-											1|[local::at0265],
-											2|[local::at0266],
-											3|[local::at0267],
-											4|[local::at0268]
-										}
-									}
-									ELEMENT[at0269] occurrences matches {0..1} matches {    -- A14 - Sitting
-										value matches {
-											0|[local::at0270],
-											1|[local::at0271],
-											2|[local::at0272],
-											3|[local::at0273],
-											4|[local::at0274]
-										}
-									}
-									ELEMENT[at0275] occurrences matches {0..1} matches {    -- A15 - Toilet
-										value matches {
-											0|[local::at0276],
-											1|[local::at0277],
-											2|[local::at0278],
-											3|[local::at0279],
-											4|[local::at0280]
-										}
-									}
-									ELEMENT[at0281] occurrences matches {0..1} matches {    -- A16 - Heavy domestic duties
-										value matches {
-											0|[local::at0282],
-											1|[local::at0283],
-											2|[local::at0284],
-											3|[local::at0285],
-											4|[local::at0286]
-										}
-									}
-									ELEMENT[at0287] occurrences matches {0..1} matches {    -- A17 - Light domestic duties
-										value matches {
-											0|[local::at0288],
-											1|[local::at0289],
-											2|[local::at0290],
-											3|[local::at0291],
-											4|[local::at0292]
-										}
-									}
-									ELEMENT[at0293] occurrences matches {0..1} matches {    -- SP1 - Squatting
-										value matches {
-											0|[local::at0294],
-											1|[local::at0295],
-											2|[local::at0296],
-											3|[local::at0297],
-											4|[local::at0298]
-										}
-									}
-									ELEMENT[at0299] occurrences matches {0..1} matches {    -- SP2 - Running
-										value matches {
-											0|[local::at0300],
-											1|[local::at0301],
-											2|[local::at0302],
-											3|[local::at0303],
-											4|[local::at0304]
-										}
-									}
-									ELEMENT[at0305] occurrences matches {0..1} matches {    -- SP3 - Jumping
-										value matches {
-											0|[local::at0306],
-											1|[local::at0307],
-											2|[local::at0308],
-											3|[local::at0309],
-											4|[local::at0310]
-										}
-									}
-									ELEMENT[at0311] occurrences matches {0..1} matches {    -- SP4 - Twisiting/pivoting
-										value matches {
-											0|[local::at0312],
-											1|[local::at0313],
-											2|[local::at0314],
-											3|[local::at0315],
-											4|[local::at0316]
-										}
-									}
-									ELEMENT[at0317] occurrences matches {0..1} matches {    -- SP5 - Kneeling
-										value matches {
-											0|[local::at0318],
-											1|[local::at0319],
-											2|[local::at0320],
-											3|[local::at0321],
-											4|[local::at0322]
-										}
-									}
-									ELEMENT[at0323] occurrences matches {0..1} matches {    -- Q1 - Aware of pain
-										value matches {
-											0|[local::at0324],
-											1|[local::at0325],
-											2|[local::at0326],
-											3|[local::at0327],
-											4|[local::at0328]
-										}
-									}
-									ELEMENT[at0329] occurrences matches {0..1} matches {    -- Q2 - Lifestyle
-										value matches {
-											0|[local::at0330],
-											1|[local::at0331],
-											2|[local::at0332],
-											3|[local::at0333],
-											4|[local::at0334]
-										}
-									}
-									ELEMENT[at0335] occurrences matches {0..1} matches {    -- Q3 - Confidence
-										value matches {
-											0|[local::at0336],
-											1|[local::at0337],
-											2|[local::at0338],
-											3|[local::at0339],
-											4|[local::at0340]
-										}
-									}
-									ELEMENT[at0341] occurrences matches {0..1} matches {    -- Q4 - General difficulty
-										value matches {
-											0|[local::at0342],
-											1|[local::at0343],
-											2|[local::at0344],
-											3|[local::at0345],
-											4|[local::at0346]
+									CLUSTER[at0349] occurrences matches {0..1} matches {    -- CLUSTER
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0323] occurrences matches {0..1} matches {    -- Q1 - Aware of pain
+												value matches {
+													0|[local::at0324],
+													1|[local::at0325],
+													2|[local::at0326],
+													3|[local::at0327],
+													4|[local::at0328]
+												}
+											}
+											ELEMENT[at0329] occurrences matches {0..1} matches {    -- Q2 - Lifestyle
+												value matches {
+													0|[local::at0330],
+													1|[local::at0331],
+													2|[local::at0332],
+													3|[local::at0333],
+													4|[local::at0334]
+												}
+											}
+											ELEMENT[at0335] occurrences matches {0..1} matches {    -- Q3 - Confidence
+												value matches {
+													0|[local::at0336],
+													1|[local::at0337],
+													2|[local::at0338],
+													3|[local::at0339],
+													4|[local::at0340]
+												}
+											}
+											ELEMENT[at0341] occurrences matches {0..1} matches {    -- Q4 - General difficulty
+												value matches {
+													0|[local::at0342],
+													1|[local::at0343],
+													2|[local::at0344],
+													3|[local::at0345],
+													4|[local::at0346]
+												}
+											}
 										}
 									}
 									ELEMENT[at0044] occurrences matches {0..1} matches {    -- Total score
@@ -1612,6 +1632,26 @@ Q4. In general, how much difficulty do you have with your knee?">
 				["at0346"] = <
 					text = <"None">
 					description = <"The patient, in general, has no difficulty with their knee.">
+				>
+				["at0347"] = <
+					text = <"CLUSTER">
+					description = <"*">
+				>
+				["at0348"] = <
+					text = <"CLUSTER">
+					description = <"*">
+				>
+				["at0349"] = <
+					text = <"CLUSTER">
+					description = <"*">
+				>
+				["at0350"] = <
+					text = <"CLUSTER">
+					description = <"*">
+				>
+				["at0351"] = <
+					text = <"CLUSTER">
+					description = <"*">
 				>
 			>
 		>
