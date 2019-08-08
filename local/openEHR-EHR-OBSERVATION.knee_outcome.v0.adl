@@ -29,12 +29,12 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
 		["custodian_organisation"] = <"Apperta Foundation CIC">
 		["references"] = <"">
-		["MD5-CAM-1.0.1"] = <"9136ee99f7ef634e23b4c25c891d5cbd">
+		["MD5-CAM-1.0.1"] = <"820179235ee326723448fcb67b71295f">
 		["build_uid"] = <"44635e5f-63c8-305d-9a86-7fb823f85734">
 	>
 
 definition
-	OBSERVATION[at0000] matches {    -- Knee outcome questionnaire.
+	OBSERVATION[at0000] matches {    -- Knee outcome questionnaire
 		data matches {
 			HISTORY[at0001] matches {    -- History
 				events cardinality matches {0..*; unordered} matches {
@@ -129,7 +129,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"Knee outcome questionnaire.">
+					text = <"Knee outcome questionnaire">
 					description = <"Knee outcome questionnaire.">
 				>
 				["at0001"] = <
