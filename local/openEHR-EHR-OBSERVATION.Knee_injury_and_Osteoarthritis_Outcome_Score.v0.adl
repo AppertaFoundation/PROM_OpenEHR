@@ -36,7 +36,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"ckm.apperta.org">
 		["original_publisher"] = <"Apperta Foundation CIC">
 		["custodian_namespace"] = <"ckm.apperta.org">
-		["MD5-CAM-1.0.1"] = <"2a30e043446d8b96fc67ce36bb290029">
+		["MD5-CAM-1.0.1"] = <"c5764ca05b7ab77be9b07bc9a39902b9">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -50,7 +50,7 @@ definition
 						data matches {
 							ITEM_TREE[at0003] matches {    -- Tree
 								items cardinality matches {0..*; unordered} matches {
-									CLUSTER[at0347] occurrences matches {0..1} matches {    -- CLUSTER
+									CLUSTER[at0347] occurrences matches {0..1} matches {    -- Symptoms
 										items cardinality matches {1..*; unordered} matches {
 											ELEMENT[at0004] occurrences matches {0..1} matches {    -- S1 - Swelling
 												value matches {
@@ -1634,8 +1634,9 @@ Q4. In general, how much difficulty do you have with your knee?">
 					description = <"The patient, in general, has no difficulty with their knee.">
 				>
 				["at0347"] = <
-					text = <"CLUSTER">
-					description = <"*">
+					text = <"Symptoms">
+					description = <"Patient reported knee symptoms during the last week.">
+					comment = <"These questions should be answered thinking of your knee symptoms during the last week.">
 				>
 				["at0348"] = <
 					text = <"CLUSTER">
