@@ -33,7 +33,7 @@ While openEHR archetypes are all freely available under an open license, the spe
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"9792d822f85e45e26133f851683996c7">
+		["MD5-CAM-1.0.1"] = <"3be7126e6307e00533ea71abc46e0e1f">
 		["build_uid"] = <"32c02cb4-dbd5-371a-a073-44724ebd1c9b">
 	>
 
@@ -203,6 +203,7 @@ definition
 											}
 										}
 									}
+									CLUSTER[at0099] occurrences matches {0..1} matches {*}    -- Function
 								}
 							}
 						}
@@ -634,6 +635,10 @@ What is the highest level of activity you can participate in on a regular basis?
 				["at0098"] = <
 					text = <"Not difficult at all">
 					description = <"The patient finds it not difficult at all to perform the activity.">
+				>
+				["at0099"] = <
+					text = <"Function">
+					description = <"*">
 				>
 			>
 		>
