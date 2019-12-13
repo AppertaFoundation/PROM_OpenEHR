@@ -9,26 +9,26 @@ language
 
 description
 	original_author = <
-		["date"] = <"2017-11-06">
-		["name"] = <"Hildegard Franke">
-		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
-		["email"] = <"hildi@freshehr.com">
+		["date"] = <"2019-12-13">
+		["name"] = <"Alan Fish">
+		["organisation"] = <"The Apperta Foundation">
+		["email"] = <"alan.fish@apperta.org">
 	>
 	lifecycle_state = <"in_development">
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
-			purpose = <"For the capture of episode information in the context of the Northumbria Orthopaedic PROMs registry.">
+			purpose = <"For the capture of episode information in the context of the Urology PROMs.">
 			copyright = <"© Clinical Models UK">
-			use = <"Use to record episode details, such as a unique identifier, in the context of Northumbria PROMs registry. 
+			use = <"Use to record episode details, such as a unique identifier, in the context of Urology PROMs. 
 
 This cluster archetype is intended to be used in the composition context slot.">
 		>
 	>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
-		["custodian_organisation"] = <"UK Clinical Models">
-		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
+		["custodian_organisation"] = <"The Apperta Foundation CIC">
+		["current_contact"] = <"Alan Fish">
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
