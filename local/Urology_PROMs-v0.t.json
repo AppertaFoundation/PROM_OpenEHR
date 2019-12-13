@@ -205,6 +205,15 @@
         "attributeTuples" : [ ],
         "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-i_pss_prostate_score-001.v0",
         "referenceType" : "archetypeOverlay"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "OBSERVATION",
+        "occurrences" : "0..*",
+        "nodeId" : "at0.4",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-iief_5-001.v0",
+        "referenceType" : "archetypeOverlay"
       } ]
     } ],
     "attributeTuples" : [ ]
@@ -286,7 +295,23 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "3bd3d7279a3ec9524f4bdb697657354c"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "For the capture of episode information in the context of the Urology PROMs.",
+          "keywords" : [ ],
+          "use" : "Use to record episode details, such as a unique identifier, in the context of Urology PROMs. \n\nThis cluster archetype is intended to be used in the composition context slot.",
+          "copyright" : "© Apperta UK",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.episode_details_urology.v0",
     "differential" : true,
@@ -337,7 +362,24 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "D41D91DE24B031E2F569B1DB28F91205"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record details of the The International Prostate Symptom Score (I-PSS).",
+          "keywords" : [ "I-PSS", "prostate", "ipss", "score", "bph" ],
+          "use" : "The International Prostate Symptom Score (I-PSS) is based on the answers to seven questions concerning urinary symptoms and one question concerning quality of life.  Each question concerning urinary symptoms allows the patient to choose one out of six answers indicating increasing severity of the particular symptom.  The answers are assigned points from 0 to 5.  The total score can therefore range from 0 to 35 (asymptomatic to very symptomatic).\r\n\r\nThe first 7 questions refer to the following urinary symptoms:\r\n1 - Incomplete emptying\r\n2 - Frequency \r\n3 - Intermittency\r\n4 - Urgency \r\n5 - Weak Stream \r\n6 - Straining \r\n7 - Nocturia\r\n\r\nQuestion 8 refers to the patient’s perceived quality of life.\r\n\r\nThe first 7 questions of the I-PSS are identical to the questions appearing on the American Urological Association (AUA) Symptom Index which currently categorizes symptoms as follows:\r\nMild (symptom score less than of equal to 7)\r\nModerate (symptom score range 8-19)\r\nSevere (symptom score range 20-35)\r\n\r\nThe International Scientific Committee (SCI), under the patronage of the World Health Organization (WHO) and the International Union Against Cancer (UICC), recommends the use of only a single question to assess the quality of life.  The answers to this question range from “delighted” to “terrible” or 0 to 6.  Although this single question may or may not capture the global impact of benign prostatic hyperplasia (BPH) symptoms or quality of life, it may serve as a valuable starting point for a doctor-patient conversation.\r\n\r\nThe SCI has agreed to use the symptom index for BPH, which has been developed by the AUA Measurement Committee, as the official worldwide symptoms assessment tool for patients suffering from prostatism.\r\n",
+          "misuse" : "Do not use for non-prostate related symptoms.",
+          "copyright" : "© Clinical Models UK",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-OBSERVATION.i_pss_prostate_score.v0",
     "differential" : true,
@@ -364,6 +406,57 @@
     },
     "adlVersion" : "1.4",
     "buildUid" : "a89283ad-c584-4ed9-b0b0-746543c7743a",
+    "rmName" : "openehr",
+    "rmRelease" : "1.0.3",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "936e0d6f-7d60-4bbe-9da7-aaba17a6df27",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "7606607D7643C3336A79FDE0D56985D6"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-OBSERVATION.iief_5.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-OBSERVATION.ovl-iief_5-001.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "OBSERVATION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "1eb19e16-3466-4e1c-bac6-328da920d616",
     "rmName" : "openehr",
     "rmRelease" : "1.0.3",
     "generated" : true,
