@@ -19,7 +19,7 @@ description
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"For the capture of episode information in the context of the Urology PROMs.">
-			copyright = <"© Clinical Models UK">
+			copyright = <"© Apperta UK">
 			use = <"Use to record episode details, such as a unique identifier, in the context of Urology PROMs. 
 
 This cluster archetype is intended to be used in the composition context slot.">
