@@ -1,4 +1,4 @@
-archetype (adl_version=1.4; uid=ca607a3d-942f-433e-a351-7f8f454024d7)
+archetype (adl_version=1.4; uid=74c9b80f-c0b0-4e05-8afd-f5f4b6574aea)
 	openEHR-EHR-CLUSTER.episode_details_urology.v0
 
 concept
@@ -19,7 +19,7 @@ description
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"For the capture of episode information in the context of the Urology PROMs.">
-			copyright = <"© Apperta UK">
+			copyright = <"© Apperta UK, Apperta Foundation">
 			use = <"Use to record episode details, such as a unique identifier, in the context of Urology PROMs. 
 
 This cluster archetype is intended to be used in the composition context slot.">
@@ -27,13 +27,13 @@ This cluster archetype is intended to be used in the composition context slot.">
 	>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
-		["custodian_organisation"] = <"The Apperta Foundation CIC">
+		["custodian_organisation"] = <"Apperta UK">
 		["current_contact"] = <"Alan Fish">
 		["original_namespace"] = <"uk.org.clinicalmodels">
-		["original_publisher"] = <"UK Clinical Models">
+		["original_publisher"] = <"Apperta UK">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"3bd3d7279a3ec9524f4bdb697657354c">
-		["build_uid"] = <"d5b3cbab-eba9-48d9-bfe1-6393ec0f2d84">
+		["MD5-CAM-1.0.1"] = <"5D550F93A80FB2C7B9A3B4F02E59E5FE">
+		["build_uid"] = <"8e5581be-cf02-4baf-94a6-0ecd6176cec4">
 		["revision"] = <"0.0.1-alpha">
 	>
 
